@@ -776,7 +776,7 @@ namespace WWII
             {
                 RefreshDataGrid(dataGridViewMilitaryUnits, "Clients");
                 RefreshDataGrid(dataGridViewWarEvents, "Employees");
-                RefreshDataGrid(dataGridViewOrders, "Orders");
+                RefreshDataGrid(dataGridViewVeterans, "Orders");
                 RefreshDataGrid(dataGridViewProducts, "Products");
                 RefreshDataGrid(dataGridViewOrderDetails, "OrderDetails");
                 RefreshDataGrid(dataGridViewOrderDetails, "OrderDetails");
@@ -947,7 +947,7 @@ namespace WWII
         {
             try
             {
-                DeleteRow(dataGridViewOrders);
+                DeleteRow(dataGridViewVeterans);
                 ClearFields();
             }
             catch (Exception ex)
@@ -1037,7 +1037,7 @@ namespace WWII
         {
             try
             {
-                Change(dataGridViewOrders);
+                Change(dataGridViewVeterans);
                 ClearFields();
             }
             catch (Exception ex)
@@ -1132,7 +1132,7 @@ namespace WWII
         {
             try
             {
-                UpdateBase(dataGridViewOrders);
+                UpdateBase(dataGridViewVeterans);
             }
             catch (Exception ex)
             {
@@ -1224,7 +1224,7 @@ namespace WWII
         {
             try
             {
-                ExportToWord(dataGridViewOrders);
+                ExportToWord(dataGridViewVeterans);
             }
             catch (Exception ex)
             {
@@ -1309,7 +1309,7 @@ namespace WWII
         {
             try
             {
-                ExportToExcel(dataGridViewOrders);
+                ExportToExcel(dataGridViewVeterans);
             }
             catch (Exception ex)
             {
@@ -1394,7 +1394,7 @@ namespace WWII
         {
             try
             {
-                ExportToTXT(dataGridViewOrders);
+                ExportToTXT(dataGridViewVeterans);
             }
             catch (Exception ex)
             {
@@ -1490,7 +1490,7 @@ namespace WWII
                 selectedRow = e.RowIndex;
                 if (e.RowIndex >= 0)
                 {
-                    DataGridView_CellClick(dataGridViewOrders, selectedRow);
+                    DataGridView_CellClick(dataGridViewVeterans, selectedRow);
                 }
             }
             catch (Exception ex)
@@ -1584,7 +1584,7 @@ namespace WWII
         {
             try
             {
-                Search(dataGridViewOrders);
+                Search(dataGridViewVeterans);
             }
             catch (Exception ex)
             {
