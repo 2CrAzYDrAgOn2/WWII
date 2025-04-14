@@ -32,8 +32,8 @@
             buttonSave = new Button();
             labelTitle = new Label();
             label1 = new Label();
-            labelFullNameClients = new Label();
-            textBoxFullNameClients = new TextBox();
+            labelUnitName = new Label();
+            textBoxUnitName = new TextBox();
             labelDescriptionMilitaryUnits = new Label();
             textBoxDescriptionMilitaryUnits = new TextBox();
             SuspendLayout();
@@ -78,26 +78,26 @@
             label1.TabIndex = 4;
             label1.Text = "Военная единица";
             // 
-            // labelFullNameClients
+            // labelUnitName
             // 
-            labelFullNameClients.AutoSize = true;
-            labelFullNameClients.BackColor = Color.Transparent;
-            labelFullNameClients.ForeColor = Color.Black;
-            labelFullNameClients.Location = new Point(193, 456);
-            labelFullNameClients.Margin = new Padding(4, 0, 4, 0);
-            labelFullNameClients.Name = "labelFullNameClients";
-            labelFullNameClients.Size = new Size(93, 15);
-            labelFullNameClients.TabIndex = 5;
-            labelFullNameClients.Text = "Наименование:";
+            labelUnitName.AutoSize = true;
+            labelUnitName.BackColor = Color.Transparent;
+            labelUnitName.ForeColor = Color.Black;
+            labelUnitName.Location = new Point(193, 456);
+            labelUnitName.Margin = new Padding(4, 0, 4, 0);
+            labelUnitName.Name = "labelUnitName";
+            labelUnitName.Size = new Size(93, 15);
+            labelUnitName.TabIndex = 5;
+            labelUnitName.Text = "Наименование:";
             // 
-            // textBoxFullNameClients
+            // textBoxUnitName
             // 
-            textBoxFullNameClients.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxFullNameClients.Location = new Point(292, 445);
-            textBoxFullNameClients.Margin = new Padding(4, 3, 4, 3);
-            textBoxFullNameClients.Name = "textBoxFullNameClients";
-            textBoxFullNameClients.Size = new Size(455, 33);
-            textBoxFullNameClients.TabIndex = 0;
+            textBoxUnitName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxUnitName.Location = new Point(292, 445);
+            textBoxUnitName.Margin = new Padding(4, 3, 4, 3);
+            textBoxUnitName.Name = "textBoxUnitName";
+            textBoxUnitName.Size = new Size(455, 33);
+            textBoxUnitName.TabIndex = 0;
             // 
             // labelDescriptionMilitaryUnits
             // 
@@ -127,8 +127,8 @@
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(labelFullNameClients);
-            Controls.Add(textBoxFullNameClients);
+            Controls.Add(labelUnitName);
+            Controls.Add(textBoxUnitName);
             Controls.Add(labelDescriptionMilitaryUnits);
             Controls.Add(textBoxDescriptionMilitaryUnits);
             Controls.Add(buttonSave);
@@ -148,8 +148,8 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label label1;
-        private Label labelFullNameClients;
-        private TextBox textBoxFullNameClients;
+        private Label labelUnitName;
+        private TextBox textBoxUnitName;
         private Label labelDescriptionMilitaryUnits;
         private TextBox textBoxDescriptionMilitaryUnits;
     }

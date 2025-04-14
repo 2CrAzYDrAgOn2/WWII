@@ -179,7 +179,10 @@
             Controls.Add(textBoxDescriptionWarEvents);
             Controls.Add(buttonSave);
             DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddFormWarEvents";
             Text = "Добавить событие войны";
             ResumeLayout(false);

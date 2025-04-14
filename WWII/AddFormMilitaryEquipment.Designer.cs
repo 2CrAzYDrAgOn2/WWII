@@ -31,9 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormMilitaryEquipment));
             labelTitle = new Label();
             label1 = new Label();
-            labelName = new Label();
-            textBoxName = new TextBox();
             buttonSave = new Button();
+            labelEquipmentName = new Label();
+            textBoxEquipmentName = new TextBox();
+            labelEquipmentType = new Label();
+            textBoxEquipmentType = new TextBox();
+            labelDescriptionMilitaryEquipment = new Label();
+            textBoxDescriptionMilitaryEquipment = new TextBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -46,7 +50,7 @@
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(175, 25);
-            labelTitle.TabIndex = 9;
+            labelTitle.TabIndex = 4;
             labelTitle.Text = "Создание записи:";
             // 
             // label1
@@ -59,29 +63,8 @@
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(144, 21);
-            label1.TabIndex = 10;
+            label1.TabIndex = 5;
             label1.Text = "Военная техника";
-            // 
-            // labelName
-            // 
-            labelName.AutoSize = true;
-            labelName.BackColor = Color.Transparent;
-            labelName.ForeColor = Color.Black;
-            labelName.Location = new Point(190, 500);
-            labelName.Margin = new Padding(4, 0, 4, 0);
-            labelName.Name = "labelName";
-            labelName.Size = new Size(93, 15);
-            labelName.TabIndex = 11;
-            labelName.Text = "Наименование:";
-            // 
-            // textBoxName
-            // 
-            textBoxName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxName.Location = new Point(294, 489);
-            textBoxName.Margin = new Padding(4, 3, 4, 3);
-            textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(455, 33);
-            textBoxName.TabIndex = 7;
             // 
             // buttonSave
             // 
@@ -92,9 +75,70 @@
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(236, 65);
-            buttonSave.TabIndex = 8;
+            buttonSave.TabIndex = 3;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
+            buttonSave.Click += ButtonSave_Click;
+            // 
+            // labelEquipmentName
+            // 
+            labelEquipmentName.AutoSize = true;
+            labelEquipmentName.ForeColor = Color.Black;
+            labelEquipmentName.Location = new Point(195, 500);
+            labelEquipmentName.Margin = new Padding(4, 0, 4, 0);
+            labelEquipmentName.Name = "labelEquipmentName";
+            labelEquipmentName.Size = new Size(93, 15);
+            labelEquipmentName.TabIndex = 6;
+            labelEquipmentName.Text = "Наименование:";
+            // 
+            // textBoxEquipmentName
+            // 
+            textBoxEquipmentName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEquipmentName.Location = new Point(294, 489);
+            textBoxEquipmentName.Margin = new Padding(4, 3, 4, 3);
+            textBoxEquipmentName.Name = "textBoxEquipmentName";
+            textBoxEquipmentName.Size = new Size(455, 33);
+            textBoxEquipmentName.TabIndex = 0;
+            // 
+            // labelEquipmentType
+            // 
+            labelEquipmentType.AutoSize = true;
+            labelEquipmentType.ForeColor = Color.Black;
+            labelEquipmentType.Location = new Point(211, 545);
+            labelEquipmentType.Margin = new Padding(4, 0, 4, 0);
+            labelEquipmentType.Name = "labelEquipmentType";
+            labelEquipmentType.Size = new Size(77, 15);
+            labelEquipmentType.TabIndex = 7;
+            labelEquipmentType.Text = "Тип техники:";
+            // 
+            // textBoxEquipmentType
+            // 
+            textBoxEquipmentType.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEquipmentType.Location = new Point(294, 534);
+            textBoxEquipmentType.Margin = new Padding(4, 3, 4, 3);
+            textBoxEquipmentType.Name = "textBoxEquipmentType";
+            textBoxEquipmentType.Size = new Size(455, 33);
+            textBoxEquipmentType.TabIndex = 1;
+            // 
+            // labelDescriptionMilitaryEquipment
+            // 
+            labelDescriptionMilitaryEquipment.AutoSize = true;
+            labelDescriptionMilitaryEquipment.ForeColor = Color.Black;
+            labelDescriptionMilitaryEquipment.Location = new Point(223, 593);
+            labelDescriptionMilitaryEquipment.Margin = new Padding(4, 0, 4, 0);
+            labelDescriptionMilitaryEquipment.Name = "labelDescriptionMilitaryEquipment";
+            labelDescriptionMilitaryEquipment.Size = new Size(65, 15);
+            labelDescriptionMilitaryEquipment.TabIndex = 8;
+            labelDescriptionMilitaryEquipment.Text = "Описание:";
+            // 
+            // textBoxDescriptionMilitaryEquipment
+            // 
+            textBoxDescriptionMilitaryEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxDescriptionMilitaryEquipment.Location = new Point(294, 582);
+            textBoxDescriptionMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
+            textBoxDescriptionMilitaryEquipment.Name = "textBoxDescriptionMilitaryEquipment";
+            textBoxDescriptionMilitaryEquipment.Size = new Size(455, 33);
+            textBoxDescriptionMilitaryEquipment.TabIndex = 2;
             // 
             // AddFormMilitaryEquipment
             // 
@@ -103,10 +147,17 @@
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(labelName);
-            Controls.Add(textBoxName);
+            Controls.Add(labelEquipmentName);
+            Controls.Add(textBoxEquipmentName);
+            Controls.Add(labelEquipmentType);
+            Controls.Add(textBoxEquipmentType);
+            Controls.Add(labelDescriptionMilitaryEquipment);
+            Controls.Add(textBoxDescriptionMilitaryEquipment);
             Controls.Add(buttonSave);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddFormMilitaryEquipment";
             Text = "Добавить военную технику";
             ResumeLayout(false);
@@ -117,8 +168,12 @@
 
         private Label labelTitle;
         private Label label1;
-        private Label labelName;
-        private TextBox textBoxName;
         private Button buttonSave;
+        private Label labelEquipmentName;
+        private TextBox textBoxEquipmentName;
+        private Label labelEquipmentType;
+        private TextBox textBoxEquipmentType;
+        private Label labelDescriptionMilitaryEquipment;
+        private TextBox textBoxDescriptionMilitaryEquipment;
     }
 }

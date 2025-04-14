@@ -21,18 +21,22 @@ namespace WWII
         {
             try
             {
-                //dataBase.OpenConnection();
-                //var orderIDOrderDetails = textBoxProductIDOrderDetails.Text;
-                //var product = textBoxOrderIDOrderDetails.Text;
-                //string queryProduct = $"SELECT ProductID FROM Products WHERE Name = '{product}'";
-                //SqlCommand commandProduct = new(queryProduct, dataBase.GetConnection());
-                //dataBase.OpenConnection();
-                //object resultProduct = commandProduct.ExecuteScalar();
-                //var productIDOrderDetails = resultProduct.ToString();
-                //var addQuery = $"insert into OrderDetails (OrderID, ProductID) values ('{orderIDOrderDetails}', '{productIDOrderDetails}')";
-                //var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
-                //sqlCommand.ExecuteNonQuery();
-                //MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataBase.OpenConnection();
+                var veteranName = textBoxVeteranIDVeteranMedals.Text;
+                var medalName = textBoxMedalIDVeteranMedals.Text;
+                var awardDate = dateTimePickerAwardDate.Value.ToString("yyyy-MM-dd");
+                string veteranQuery = $"SELECT VeteranID FROM Veterans WHERE FullName = '{veteranName}'";
+                SqlCommand veteranCommand = new(veteranQuery, dataBase.GetConnection());
+                object veteranResult = veteranCommand.ExecuteScalar();
+                var veteranID = veteranResult.ToString();
+                string medalQuery = $"SELECT MedalID FROM Medals WHERE MedalName = '{medalName}'";
+                SqlCommand medalCommand = new(medalQuery, dataBase.GetConnection());
+                object medalResult = medalCommand.ExecuteScalar();
+                var medalID = medalResult.ToString();
+                string addQuery = $"INSERT INTO VeteranMedals (VeteranID, MedalID, AwardDate) VALUES ('{veteranID}', '{medalID}', '{awardDate}')";
+                var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

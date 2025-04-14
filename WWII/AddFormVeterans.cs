@@ -22,29 +22,20 @@ namespace WWII
         {
             try
             {
-                //dataBase.OpenConnection();
-                //var client = textBoxClientIDOrders.Text;
-                //string queryClient = $"SELECT ClientID FROM Clients WHERE FullName = '{client}'";
-                //SqlCommand commandClient = new(queryClient, dataBase.GetConnection());
-                //dataBase.OpenConnection();
-                //object resultClient = commandClient.ExecuteScalar();
-                //var clientIDOrders = resultClient.ToString();
-                //var employee = textBoxEmployeeIDOrders.Text;
-                //string queryEmployee = $"SELECT EmployeeID FROM Employees WHERE FullName = '{employee}'";
-                //SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
-                //dataBase.OpenConnection();
-                //object resultEmployee = commandEmployee.ExecuteScalar();
-                //var employeeIDOrders = resultEmployee.ToString();
-                //var status = comboBoxStatusID.Text;
-                //string queryStatus = $"SELECT StatusID FROM Statuses WHERE Status = '{status}'";
-                //SqlCommand commandStatus = new(queryStatus, dataBase.GetConnection());
-                //dataBase.OpenConnection();
-                //object resultStatus = commandStatus.ExecuteScalar();
-                //var statusID = resultStatus.ToString();
-                //var addQuery = $"insert into Orders (ClientID, EmployeeID, StatusID) values ('{clientIDOrders}', '{employeeIDOrders}', '{statusID}')";
-                //var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
-                //sqlCommand.ExecuteNonQuery();
-                //MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataBase.OpenConnection();
+                var fullName = textBoxFullName.Text;
+                var birthDate = dateTimePickerBirthDate.Value.ToString("yyyy-MM-dd");
+                var deathDate = dateTimePickerDeathDate.Value.ToString("yyyy-MM-dd");
+                var militaryRank = textBoxMilitaryRank.Text;
+                var unitName = textBoxUnitID.Text;
+                string query = $"SELECT MilitaryUnitID FROM MilitaryUnits WHERE UnitName = '{unitName}'";
+                SqlCommand command = new(query, dataBase.GetConnection());
+                object result = command.ExecuteScalar();
+                var unitID = result.ToString();
+                string addQuery = $"INSERT INTO Veterans (FullName, BirthDate, DeathDate, MilitaryRank, UnitID) VALUES ('{fullName}', '{birthDate}', '{deathDate}', '{militaryRank}', '{unitID}')";
+                var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

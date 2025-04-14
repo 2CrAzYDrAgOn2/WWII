@@ -31,9 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormMilitaryRoutes));
             labelTitle = new Label();
             label1 = new Label();
-            labelName = new Label();
-            textBoxName = new TextBox();
             buttonSave = new Button();
+            labelRouteName = new Label();
+            textBoxRouteName = new TextBox();
+            labelStartLocation = new Label();
+            textBoxStartLocation = new TextBox();
+            labelEndLocation = new Label();
+            textBoxEndLocation = new TextBox();
+            labelDescriptionMilitaryRoutes = new Label();
+            textBoxDescriptionMilitaryRoutes = new TextBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -46,7 +52,7 @@
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(175, 25);
-            labelTitle.TabIndex = 14;
+            labelTitle.TabIndex = 5;
             labelTitle.Text = "Создание записи:";
             // 
             // label1
@@ -59,29 +65,8 @@
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(157, 21);
-            label1.TabIndex = 15;
+            label1.TabIndex = 6;
             label1.Text = "Военный маршрут";
-            // 
-            // labelName
-            // 
-            labelName.AutoSize = true;
-            labelName.BackColor = Color.Transparent;
-            labelName.ForeColor = Color.Black;
-            labelName.Location = new Point(187, 500);
-            labelName.Margin = new Padding(4, 0, 4, 0);
-            labelName.Name = "labelName";
-            labelName.Size = new Size(93, 15);
-            labelName.TabIndex = 16;
-            labelName.Text = "Наименование:";
-            // 
-            // textBoxName
-            // 
-            textBoxName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxName.Location = new Point(291, 489);
-            textBoxName.Margin = new Padding(4, 3, 4, 3);
-            textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(455, 33);
-            textBoxName.TabIndex = 12;
             // 
             // buttonSave
             // 
@@ -92,9 +77,90 @@
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(236, 65);
-            buttonSave.TabIndex = 13;
+            buttonSave.TabIndex = 4;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
+            buttonSave.Click += ButtonSave_Click;
+            // 
+            // labelRouteName
+            // 
+            labelRouteName.AutoSize = true;
+            labelRouteName.ForeColor = Color.Black;
+            labelRouteName.Location = new Point(192, 500);
+            labelRouteName.Margin = new Padding(4, 0, 4, 0);
+            labelRouteName.Name = "labelRouteName";
+            labelRouteName.Size = new Size(93, 15);
+            labelRouteName.TabIndex = 7;
+            labelRouteName.Text = "Наименование:";
+            // 
+            // textBoxRouteName
+            // 
+            textBoxRouteName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxRouteName.Location = new Point(291, 489);
+            textBoxRouteName.Margin = new Padding(4, 3, 4, 3);
+            textBoxRouteName.Name = "textBoxRouteName";
+            textBoxRouteName.Size = new Size(455, 33);
+            textBoxRouteName.TabIndex = 0;
+            // 
+            // labelStartLocation
+            // 
+            labelStartLocation.AutoSize = true;
+            labelStartLocation.ForeColor = Color.Black;
+            labelStartLocation.Location = new Point(181, 545);
+            labelStartLocation.Margin = new Padding(4, 0, 4, 0);
+            labelStartLocation.Name = "labelStartLocation";
+            labelStartLocation.Size = new Size(104, 15);
+            labelStartLocation.TabIndex = 8;
+            labelStartLocation.Text = "Начальная точка:";
+            // 
+            // textBoxStartLocation
+            // 
+            textBoxStartLocation.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxStartLocation.Location = new Point(291, 534);
+            textBoxStartLocation.Margin = new Padding(4, 3, 4, 3);
+            textBoxStartLocation.Name = "textBoxStartLocation";
+            textBoxStartLocation.Size = new Size(455, 33);
+            textBoxStartLocation.TabIndex = 1;
+            // 
+            // labelEndLocation
+            // 
+            labelEndLocation.AutoSize = true;
+            labelEndLocation.ForeColor = Color.Black;
+            labelEndLocation.Location = new Point(188, 593);
+            labelEndLocation.Margin = new Padding(4, 0, 4, 0);
+            labelEndLocation.Name = "labelEndLocation";
+            labelEndLocation.Size = new Size(97, 15);
+            labelEndLocation.TabIndex = 9;
+            labelEndLocation.Text = "Конечная точка:";
+            // 
+            // textBoxEndLocation
+            // 
+            textBoxEndLocation.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEndLocation.Location = new Point(291, 582);
+            textBoxEndLocation.Margin = new Padding(4, 3, 4, 3);
+            textBoxEndLocation.Name = "textBoxEndLocation";
+            textBoxEndLocation.Size = new Size(455, 33);
+            textBoxEndLocation.TabIndex = 2;
+            // 
+            // labelDescriptionMilitaryRoutes
+            // 
+            labelDescriptionMilitaryRoutes.AutoSize = true;
+            labelDescriptionMilitaryRoutes.ForeColor = Color.Black;
+            labelDescriptionMilitaryRoutes.Location = new Point(220, 635);
+            labelDescriptionMilitaryRoutes.Margin = new Padding(4, 0, 4, 0);
+            labelDescriptionMilitaryRoutes.Name = "labelDescriptionMilitaryRoutes";
+            labelDescriptionMilitaryRoutes.Size = new Size(65, 15);
+            labelDescriptionMilitaryRoutes.TabIndex = 10;
+            labelDescriptionMilitaryRoutes.Text = "Описание:";
+            // 
+            // textBoxDescriptionMilitaryRoutes
+            // 
+            textBoxDescriptionMilitaryRoutes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxDescriptionMilitaryRoutes.Location = new Point(291, 624);
+            textBoxDescriptionMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
+            textBoxDescriptionMilitaryRoutes.Name = "textBoxDescriptionMilitaryRoutes";
+            textBoxDescriptionMilitaryRoutes.Size = new Size(455, 33);
+            textBoxDescriptionMilitaryRoutes.TabIndex = 3;
             // 
             // AddFormMilitaryRoutes
             // 
@@ -103,10 +169,19 @@
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(labelName);
-            Controls.Add(textBoxName);
+            Controls.Add(labelRouteName);
+            Controls.Add(textBoxRouteName);
+            Controls.Add(labelStartLocation);
+            Controls.Add(textBoxStartLocation);
+            Controls.Add(labelEndLocation);
+            Controls.Add(textBoxEndLocation);
+            Controls.Add(labelDescriptionMilitaryRoutes);
+            Controls.Add(textBoxDescriptionMilitaryRoutes);
             Controls.Add(buttonSave);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddFormMilitaryRoutes";
             Text = "Добавить военный маршрут";
             ResumeLayout(false);
@@ -117,8 +192,14 @@
 
         private Label labelTitle;
         private Label label1;
-        private Label labelName;
-        private TextBox textBoxName;
         private Button buttonSave;
+        private Label labelRouteName;
+        private TextBox textBoxRouteName;
+        private Label labelStartLocation;
+        private TextBox textBoxStartLocation;
+        private Label labelEndLocation;
+        private TextBox textBoxEndLocation;
+        private Label labelDescriptionMilitaryRoutes;
+        private TextBox textBoxDescriptionMilitaryRoutes;
     }
 }

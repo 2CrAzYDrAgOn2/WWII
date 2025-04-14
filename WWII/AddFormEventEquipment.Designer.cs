@@ -31,9 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormEventEquipment));
             labelTitle = new Label();
             label1 = new Label();
-            labelName = new Label();
-            textBoxName = new TextBox();
             buttonSave = new Button();
+            labelEventIDEventEquipment = new Label();
+            textBoxEventIDEventEquipment = new TextBox();
+            labelEquipmentIDEventEquipment = new Label();
+            textBoxEquipmentIDEventEquipment = new TextBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -46,7 +48,7 @@
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(175, 25);
-            labelTitle.TabIndex = 9;
+            labelTitle.TabIndex = 3;
             labelTitle.Text = "Создание записи:";
             // 
             // label1
@@ -59,29 +61,8 @@
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(147, 21);
-            label1.TabIndex = 10;
+            label1.TabIndex = 4;
             label1.Text = "Событие техники";
-            // 
-            // labelName
-            // 
-            labelName.AutoSize = true;
-            labelName.BackColor = Color.Transparent;
-            labelName.ForeColor = Color.Black;
-            labelName.Location = new Point(190, 500);
-            labelName.Margin = new Padding(4, 0, 4, 0);
-            labelName.Name = "labelName";
-            labelName.Size = new Size(93, 15);
-            labelName.TabIndex = 11;
-            labelName.Text = "Наименование:";
-            // 
-            // textBoxName
-            // 
-            textBoxName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxName.Location = new Point(294, 489);
-            textBoxName.Margin = new Padding(4, 3, 4, 3);
-            textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(455, 33);
-            textBoxName.TabIndex = 7;
             // 
             // buttonSave
             // 
@@ -92,9 +73,50 @@
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(236, 65);
-            buttonSave.TabIndex = 8;
+            buttonSave.TabIndex = 2;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
+            buttonSave.Click += ButtonSave_Click;
+            // 
+            // labelEventIDEventEquipment
+            // 
+            labelEventIDEventEquipment.AutoSize = true;
+            labelEventIDEventEquipment.ForeColor = Color.Black;
+            labelEventIDEventEquipment.Location = new Point(229, 500);
+            labelEventIDEventEquipment.Margin = new Padding(4, 0, 4, 0);
+            labelEventIDEventEquipment.Name = "labelEventIDEventEquipment";
+            labelEventIDEventEquipment.Size = new Size(59, 15);
+            labelEventIDEventEquipment.TabIndex = 5;
+            labelEventIDEventEquipment.Text = "Событие:";
+            // 
+            // textBoxEventIDEventEquipment
+            // 
+            textBoxEventIDEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEventIDEventEquipment.Location = new Point(294, 489);
+            textBoxEventIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
+            textBoxEventIDEventEquipment.Name = "textBoxEventIDEventEquipment";
+            textBoxEventIDEventEquipment.Size = new Size(455, 33);
+            textBoxEventIDEventEquipment.TabIndex = 0;
+            // 
+            // labelEquipmentIDEventEquipment
+            // 
+            labelEquipmentIDEventEquipment.AutoSize = true;
+            labelEquipmentIDEventEquipment.ForeColor = Color.Black;
+            labelEquipmentIDEventEquipment.Location = new Point(197, 545);
+            labelEquipmentIDEventEquipment.Margin = new Padding(4, 0, 4, 0);
+            labelEquipmentIDEventEquipment.Name = "labelEquipmentIDEventEquipment";
+            labelEquipmentIDEventEquipment.Size = new Size(91, 15);
+            labelEquipmentIDEventEquipment.TabIndex = 6;
+            labelEquipmentIDEventEquipment.Text = "Оборудование:";
+            // 
+            // textBoxEquipmentIDEventEquipment
+            // 
+            textBoxEquipmentIDEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEquipmentIDEventEquipment.Location = new Point(294, 534);
+            textBoxEquipmentIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
+            textBoxEquipmentIDEventEquipment.Name = "textBoxEquipmentIDEventEquipment";
+            textBoxEquipmentIDEventEquipment.Size = new Size(455, 33);
+            textBoxEquipmentIDEventEquipment.TabIndex = 1;
             // 
             // AddFormEventEquipment
             // 
@@ -103,10 +125,15 @@
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(labelName);
-            Controls.Add(textBoxName);
+            Controls.Add(labelEventIDEventEquipment);
+            Controls.Add(textBoxEventIDEventEquipment);
+            Controls.Add(labelEquipmentIDEventEquipment);
+            Controls.Add(textBoxEquipmentIDEventEquipment);
             Controls.Add(buttonSave);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddFormEventEquipment";
             Text = "Добавить событие техники";
             ResumeLayout(false);
@@ -117,8 +144,10 @@
 
         private Label labelTitle;
         private Label label1;
-        private Label labelName;
-        private TextBox textBoxName;
         private Button buttonSave;
+        private Label labelEventIDEventEquipment;
+        private TextBox textBoxEventIDEventEquipment;
+        private Label labelEquipmentIDEventEquipment;
+        private TextBox textBoxEquipmentIDEventEquipment;
     }
 }

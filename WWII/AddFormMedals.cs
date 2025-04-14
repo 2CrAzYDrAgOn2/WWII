@@ -23,14 +23,13 @@ namespace WWII
         {
             try
             {
-                //dataBase.OpenConnection();
-                //var name = textBoxName.Text;
-                //var description = textBoxDescription.Text;
-                //var price = textBoxPrice.Text;
-                //var addQuery = $"insert into Products (Name, Description, Price) values ('{name}', '{description}', '{price}')";
-                //var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
-                //sqlCommand.ExecuteNonQuery();
-                //MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataBase.OpenConnection();
+                var medalName = textBoxMedalName.Text;
+                var description = textBoxDescriptionMedals.Text;
+                string addQuery = $"INSERT INTO Medals (MedalName, Description) VALUES ('{medalName}', '{description}')";
+                var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
