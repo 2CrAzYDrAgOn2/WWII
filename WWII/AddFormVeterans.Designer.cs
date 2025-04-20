@@ -48,12 +48,12 @@
             // 
             labelTitle.AutoSize = true;
             labelTitle.BackColor = Color.Transparent;
-            labelTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            labelTitle.Font = new Font("Segoe UI", 35F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             labelTitle.ForeColor = Color.Black;
-            labelTitle.Location = new Point(243, 9);
+            labelTitle.Location = new Point(242, 9);
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(175, 25);
+            labelTitle.Size = new Size(429, 62);
             labelTitle.TabIndex = 6;
             labelTitle.Text = "Создание записи:";
             // 
@@ -61,12 +61,12 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(244, 38);
+            label1.Location = new Point(386, 87);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(74, 21);
+            label1.Size = new Size(147, 45);
             label1.TabIndex = 7;
             label1.Text = "Ветеран";
             // 
@@ -74,11 +74,12 @@
             // 
             buttonSave.BackColor = Color.Transparent;
             buttonSave.FlatStyle = FlatStyle.Flat;
+            buttonSave.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonSave.ForeColor = Color.Black;
-            buttonSave.Location = new Point(330, 762);
+            buttonSave.Location = new Point(336, 464);
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(236, 65);
+            buttonSave.Size = new Size(236, 55);
             buttonSave.TabIndex = 5;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
@@ -87,107 +88,118 @@
             // labelFullName
             // 
             labelFullName.AutoSize = true;
+            labelFullName.BackColor = Color.Transparent;
+            labelFullName.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelFullName.ForeColor = Color.Black;
-            labelFullName.Location = new Point(246, 499);
+            labelFullName.Location = new Point(164, 185);
             labelFullName.Margin = new Padding(4, 0, 4, 0);
             labelFullName.Name = "labelFullName";
-            labelFullName.Size = new Size(37, 15);
+            labelFullName.Size = new Size(65, 28);
             labelFullName.TabIndex = 8;
             labelFullName.Text = "ФИО:";
             // 
             // textBoxFullName
             // 
-            textBoxFullName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxFullName.Location = new Point(292, 489);
+            textBoxFullName.Font = new Font("Segoe UI", 15F);
+            textBoxFullName.Location = new Point(237, 182);
             textBoxFullName.Margin = new Padding(4, 3, 4, 3);
             textBoxFullName.Name = "textBoxFullName";
-            textBoxFullName.Size = new Size(455, 33);
+            textBoxFullName.Size = new Size(455, 34);
             textBoxFullName.TabIndex = 0;
             // 
             // labelBirthDate
             // 
             labelBirthDate.AutoSize = true;
+            labelBirthDate.BackColor = Color.Transparent;
+            labelBirthDate.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelBirthDate.ForeColor = Color.Black;
-            labelBirthDate.Location = new Point(181, 546);
+            labelBirthDate.Location = new Point(59, 239);
             labelBirthDate.Margin = new Padding(4, 0, 4, 0);
             labelBirthDate.Name = "labelBirthDate";
-            labelBirthDate.Size = new Size(93, 15);
+            labelBirthDate.Size = new Size(170, 28);
             labelBirthDate.TabIndex = 9;
             labelBirthDate.Text = "Дата рождения:";
             // 
             // dateTimePickerBirthDate
             // 
-            dateTimePickerBirthDate.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerBirthDate.Location = new Point(292, 534);
+            dateTimePickerBirthDate.Font = new Font("Segoe UI", 15F);
+            dateTimePickerBirthDate.Location = new Point(237, 234);
             dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
-            dateTimePickerBirthDate.Size = new Size(455, 33);
+            dateTimePickerBirthDate.Size = new Size(455, 34);
             dateTimePickerBirthDate.TabIndex = 1;
             // 
             // labelDeathDate
             // 
             labelDeathDate.AutoSize = true;
+            labelDeathDate.BackColor = Color.Transparent;
+            labelDeathDate.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelDeathDate.ForeColor = Color.Black;
-            labelDeathDate.Location = new Point(200, 586);
+            labelDeathDate.Location = new Point(88, 292);
             labelDeathDate.Margin = new Padding(4, 0, 4, 0);
             labelDeathDate.Name = "labelDeathDate";
-            labelDeathDate.Size = new Size(78, 15);
+            labelDeathDate.Size = new Size(141, 28);
             labelDeathDate.TabIndex = 10;
             labelDeathDate.Text = "Дата смерти:";
             // 
             // dateTimePickerDeathDate
             // 
-            dateTimePickerDeathDate.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerDeathDate.Location = new Point(292, 579);
+            dateTimePickerDeathDate.Font = new Font("Segoe UI", 15F);
+            dateTimePickerDeathDate.Location = new Point(237, 287);
             dateTimePickerDeathDate.Name = "dateTimePickerDeathDate";
-            dateTimePickerDeathDate.Size = new Size(455, 33);
+            dateTimePickerDeathDate.Size = new Size(455, 34);
             dateTimePickerDeathDate.TabIndex = 2;
             // 
             // labelMilitaryRank
             // 
             labelMilitaryRank.AutoSize = true;
+            labelMilitaryRank.BackColor = Color.Transparent;
+            labelMilitaryRank.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelMilitaryRank.ForeColor = Color.Black;
-            labelMilitaryRank.Location = new Point(231, 634);
+            labelMilitaryRank.Location = new Point(142, 341);
             labelMilitaryRank.Margin = new Padding(4, 0, 4, 0);
             labelMilitaryRank.Name = "labelMilitaryRank";
-            labelMilitaryRank.Size = new Size(49, 15);
+            labelMilitaryRank.Size = new Size(87, 28);
             labelMilitaryRank.TabIndex = 11;
             labelMilitaryRank.Text = "Звание:";
             // 
             // textBoxMilitaryRank
             // 
-            textBoxMilitaryRank.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMilitaryRank.Location = new Point(292, 624);
+            textBoxMilitaryRank.Font = new Font("Segoe UI", 15F);
+            textBoxMilitaryRank.Location = new Point(237, 338);
             textBoxMilitaryRank.Margin = new Padding(4, 3, 4, 3);
             textBoxMilitaryRank.Name = "textBoxMilitaryRank";
-            textBoxMilitaryRank.Size = new Size(455, 33);
+            textBoxMilitaryRank.Size = new Size(455, 34);
             textBoxMilitaryRank.TabIndex = 3;
             // 
             // labelUnitID
             // 
             labelUnitID.AutoSize = true;
+            labelUnitID.BackColor = Color.Transparent;
+            labelUnitID.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelUnitID.ForeColor = Color.Black;
-            labelUnitID.Location = new Point(227, 679);
+            labelUnitID.Location = new Point(133, 392);
             labelUnitID.Margin = new Padding(4, 0, 4, 0);
             labelUnitID.Name = "labelUnitID";
-            labelUnitID.Size = new Size(54, 15);
+            labelUnitID.Size = new Size(96, 28);
             labelUnitID.TabIndex = 12;
             labelUnitID.Text = "Оружие:";
             // 
             // textBoxUnitID
             // 
-            textBoxUnitID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxUnitID.Location = new Point(292, 669);
+            textBoxUnitID.Font = new Font("Segoe UI", 15F);
+            textBoxUnitID.Location = new Point(237, 389);
             textBoxUnitID.Margin = new Padding(4, 3, 4, 3);
             textBoxUnitID.Name = "textBoxUnitID";
-            textBoxUnitID.Size = new Size(455, 33);
+            textBoxUnitID.Size = new Size(455, 34);
             textBoxUnitID.TabIndex = 4;
             // 
             // AddFormVeterans
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(896, 841);
+            ClientSize = new Size(884, 561);
             Controls.Add(labelTitle);
             Controls.Add(label1);
             Controls.Add(labelFullName);

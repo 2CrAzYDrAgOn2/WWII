@@ -48,5 +48,10 @@ namespace WWII
                 dataBase.CloseConnection();
             }
         }
+
+        private void labelDescriptionMilitaryEquipment_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

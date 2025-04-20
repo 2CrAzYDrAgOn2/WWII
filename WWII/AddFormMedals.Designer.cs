@@ -42,12 +42,12 @@
             // 
             labelTitle.AutoSize = true;
             labelTitle.BackColor = Color.Transparent;
-            labelTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            labelTitle.Font = new Font("Segoe UI", 35F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             labelTitle.ForeColor = Color.Black;
-            labelTitle.Location = new Point(244, 9);
+            labelTitle.Location = new Point(227, 24);
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(175, 25);
+            labelTitle.Size = new Size(429, 62);
             labelTitle.TabIndex = 3;
             labelTitle.Text = "Создание записи:";
             // 
@@ -55,12 +55,12 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(245, 38);
+            label1.Location = new Point(378, 98);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(72, 21);
+            label1.Size = new Size(142, 45);
             label1.TabIndex = 4;
             label1.Text = "Медаль";
             // 
@@ -68,11 +68,12 @@
             // 
             buttonSave.BackColor = Color.Transparent;
             buttonSave.FlatStyle = FlatStyle.Flat;
+            buttonSave.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonSave.ForeColor = Color.Black;
-            buttonSave.Location = new Point(331, 762);
+            buttonSave.Location = new Point(333, 314);
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(236, 65);
+            buttonSave.Size = new Size(236, 55);
             buttonSave.TabIndex = 2;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
@@ -81,49 +82,54 @@
             // labelMedalName
             // 
             labelMedalName.AutoSize = true;
+            labelMedalName.BackColor = Color.Transparent;
+            labelMedalName.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelMedalName.ForeColor = Color.Black;
-            labelMedalName.Location = new Point(189, 500);
+            labelMedalName.Location = new Point(53, 187);
             labelMedalName.Margin = new Padding(4, 0, 4, 0);
             labelMedalName.Name = "labelMedalName";
-            labelMedalName.Size = new Size(93, 15);
+            labelMedalName.Size = new Size(166, 28);
             labelMedalName.TabIndex = 5;
             labelMedalName.Text = "Наименование:";
             // 
             // textBoxMedalName
             // 
-            textBoxMedalName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMedalName.Location = new Point(293, 489);
+            textBoxMedalName.Font = new Font("Segoe UI", 15F);
+            textBoxMedalName.Location = new Point(227, 184);
             textBoxMedalName.Margin = new Padding(4, 3, 4, 3);
             textBoxMedalName.Name = "textBoxMedalName";
-            textBoxMedalName.Size = new Size(455, 33);
+            textBoxMedalName.Size = new Size(455, 34);
             textBoxMedalName.TabIndex = 0;
             // 
             // labelDescriptionMedals
             // 
             labelDescriptionMedals.AutoSize = true;
+            labelDescriptionMedals.BackColor = Color.Transparent;
+            labelDescriptionMedals.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelDescriptionMedals.ForeColor = Color.Black;
-            labelDescriptionMedals.Location = new Point(217, 545);
+            labelDescriptionMedals.Location = new Point(105, 239);
             labelDescriptionMedals.Margin = new Padding(4, 0, 4, 0);
             labelDescriptionMedals.Name = "labelDescriptionMedals";
-            labelDescriptionMedals.Size = new Size(65, 15);
+            labelDescriptionMedals.Size = new Size(114, 28);
             labelDescriptionMedals.TabIndex = 6;
             labelDescriptionMedals.Text = "Описание:";
             // 
             // textBoxDescriptionMedals
             // 
-            textBoxDescriptionMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxDescriptionMedals.Location = new Point(293, 534);
+            textBoxDescriptionMedals.Font = new Font("Segoe UI", 15F);
+            textBoxDescriptionMedals.Location = new Point(227, 236);
             textBoxDescriptionMedals.Margin = new Padding(4, 3, 4, 3);
             textBoxDescriptionMedals.Name = "textBoxDescriptionMedals";
-            textBoxDescriptionMedals.Size = new Size(455, 33);
+            textBoxDescriptionMedals.Size = new Size(455, 34);
             textBoxDescriptionMedals.TabIndex = 1;
             // 
             // AddFormMedals
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(896, 841);
+            ClientSize = new Size(884, 431);
             Controls.Add(labelTitle);
             Controls.Add(label1);
             Controls.Add(labelMedalName);

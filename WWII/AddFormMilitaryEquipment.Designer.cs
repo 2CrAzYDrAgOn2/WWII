@@ -44,12 +44,12 @@
             // 
             labelTitle.AutoSize = true;
             labelTitle.BackColor = Color.Transparent;
-            labelTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            labelTitle.Font = new Font("Segoe UI", 35F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             labelTitle.ForeColor = Color.Black;
-            labelTitle.Location = new Point(245, 9);
+            labelTitle.Location = new Point(227, 24);
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(175, 25);
+            labelTitle.Size = new Size(429, 62);
             labelTitle.TabIndex = 4;
             labelTitle.Text = "Создание записи:";
             // 
@@ -57,12 +57,12 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(246, 38);
+            label1.Location = new Point(297, 98);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(144, 21);
+            label1.Size = new Size(287, 45);
             label1.TabIndex = 5;
             label1.Text = "Военная техника";
             // 
@@ -70,11 +70,12 @@
             // 
             buttonSave.BackColor = Color.Transparent;
             buttonSave.FlatStyle = FlatStyle.Flat;
+            buttonSave.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonSave.ForeColor = Color.Black;
-            buttonSave.Location = new Point(332, 762);
+            buttonSave.Location = new Point(333, 366);
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(236, 65);
+            buttonSave.Size = new Size(236, 55);
             buttonSave.TabIndex = 3;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
@@ -83,68 +84,75 @@
             // labelEquipmentName
             // 
             labelEquipmentName.AutoSize = true;
+            labelEquipmentName.BackColor = Color.Transparent;
+            labelEquipmentName.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelEquipmentName.ForeColor = Color.Black;
-            labelEquipmentName.Location = new Point(195, 500);
+            labelEquipmentName.Location = new Point(63, 185);
             labelEquipmentName.Margin = new Padding(4, 0, 4, 0);
             labelEquipmentName.Name = "labelEquipmentName";
-            labelEquipmentName.Size = new Size(93, 15);
+            labelEquipmentName.Size = new Size(166, 28);
             labelEquipmentName.TabIndex = 6;
             labelEquipmentName.Text = "Наименование:";
             // 
             // textBoxEquipmentName
             // 
-            textBoxEquipmentName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEquipmentName.Location = new Point(294, 489);
+            textBoxEquipmentName.Font = new Font("Segoe UI", 15F);
+            textBoxEquipmentName.Location = new Point(237, 182);
             textBoxEquipmentName.Margin = new Padding(4, 3, 4, 3);
             textBoxEquipmentName.Name = "textBoxEquipmentName";
-            textBoxEquipmentName.Size = new Size(455, 33);
+            textBoxEquipmentName.Size = new Size(455, 34);
             textBoxEquipmentName.TabIndex = 0;
             // 
             // labelEquipmentType
             // 
             labelEquipmentType.AutoSize = true;
+            labelEquipmentType.BackColor = Color.Transparent;
+            labelEquipmentType.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelEquipmentType.ForeColor = Color.Black;
-            labelEquipmentType.Location = new Point(211, 545);
+            labelEquipmentType.Location = new Point(90, 237);
             labelEquipmentType.Margin = new Padding(4, 0, 4, 0);
             labelEquipmentType.Name = "labelEquipmentType";
-            labelEquipmentType.Size = new Size(77, 15);
+            labelEquipmentType.Size = new Size(139, 28);
             labelEquipmentType.TabIndex = 7;
             labelEquipmentType.Text = "Тип техники:";
             // 
             // textBoxEquipmentType
             // 
-            textBoxEquipmentType.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEquipmentType.Location = new Point(294, 534);
+            textBoxEquipmentType.Font = new Font("Segoe UI", 15F);
+            textBoxEquipmentType.Location = new Point(237, 234);
             textBoxEquipmentType.Margin = new Padding(4, 3, 4, 3);
             textBoxEquipmentType.Name = "textBoxEquipmentType";
-            textBoxEquipmentType.Size = new Size(455, 33);
+            textBoxEquipmentType.Size = new Size(455, 34);
             textBoxEquipmentType.TabIndex = 1;
             // 
             // labelDescriptionMilitaryEquipment
             // 
             labelDescriptionMilitaryEquipment.AutoSize = true;
+            labelDescriptionMilitaryEquipment.BackColor = Color.Transparent;
+            labelDescriptionMilitaryEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelDescriptionMilitaryEquipment.ForeColor = Color.Black;
-            labelDescriptionMilitaryEquipment.Location = new Point(223, 593);
+            labelDescriptionMilitaryEquipment.Location = new Point(115, 290);
             labelDescriptionMilitaryEquipment.Margin = new Padding(4, 0, 4, 0);
             labelDescriptionMilitaryEquipment.Name = "labelDescriptionMilitaryEquipment";
-            labelDescriptionMilitaryEquipment.Size = new Size(65, 15);
+            labelDescriptionMilitaryEquipment.Size = new Size(114, 28);
             labelDescriptionMilitaryEquipment.TabIndex = 8;
             labelDescriptionMilitaryEquipment.Text = "Описание:";
             // 
             // textBoxDescriptionMilitaryEquipment
             // 
-            textBoxDescriptionMilitaryEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxDescriptionMilitaryEquipment.Location = new Point(294, 582);
+            textBoxDescriptionMilitaryEquipment.Font = new Font("Segoe UI", 15F);
+            textBoxDescriptionMilitaryEquipment.Location = new Point(237, 287);
             textBoxDescriptionMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             textBoxDescriptionMilitaryEquipment.Name = "textBoxDescriptionMilitaryEquipment";
-            textBoxDescriptionMilitaryEquipment.Size = new Size(455, 33);
+            textBoxDescriptionMilitaryEquipment.Size = new Size(455, 34);
             textBoxDescriptionMilitaryEquipment.TabIndex = 2;
             // 
             // AddFormMilitaryEquipment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(896, 841);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(884, 461);
             Controls.Add(labelTitle);
             Controls.Add(label1);
             Controls.Add(labelEquipmentName);
@@ -156,6 +164,7 @@
             Controls.Add(buttonSave);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "AddFormMilitaryEquipment";

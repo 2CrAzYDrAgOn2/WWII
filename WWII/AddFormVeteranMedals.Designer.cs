@@ -44,12 +44,12 @@
             // 
             labelTitle.AutoSize = true;
             labelTitle.BackColor = Color.Transparent;
-            labelTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            labelTitle.Font = new Font("Segoe UI", 35F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             labelTitle.ForeColor = Color.Black;
-            labelTitle.Location = new Point(242, 9);
+            labelTitle.Location = new Point(227, 24);
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(175, 25);
+            labelTitle.Size = new Size(429, 62);
             labelTitle.TabIndex = 4;
             labelTitle.Text = "Создание записи:";
             // 
@@ -57,12 +57,12 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(243, 38);
+            label1.Location = new Point(297, 98);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(152, 21);
+            label1.Size = new Size(300, 45);
             label1.TabIndex = 5;
             label1.Text = "Награда ветерана";
             // 
@@ -70,11 +70,12 @@
             // 
             buttonSave.BackColor = Color.Transparent;
             buttonSave.FlatStyle = FlatStyle.Flat;
+            buttonSave.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonSave.ForeColor = Color.Black;
-            buttonSave.Location = new Point(329, 762);
+            buttonSave.Location = new Point(333, 366);
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(236, 65);
+            buttonSave.Size = new Size(236, 55);
             buttonSave.TabIndex = 3;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
@@ -83,68 +84,75 @@
             // labelVeteranIDVeteranMedals
             // 
             labelVeteranIDVeteranMedals.AutoSize = true;
+            labelVeteranIDVeteranMedals.BackColor = Color.Transparent;
+            labelVeteranIDVeteranMedals.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelVeteranIDVeteranMedals.ForeColor = Color.Black;
-            labelVeteranIDVeteranMedals.Location = new Point(226, 500);
+            labelVeteranIDVeteranMedals.Location = new Point(136, 185);
             labelVeteranIDVeteranMedals.Margin = new Padding(4, 0, 4, 0);
             labelVeteranIDVeteranMedals.Name = "labelVeteranIDVeteranMedals";
-            labelVeteranIDVeteranMedals.Size = new Size(54, 15);
+            labelVeteranIDVeteranMedals.Size = new Size(96, 28);
             labelVeteranIDVeteranMedals.TabIndex = 6;
             labelVeteranIDVeteranMedals.Text = "Ветеран:";
             // 
             // textBoxVeteranIDVeteranMedals
             // 
-            textBoxVeteranIDVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxVeteranIDVeteranMedals.Location = new Point(291, 489);
+            textBoxVeteranIDVeteranMedals.Font = new Font("Segoe UI", 15F);
+            textBoxVeteranIDVeteranMedals.Location = new Point(237, 182);
             textBoxVeteranIDVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             textBoxVeteranIDVeteranMedals.Name = "textBoxVeteranIDVeteranMedals";
-            textBoxVeteranIDVeteranMedals.Size = new Size(455, 33);
+            textBoxVeteranIDVeteranMedals.Size = new Size(455, 34);
             textBoxVeteranIDVeteranMedals.TabIndex = 0;
             // 
             // labelMedalIDVeteranMedals
             // 
             labelMedalIDVeteranMedals.AutoSize = true;
+            labelMedalIDVeteranMedals.BackColor = Color.Transparent;
+            labelMedalIDVeteranMedals.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelMedalIDVeteranMedals.ForeColor = Color.Black;
-            labelMedalIDVeteranMedals.Location = new Point(228, 545);
+            labelMedalIDVeteranMedals.Location = new Point(139, 237);
             labelMedalIDVeteranMedals.Margin = new Padding(4, 0, 4, 0);
             labelMedalIDVeteranMedals.Name = "labelMedalIDVeteranMedals";
-            labelMedalIDVeteranMedals.Size = new Size(52, 15);
+            labelMedalIDVeteranMedals.Size = new Size(93, 28);
             labelMedalIDVeteranMedals.TabIndex = 7;
             labelMedalIDVeteranMedals.Text = "Медаль:";
             // 
             // textBoxMedalIDVeteranMedals
             // 
-            textBoxMedalIDVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMedalIDVeteranMedals.Location = new Point(291, 534);
+            textBoxMedalIDVeteranMedals.Font = new Font("Segoe UI", 15F);
+            textBoxMedalIDVeteranMedals.Location = new Point(237, 234);
             textBoxMedalIDVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             textBoxMedalIDVeteranMedals.Name = "textBoxMedalIDVeteranMedals";
-            textBoxMedalIDVeteranMedals.Size = new Size(455, 33);
+            textBoxMedalIDVeteranMedals.Size = new Size(455, 34);
             textBoxMedalIDVeteranMedals.TabIndex = 1;
             // 
             // labelAwardDate
             // 
             labelAwardDate.AutoSize = true;
+            labelAwardDate.BackColor = Color.Transparent;
+            labelAwardDate.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelAwardDate.ForeColor = Color.Black;
-            labelAwardDate.Location = new Point(170, 593);
+            labelAwardDate.Location = new Point(32, 292);
             labelAwardDate.Margin = new Padding(4, 0, 4, 0);
             labelAwardDate.Name = "labelAwardDate";
-            labelAwardDate.Size = new Size(110, 15);
+            labelAwardDate.Size = new Size(200, 28);
             labelAwardDate.TabIndex = 8;
             labelAwardDate.Text = "Дата награждения:";
             // 
             // dateTimePickerAwardDate
             // 
-            dateTimePickerAwardDate.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerAwardDate.Location = new Point(291, 579);
+            dateTimePickerAwardDate.Font = new Font("Segoe UI", 15F);
+            dateTimePickerAwardDate.Location = new Point(237, 287);
             dateTimePickerAwardDate.Name = "dateTimePickerAwardDate";
-            dateTimePickerAwardDate.Size = new Size(455, 33);
+            dateTimePickerAwardDate.Size = new Size(455, 34);
             dateTimePickerAwardDate.TabIndex = 2;
             // 
             // AddFormVeteranMedals
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(896, 841);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(884, 461);
             Controls.Add(labelTitle);
             Controls.Add(label1);
             Controls.Add(labelVeteranIDVeteranMedals);

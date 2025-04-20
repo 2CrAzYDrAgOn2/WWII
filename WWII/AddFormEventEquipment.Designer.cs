@@ -42,12 +42,12 @@
             // 
             labelTitle.AutoSize = true;
             labelTitle.BackColor = Color.Transparent;
-            labelTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            labelTitle.Font = new Font("Segoe UI", 35F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             labelTitle.ForeColor = Color.Black;
-            labelTitle.Location = new Point(245, 9);
+            labelTitle.Location = new Point(227, 24);
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(175, 25);
+            labelTitle.Size = new Size(429, 62);
             labelTitle.TabIndex = 3;
             labelTitle.Text = "Создание записи:";
             // 
@@ -55,12 +55,12 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(246, 38);
+            label1.Location = new Point(297, 97);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(147, 21);
+            label1.Size = new Size(294, 45);
             label1.TabIndex = 4;
             label1.Text = "Событие техники";
             // 
@@ -68,11 +68,12 @@
             // 
             buttonSave.BackColor = Color.Transparent;
             buttonSave.FlatStyle = FlatStyle.Flat;
+            buttonSave.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
             buttonSave.ForeColor = Color.Black;
-            buttonSave.Location = new Point(332, 762);
+            buttonSave.Location = new Point(333, 314);
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(236, 65);
+            buttonSave.Size = new Size(236, 55);
             buttonSave.TabIndex = 2;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
@@ -81,48 +82,53 @@
             // labelEventIDEventEquipment
             // 
             labelEventIDEventEquipment.AutoSize = true;
+            labelEventIDEventEquipment.BackColor = Color.Transparent;
+            labelEventIDEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelEventIDEventEquipment.ForeColor = Color.Black;
-            labelEventIDEventEquipment.Location = new Point(229, 500);
+            labelEventIDEventEquipment.Location = new Point(117, 187);
             labelEventIDEventEquipment.Margin = new Padding(4, 0, 4, 0);
             labelEventIDEventEquipment.Name = "labelEventIDEventEquipment";
-            labelEventIDEventEquipment.Size = new Size(59, 15);
+            labelEventIDEventEquipment.Size = new Size(102, 28);
             labelEventIDEventEquipment.TabIndex = 5;
             labelEventIDEventEquipment.Text = "Событие:";
             // 
             // textBoxEventIDEventEquipment
             // 
-            textBoxEventIDEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEventIDEventEquipment.Location = new Point(294, 489);
+            textBoxEventIDEventEquipment.Font = new Font("Segoe UI", 15F);
+            textBoxEventIDEventEquipment.Location = new Point(227, 184);
             textBoxEventIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
             textBoxEventIDEventEquipment.Name = "textBoxEventIDEventEquipment";
-            textBoxEventIDEventEquipment.Size = new Size(455, 33);
+            textBoxEventIDEventEquipment.Size = new Size(455, 34);
             textBoxEventIDEventEquipment.TabIndex = 0;
             // 
             // labelEquipmentIDEventEquipment
             // 
             labelEquipmentIDEventEquipment.AutoSize = true;
+            labelEquipmentIDEventEquipment.BackColor = Color.Transparent;
+            labelEquipmentIDEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             labelEquipmentIDEventEquipment.ForeColor = Color.Black;
-            labelEquipmentIDEventEquipment.Location = new Point(197, 545);
+            labelEquipmentIDEventEquipment.Location = new Point(58, 239);
             labelEquipmentIDEventEquipment.Margin = new Padding(4, 0, 4, 0);
             labelEquipmentIDEventEquipment.Name = "labelEquipmentIDEventEquipment";
-            labelEquipmentIDEventEquipment.Size = new Size(91, 15);
+            labelEquipmentIDEventEquipment.Size = new Size(161, 28);
             labelEquipmentIDEventEquipment.TabIndex = 6;
             labelEquipmentIDEventEquipment.Text = "Оборудование:";
             // 
             // textBoxEquipmentIDEventEquipment
             // 
-            textBoxEquipmentIDEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEquipmentIDEventEquipment.Location = new Point(294, 534);
+            textBoxEquipmentIDEventEquipment.Font = new Font("Segoe UI", 15F);
+            textBoxEquipmentIDEventEquipment.Location = new Point(227, 236);
             textBoxEquipmentIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
             textBoxEquipmentIDEventEquipment.Name = "textBoxEquipmentIDEventEquipment";
-            textBoxEquipmentIDEventEquipment.Size = new Size(455, 33);
+            textBoxEquipmentIDEventEquipment.Size = new Size(455, 34);
             textBoxEquipmentIDEventEquipment.TabIndex = 1;
             // 
             // AddFormEventEquipment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(896, 841);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(884, 431);
             Controls.Add(labelTitle);
             Controls.Add(label1);
             Controls.Add(labelEventIDEventEquipment);

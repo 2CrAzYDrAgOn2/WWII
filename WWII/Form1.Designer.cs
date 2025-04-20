@@ -30,11 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabPageMilitaryUnits = new TabPage();
-            panelTitleMilitaryUnits = new Panel();
-            labelTitleMilitaryUnits = new Label();
-            buttonClearMilitaryUnits = new Button();
-            buttonRefreshMilitaryUnits = new Button();
-            textBoxSearchMilitaryUnits = new TextBox();
             dataGridViewMilitaryUnits = new DataGridView();
             panelRecordMilitaryUnits = new Panel();
             labelRecordMilitaryUnits = new Label();
@@ -243,8 +238,20 @@
             buttonWordEventEquipment = new Button();
             buttonExcelEventEquipment = new Button();
             buttonTXTEventEquipment = new Button();
+            labelTitleMilitaryUnits = new Label();
+            textBoxSearchMilitaryUnits = new TextBox();
+            buttonRefreshMilitaryUnits = new Button();
+            buttonClearMilitaryUnits = new Button();
+            panel1 = new Panel();
+            panelTitleMilitaryUnits = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            panel5 = new Panel();
+            panel6 = new Panel();
+            panel7 = new Panel();
+            panel8 = new Panel();
             tabPageMilitaryUnits.SuspendLayout();
-            panelTitleMilitaryUnits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMilitaryUnits).BeginInit();
             panelRecordMilitaryUnits.SuspendLayout();
             panelControlMilitaryUnits.SuspendLayout();
@@ -284,10 +291,13 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewEventEquipment).BeginInit();
             panelRecordEventEquipment.SuspendLayout();
             panelControlEventEquipment.SuspendLayout();
+            panelTitleMilitaryUnits.SuspendLayout();
             SuspendLayout();
             // 
             // tabPageMilitaryUnits
             // 
+            tabPageMilitaryUnits.BackgroundImage = (Image)resources.GetObject("tabPageMilitaryUnits.BackgroundImage");
+            tabPageMilitaryUnits.BackgroundImageLayout = ImageLayout.None;
             tabPageMilitaryUnits.Controls.Add(panelTitleMilitaryUnits);
             tabPageMilitaryUnits.Controls.Add(dataGridViewMilitaryUnits);
             tabPageMilitaryUnits.Controls.Add(panelRecordMilitaryUnits);
@@ -301,68 +311,6 @@
             tabPageMilitaryUnits.TabIndex = 1;
             tabPageMilitaryUnits.Text = "Военные единицы";
             tabPageMilitaryUnits.UseVisualStyleBackColor = true;
-            // 
-            // panelTitleMilitaryUnits
-            // 
-            panelTitleMilitaryUnits.Controls.Add(labelTitleMilitaryUnits);
-            panelTitleMilitaryUnits.Controls.Add(buttonClearMilitaryUnits);
-            panelTitleMilitaryUnits.Controls.Add(buttonRefreshMilitaryUnits);
-            panelTitleMilitaryUnits.Controls.Add(textBoxSearchMilitaryUnits);
-            panelTitleMilitaryUnits.Location = new Point(0, 0);
-            panelTitleMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
-            panelTitleMilitaryUnits.Name = "panelTitleMilitaryUnits";
-            panelTitleMilitaryUnits.Size = new Size(876, 84);
-            panelTitleMilitaryUnits.TabIndex = 3;
-            // 
-            // labelTitleMilitaryUnits
-            // 
-            labelTitleMilitaryUnits.AutoSize = true;
-            labelTitleMilitaryUnits.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleMilitaryUnits.ForeColor = Color.Black;
-            labelTitleMilitaryUnits.Location = new Point(4, 3);
-            labelTitleMilitaryUnits.Margin = new Padding(4, 0, 4, 0);
-            labelTitleMilitaryUnits.Name = "labelTitleMilitaryUnits";
-            labelTitleMilitaryUnits.Size = new Size(435, 65);
-            labelTitleMilitaryUnits.TabIndex = 4;
-            labelTitleMilitaryUnits.Text = "Военные единицы";
-            // 
-            // buttonClearMilitaryUnits
-            // 
-            buttonClearMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonClearMilitaryUnits.BackgroundImage");
-            buttonClearMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearMilitaryUnits.FlatStyle = FlatStyle.Flat;
-            buttonClearMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearMilitaryUnits.Location = new Point(528, 3);
-            buttonClearMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
-            buttonClearMilitaryUnits.Name = "buttonClearMilitaryUnits";
-            buttonClearMilitaryUnits.Size = new Size(78, 77);
-            buttonClearMilitaryUnits.TabIndex = 0;
-            buttonClearMilitaryUnits.UseVisualStyleBackColor = true;
-            buttonClearMilitaryUnits.Click += ButtonClear_Click;
-            // 
-            // buttonRefreshMilitaryUnits
-            // 
-            buttonRefreshMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonRefreshMilitaryUnits.BackgroundImage");
-            buttonRefreshMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonRefreshMilitaryUnits.FlatStyle = FlatStyle.Flat;
-            buttonRefreshMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshMilitaryUnits.Location = new Point(614, 3);
-            buttonRefreshMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshMilitaryUnits.Name = "buttonRefreshMilitaryUnits";
-            buttonRefreshMilitaryUnits.Size = new Size(78, 77);
-            buttonRefreshMilitaryUnits.TabIndex = 1;
-            buttonRefreshMilitaryUnits.UseVisualStyleBackColor = true;
-            buttonRefreshMilitaryUnits.Click += ButtonRefresh_Click;
-            // 
-            // textBoxSearchMilitaryUnits
-            // 
-            textBoxSearchMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchMilitaryUnits.Location = new Point(699, 37);
-            textBoxSearchMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
-            textBoxSearchMilitaryUnits.Name = "textBoxSearchMilitaryUnits";
-            textBoxSearchMilitaryUnits.Size = new Size(173, 33);
-            textBoxSearchMilitaryUnits.TabIndex = 2;
-            textBoxSearchMilitaryUnits.TextChanged += TextBoxSearchMilitaryUnits_TextChanged;
             // 
             // dataGridViewMilitaryUnits
             // 
@@ -380,6 +328,8 @@
             // 
             // panelRecordMilitaryUnits
             // 
+            panelRecordMilitaryUnits.BackgroundImageLayout = ImageLayout.None;
+            panelRecordMilitaryUnits.BorderStyle = BorderStyle.FixedSingle;
             panelRecordMilitaryUnits.Controls.Add(labelRecordMilitaryUnits);
             panelRecordMilitaryUnits.Controls.Add(labelMilitaryUnitID);
             panelRecordMilitaryUnits.Controls.Add(textBoxMilitaryUnitID);
@@ -387,10 +337,10 @@
             panelRecordMilitaryUnits.Controls.Add(textBoxUnitName);
             panelRecordMilitaryUnits.Controls.Add(labelDescriptionMilitaryUnits);
             panelRecordMilitaryUnits.Controls.Add(textBoxDescriptionMilitaryUnits);
-            panelRecordMilitaryUnits.Location = new Point(9, 450);
+            panelRecordMilitaryUnits.Location = new Point(8, 521);
             panelRecordMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
             panelRecordMilitaryUnits.Name = "panelRecordMilitaryUnits";
-            panelRecordMilitaryUnits.Size = new Size(611, 552);
+            panelRecordMilitaryUnits.Size = new Size(609, 272);
             panelRecordMilitaryUnits.TabIndex = 1;
             // 
             // labelRecordMilitaryUnits
@@ -408,61 +358,64 @@
             // labelMilitaryUnitID
             // 
             labelMilitaryUnitID.AutoSize = true;
+            labelMilitaryUnitID.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             labelMilitaryUnitID.ForeColor = Color.Black;
-            labelMilitaryUnitID.Location = new Point(98, 79);
+            labelMilitaryUnitID.Location = new Point(64, 78);
             labelMilitaryUnitID.Margin = new Padding(4, 0, 4, 0);
             labelMilitaryUnitID.Name = "labelMilitaryUnitID";
-            labelMilitaryUnitID.Size = new Size(48, 15);
+            labelMilitaryUnitID.Size = new Size(62, 20);
             labelMilitaryUnitID.TabIndex = 4;
             labelMilitaryUnitID.Text = "Номер:";
             // 
             // textBoxMilitaryUnitID
             // 
             textBoxMilitaryUnitID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMilitaryUnitID.Location = new Point(152, 68);
+            textBoxMilitaryUnitID.Location = new Point(134, 71);
             textBoxMilitaryUnitID.Margin = new Padding(4, 3, 4, 3);
             textBoxMilitaryUnitID.Name = "textBoxMilitaryUnitID";
-            textBoxMilitaryUnitID.Size = new Size(455, 33);
+            textBoxMilitaryUnitID.Size = new Size(444, 33);
             textBoxMilitaryUnitID.TabIndex = 0;
             // 
             // labelUnitName
             // 
             labelUnitName.AutoSize = true;
+            labelUnitName.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             labelUnitName.ForeColor = Color.Black;
-            labelUnitName.Location = new Point(46, 123);
+            labelUnitName.Location = new Point(4, 123);
             labelUnitName.Margin = new Padding(4, 0, 4, 0);
             labelUnitName.Name = "labelUnitName";
-            labelUnitName.Size = new Size(93, 15);
+            labelUnitName.Size = new Size(122, 20);
             labelUnitName.TabIndex = 5;
             labelUnitName.Text = "Наименование:";
             // 
             // textBoxUnitName
             // 
             textBoxUnitName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxUnitName.Location = new Point(152, 113);
+            textBoxUnitName.Location = new Point(134, 116);
             textBoxUnitName.Margin = new Padding(4, 3, 4, 3);
             textBoxUnitName.Name = "textBoxUnitName";
-            textBoxUnitName.Size = new Size(455, 33);
+            textBoxUnitName.Size = new Size(444, 33);
             textBoxUnitName.TabIndex = 1;
             // 
             // labelDescriptionMilitaryUnits
             // 
             labelDescriptionMilitaryUnits.AutoSize = true;
+            labelDescriptionMilitaryUnits.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             labelDescriptionMilitaryUnits.ForeColor = Color.Black;
-            labelDescriptionMilitaryUnits.Location = new Point(79, 169);
+            labelDescriptionMilitaryUnits.Location = new Point(43, 169);
             labelDescriptionMilitaryUnits.Margin = new Padding(4, 0, 4, 0);
             labelDescriptionMilitaryUnits.Name = "labelDescriptionMilitaryUnits";
-            labelDescriptionMilitaryUnits.Size = new Size(65, 15);
+            labelDescriptionMilitaryUnits.Size = new Size(83, 20);
             labelDescriptionMilitaryUnits.TabIndex = 6;
             labelDescriptionMilitaryUnits.Text = "Описание:";
             // 
             // textBoxDescriptionMilitaryUnits
             // 
             textBoxDescriptionMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxDescriptionMilitaryUnits.Location = new Point(152, 158);
+            textBoxDescriptionMilitaryUnits.Location = new Point(134, 161);
             textBoxDescriptionMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
             textBoxDescriptionMilitaryUnits.Name = "textBoxDescriptionMilitaryUnits";
-            textBoxDescriptionMilitaryUnits.Size = new Size(455, 33);
+            textBoxDescriptionMilitaryUnits.Size = new Size(444, 33);
             textBoxDescriptionMilitaryUnits.TabIndex = 2;
             // 
             // labelControlMilitaryUnits
@@ -471,7 +424,7 @@
             labelControlMilitaryUnits.BackColor = Color.Transparent;
             labelControlMilitaryUnits.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             labelControlMilitaryUnits.ForeColor = Color.Black;
-            labelControlMilitaryUnits.Location = new Point(632, 453);
+            labelControlMilitaryUnits.Location = new Point(645, 453);
             labelControlMilitaryUnits.Margin = new Padding(4, 0, 4, 0);
             labelControlMilitaryUnits.Name = "labelControlMilitaryUnits";
             labelControlMilitaryUnits.Size = new Size(213, 25);
@@ -487,20 +440,21 @@
             panelControlMilitaryUnits.Controls.Add(buttonWordMilitaryUnit);
             panelControlMilitaryUnits.Controls.Add(buttonExcelMilitaryUnit);
             panelControlMilitaryUnits.Controls.Add(buttonTXTMilitaryUnit);
-            panelControlMilitaryUnits.Location = new Point(634, 482);
+            panelControlMilitaryUnits.Location = new Point(626, 481);
             panelControlMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
             panelControlMilitaryUnits.Name = "panelControlMilitaryUnits";
-            panelControlMilitaryUnits.Size = new Size(243, 520);
+            panelControlMilitaryUnits.Size = new Size(255, 373);
             panelControlMilitaryUnits.TabIndex = 2;
             // 
             // buttonNewMilitaryUnit
             // 
             buttonNewMilitaryUnit.FlatStyle = FlatStyle.Flat;
+            buttonNewMilitaryUnit.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonNewMilitaryUnit.ForeColor = Color.Black;
-            buttonNewMilitaryUnit.Location = new Point(4, 3);
+            buttonNewMilitaryUnit.Location = new Point(10, 12);
             buttonNewMilitaryUnit.Margin = new Padding(4, 3, 4, 3);
             buttonNewMilitaryUnit.Name = "buttonNewMilitaryUnit";
-            buttonNewMilitaryUnit.Size = new Size(236, 67);
+            buttonNewMilitaryUnit.Size = new Size(236, 45);
             buttonNewMilitaryUnit.TabIndex = 0;
             buttonNewMilitaryUnit.Text = "Новая запись";
             buttonNewMilitaryUnit.UseVisualStyleBackColor = true;
@@ -508,12 +462,14 @@
             // 
             // buttonDeleteMilitaryUnit
             // 
+            buttonDeleteMilitaryUnit.FlatAppearance.BorderColor = Color.Black;
             buttonDeleteMilitaryUnit.FlatStyle = FlatStyle.Flat;
+            buttonDeleteMilitaryUnit.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonDeleteMilitaryUnit.ForeColor = Color.Black;
-            buttonDeleteMilitaryUnit.Location = new Point(4, 78);
+            buttonDeleteMilitaryUnit.Location = new Point(10, 63);
             buttonDeleteMilitaryUnit.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteMilitaryUnit.Name = "buttonDeleteMilitaryUnit";
-            buttonDeleteMilitaryUnit.Size = new Size(236, 67);
+            buttonDeleteMilitaryUnit.Size = new Size(236, 45);
             buttonDeleteMilitaryUnit.TabIndex = 1;
             buttonDeleteMilitaryUnit.Text = "Удалить";
             buttonDeleteMilitaryUnit.UseVisualStyleBackColor = true;
@@ -521,12 +477,14 @@
             // 
             // buttonChangeMilitaryUnit
             // 
+            buttonChangeMilitaryUnit.FlatAppearance.BorderColor = Color.Black;
             buttonChangeMilitaryUnit.FlatStyle = FlatStyle.Flat;
+            buttonChangeMilitaryUnit.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonChangeMilitaryUnit.ForeColor = Color.Black;
-            buttonChangeMilitaryUnit.Location = new Point(4, 152);
+            buttonChangeMilitaryUnit.Location = new Point(10, 114);
             buttonChangeMilitaryUnit.Margin = new Padding(4, 3, 4, 3);
             buttonChangeMilitaryUnit.Name = "buttonChangeMilitaryUnit";
-            buttonChangeMilitaryUnit.Size = new Size(236, 67);
+            buttonChangeMilitaryUnit.Size = new Size(236, 45);
             buttonChangeMilitaryUnit.TabIndex = 2;
             buttonChangeMilitaryUnit.Text = "Изменить";
             buttonChangeMilitaryUnit.UseVisualStyleBackColor = true;
@@ -534,12 +492,14 @@
             // 
             // buttonSaveMilitaryUnit
             // 
+            buttonSaveMilitaryUnit.FlatAppearance.BorderColor = Color.Black;
             buttonSaveMilitaryUnit.FlatStyle = FlatStyle.Flat;
+            buttonSaveMilitaryUnit.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonSaveMilitaryUnit.ForeColor = Color.Black;
-            buttonSaveMilitaryUnit.Location = new Point(4, 226);
+            buttonSaveMilitaryUnit.Location = new Point(10, 165);
             buttonSaveMilitaryUnit.Margin = new Padding(4, 3, 4, 3);
             buttonSaveMilitaryUnit.Name = "buttonSaveMilitaryUnit";
-            buttonSaveMilitaryUnit.Size = new Size(236, 67);
+            buttonSaveMilitaryUnit.Size = new Size(236, 45);
             buttonSaveMilitaryUnit.TabIndex = 3;
             buttonSaveMilitaryUnit.Text = "Сохранить";
             buttonSaveMilitaryUnit.UseVisualStyleBackColor = true;
@@ -547,12 +507,14 @@
             // 
             // buttonWordMilitaryUnit
             // 
+            buttonWordMilitaryUnit.FlatAppearance.BorderColor = Color.Black;
             buttonWordMilitaryUnit.FlatStyle = FlatStyle.Flat;
+            buttonWordMilitaryUnit.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonWordMilitaryUnit.ForeColor = Color.Black;
-            buttonWordMilitaryUnit.Location = new Point(4, 301);
+            buttonWordMilitaryUnit.Location = new Point(10, 216);
             buttonWordMilitaryUnit.Margin = new Padding(4, 3, 4, 3);
             buttonWordMilitaryUnit.Name = "buttonWordMilitaryUnit";
-            buttonWordMilitaryUnit.Size = new Size(236, 67);
+            buttonWordMilitaryUnit.Size = new Size(236, 45);
             buttonWordMilitaryUnit.TabIndex = 4;
             buttonWordMilitaryUnit.Text = "Вывод в Word";
             buttonWordMilitaryUnit.UseVisualStyleBackColor = true;
@@ -560,12 +522,14 @@
             // 
             // buttonExcelMilitaryUnit
             // 
+            buttonExcelMilitaryUnit.FlatAppearance.BorderColor = Color.Black;
             buttonExcelMilitaryUnit.FlatStyle = FlatStyle.Flat;
+            buttonExcelMilitaryUnit.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonExcelMilitaryUnit.ForeColor = Color.Black;
-            buttonExcelMilitaryUnit.Location = new Point(4, 375);
+            buttonExcelMilitaryUnit.Location = new Point(10, 267);
             buttonExcelMilitaryUnit.Margin = new Padding(4, 3, 4, 3);
             buttonExcelMilitaryUnit.Name = "buttonExcelMilitaryUnit";
-            buttonExcelMilitaryUnit.Size = new Size(236, 67);
+            buttonExcelMilitaryUnit.Size = new Size(236, 45);
             buttonExcelMilitaryUnit.TabIndex = 5;
             buttonExcelMilitaryUnit.Text = "Вывод в Excel";
             buttonExcelMilitaryUnit.UseVisualStyleBackColor = true;
@@ -573,12 +537,14 @@
             // 
             // buttonTXTMilitaryUnit
             // 
+            buttonTXTMilitaryUnit.FlatAppearance.BorderColor = Color.Black;
             buttonTXTMilitaryUnit.FlatStyle = FlatStyle.Flat;
+            buttonTXTMilitaryUnit.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonTXTMilitaryUnit.ForeColor = Color.Black;
-            buttonTXTMilitaryUnit.Location = new Point(4, 449);
+            buttonTXTMilitaryUnit.Location = new Point(10, 318);
             buttonTXTMilitaryUnit.Margin = new Padding(4, 3, 4, 3);
             buttonTXTMilitaryUnit.Name = "buttonTXTMilitaryUnit";
-            buttonTXTMilitaryUnit.Size = new Size(236, 67);
+            buttonTXTMilitaryUnit.Size = new Size(236, 45);
             buttonTXTMilitaryUnit.TabIndex = 6;
             buttonTXTMilitaryUnit.Text = "Вывод в TXT";
             buttonTXTMilitaryUnit.UseVisualStyleBackColor = true;
@@ -603,6 +569,7 @@
             // 
             // tabPageWarEvents
             // 
+            tabPageWarEvents.BackgroundImage = (Image)resources.GetObject("tabPageWarEvents.BackgroundImage");
             tabPageWarEvents.Controls.Add(panelTitleWarEvents);
             tabPageWarEvents.Controls.Add(dataGridViewWarEvents);
             tabPageWarEvents.Controls.Add(panelRecordWarEvents);
@@ -619,6 +586,7 @@
             // 
             // panelTitleWarEvents
             // 
+            panelTitleWarEvents.Controls.Add(panel2);
             panelTitleWarEvents.Controls.Add(labelTitleWarEvents);
             panelTitleWarEvents.Controls.Add(buttonClearWarEvents);
             panelTitleWarEvents.Controls.Add(buttonRefreshWarEvents);
@@ -626,7 +594,7 @@
             panelTitleWarEvents.Location = new Point(0, 0);
             panelTitleWarEvents.Margin = new Padding(4, 3, 4, 3);
             panelTitleWarEvents.Name = "panelTitleWarEvents";
-            panelTitleWarEvents.Size = new Size(876, 84);
+            panelTitleWarEvents.Size = new Size(889, 84);
             panelTitleWarEvents.TabIndex = 3;
             // 
             // labelTitleWarEvents
@@ -647,10 +615,10 @@
             buttonClearWarEvents.BackgroundImageLayout = ImageLayout.Stretch;
             buttonClearWarEvents.FlatStyle = FlatStyle.Flat;
             buttonClearWarEvents.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearWarEvents.Location = new Point(528, 3);
+            buttonClearWarEvents.Location = new Point(388, 8);
             buttonClearWarEvents.Margin = new Padding(4, 3, 4, 3);
             buttonClearWarEvents.Name = "buttonClearWarEvents";
-            buttonClearWarEvents.Size = new Size(78, 77);
+            buttonClearWarEvents.Size = new Size(60, 60);
             buttonClearWarEvents.TabIndex = 0;
             buttonClearWarEvents.UseVisualStyleBackColor = true;
             buttonClearWarEvents.Click += ButtonClear_Click;
@@ -661,10 +629,10 @@
             buttonRefreshWarEvents.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshWarEvents.FlatStyle = FlatStyle.Flat;
             buttonRefreshWarEvents.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshWarEvents.Location = new Point(614, 3);
+            buttonRefreshWarEvents.Location = new Point(456, 8);
             buttonRefreshWarEvents.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshWarEvents.Name = "buttonRefreshWarEvents";
-            buttonRefreshWarEvents.Size = new Size(78, 77);
+            buttonRefreshWarEvents.Size = new Size(60, 60);
             buttonRefreshWarEvents.TabIndex = 1;
             buttonRefreshWarEvents.UseVisualStyleBackColor = true;
             buttonRefreshWarEvents.Click += ButtonRefresh_Click;
@@ -672,10 +640,10 @@
             // textBoxSearchWarEvents
             // 
             textBoxSearchWarEvents.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchWarEvents.Location = new Point(699, 37);
+            textBoxSearchWarEvents.Location = new Point(654, 25);
             textBoxSearchWarEvents.Margin = new Padding(4, 3, 4, 3);
             textBoxSearchWarEvents.Name = "textBoxSearchWarEvents";
-            textBoxSearchWarEvents.Size = new Size(173, 33);
+            textBoxSearchWarEvents.Size = new Size(227, 33);
             textBoxSearchWarEvents.TabIndex = 2;
             textBoxSearchWarEvents.TextChanged += TextBoxSearchWarEvents_TextChanged;
             // 
@@ -684,7 +652,7 @@
             dataGridViewWarEvents.AllowUserToAddRows = false;
             dataGridViewWarEvents.AllowUserToDeleteRows = false;
             dataGridViewWarEvents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewWarEvents.Location = new Point(9, 91);
+            dataGridViewWarEvents.Location = new Point(18, 71);
             dataGridViewWarEvents.Margin = new Padding(4, 3, 4, 3);
             dataGridViewWarEvents.Name = "dataGridViewWarEvents";
             dataGridViewWarEvents.ReadOnly = true;
@@ -706,10 +674,10 @@
             panelRecordWarEvents.Controls.Add(textBoxEventLocation);
             panelRecordWarEvents.Controls.Add(labelDescriptionWarEvents);
             panelRecordWarEvents.Controls.Add(textBoxDescriptionWarEvents);
-            panelRecordWarEvents.Location = new Point(9, 450);
+            panelRecordWarEvents.Location = new Point(9, 482);
             panelRecordWarEvents.Margin = new Padding(4, 3, 4, 3);
             panelRecordWarEvents.Name = "panelRecordWarEvents";
-            panelRecordWarEvents.Size = new Size(611, 552);
+            panelRecordWarEvents.Size = new Size(609, 333);
             panelRecordWarEvents.TabIndex = 1;
             // 
             // labelRecordWarEvents
@@ -727,100 +695,105 @@
             // labelWarEventID
             // 
             labelWarEventID.AutoSize = true;
+            labelWarEventID.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelWarEventID.ForeColor = Color.Black;
-            labelWarEventID.Location = new Point(93, 82);
+            labelWarEventID.Location = new Point(88, 82);
             labelWarEventID.Margin = new Padding(4, 0, 4, 0);
             labelWarEventID.Name = "labelWarEventID";
-            labelWarEventID.Size = new Size(48, 15);
+            labelWarEventID.Size = new Size(62, 20);
             labelWarEventID.TabIndex = 6;
             labelWarEventID.Text = "Номер:";
             // 
             // textBoxWarEventID
             // 
             textBoxWarEventID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxWarEventID.Location = new Point(152, 68);
+            textBoxWarEventID.Location = new Point(156, 75);
             textBoxWarEventID.Margin = new Padding(4, 3, 4, 3);
             textBoxWarEventID.Name = "textBoxWarEventID";
-            textBoxWarEventID.Size = new Size(455, 33);
+            textBoxWarEventID.Size = new Size(433, 33);
             textBoxWarEventID.TabIndex = 0;
             // 
             // labelEventName
             // 
             labelEventName.AutoSize = true;
+            labelEventName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelEventName.ForeColor = Color.Black;
-            labelEventName.Location = new Point(41, 123);
+            labelEventName.Location = new Point(29, 127);
             labelEventName.Margin = new Padding(4, 0, 4, 0);
             labelEventName.Name = "labelEventName";
-            labelEventName.Size = new Size(93, 15);
+            labelEventName.Size = new Size(122, 20);
             labelEventName.TabIndex = 7;
             labelEventName.Text = "Наименование:";
             // 
             // textBoxEventName
             // 
             textBoxEventName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEventName.Location = new Point(152, 113);
+            textBoxEventName.Location = new Point(156, 120);
             textBoxEventName.Margin = new Padding(4, 3, 4, 3);
             textBoxEventName.Name = "textBoxEventName";
-            textBoxEventName.Size = new Size(455, 33);
+            textBoxEventName.Size = new Size(433, 33);
             textBoxEventName.TabIndex = 1;
             // 
             // labelEventDate
             // 
             labelEventDate.AutoSize = true;
+            labelEventDate.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelEventDate.ForeColor = Color.Black;
-            labelEventDate.Location = new Point(107, 170);
+            labelEventDate.Location = new Point(101, 175);
             labelEventDate.Margin = new Padding(4, 0, 4, 0);
             labelEventDate.Name = "labelEventDate";
-            labelEventDate.Size = new Size(35, 15);
+            labelEventDate.Size = new Size(48, 20);
             labelEventDate.TabIndex = 8;
             labelEventDate.Text = "Дата:";
             // 
             // dateTimePickerEventDate
             // 
             dateTimePickerEventDate.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerEventDate.Location = new Point(152, 158);
+            dateTimePickerEventDate.Location = new Point(156, 165);
             dateTimePickerEventDate.Name = "dateTimePickerEventDate";
-            dateTimePickerEventDate.Size = new Size(455, 33);
+            dateTimePickerEventDate.Size = new Size(433, 33);
             dateTimePickerEventDate.TabIndex = 2;
             // 
             // labelEventLocation
             // 
             labelEventLocation.AutoSize = true;
+            labelEventLocation.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelEventLocation.ForeColor = Color.Black;
-            labelEventLocation.Location = new Point(27, 216);
+            labelEventLocation.Location = new Point(9, 220);
             labelEventLocation.Margin = new Padding(4, 0, 4, 0);
             labelEventLocation.Name = "labelEventLocation";
-            labelEventLocation.Size = new Size(108, 15);
+            labelEventLocation.Size = new Size(141, 20);
             labelEventLocation.TabIndex = 9;
             labelEventLocation.Text = "Местоположение:";
             // 
             // textBoxEventLocation
             // 
             textBoxEventLocation.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEventLocation.Location = new Point(152, 206);
+            textBoxEventLocation.Location = new Point(156, 213);
             textBoxEventLocation.Margin = new Padding(4, 3, 4, 3);
             textBoxEventLocation.Name = "textBoxEventLocation";
-            textBoxEventLocation.Size = new Size(455, 33);
+            textBoxEventLocation.Size = new Size(433, 33);
             textBoxEventLocation.TabIndex = 3;
             // 
             // labelDescriptionWarEvents
             // 
             labelDescriptionWarEvents.AutoSize = true;
+            labelDescriptionWarEvents.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelDescriptionWarEvents.ForeColor = Color.Black;
-            labelDescriptionWarEvents.Location = new Point(74, 261);
+            labelDescriptionWarEvents.Location = new Point(68, 265);
             labelDescriptionWarEvents.Margin = new Padding(4, 0, 4, 0);
             labelDescriptionWarEvents.Name = "labelDescriptionWarEvents";
-            labelDescriptionWarEvents.Size = new Size(65, 15);
+            labelDescriptionWarEvents.Size = new Size(83, 20);
             labelDescriptionWarEvents.TabIndex = 10;
             labelDescriptionWarEvents.Text = "Описание:";
             // 
             // textBoxDescriptionWarEvents
             // 
             textBoxDescriptionWarEvents.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxDescriptionWarEvents.Location = new Point(152, 251);
+            textBoxDescriptionWarEvents.Location = new Point(156, 258);
             textBoxDescriptionWarEvents.Margin = new Padding(4, 3, 4, 3);
             textBoxDescriptionWarEvents.Name = "textBoxDescriptionWarEvents";
-            textBoxDescriptionWarEvents.Size = new Size(455, 33);
+            textBoxDescriptionWarEvents.Size = new Size(433, 33);
             textBoxDescriptionWarEvents.TabIndex = 4;
             // 
             // labelControlWarEvents
@@ -829,7 +802,7 @@
             labelControlWarEvents.BackColor = Color.Transparent;
             labelControlWarEvents.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             labelControlWarEvents.ForeColor = Color.Black;
-            labelControlWarEvents.Location = new Point(636, 456);
+            labelControlWarEvents.Location = new Point(645, 453);
             labelControlWarEvents.Margin = new Padding(4, 0, 4, 0);
             labelControlWarEvents.Name = "labelControlWarEvents";
             labelControlWarEvents.Size = new Size(213, 25);
@@ -845,20 +818,21 @@
             panelControlWarEvents.Controls.Add(buttonWordWarEvent);
             panelControlWarEvents.Controls.Add(buttonExcelWarEvent);
             panelControlWarEvents.Controls.Add(buttonTXTWarEvent);
-            panelControlWarEvents.Location = new Point(634, 482);
+            panelControlWarEvents.Location = new Point(626, 481);
             panelControlWarEvents.Margin = new Padding(4, 3, 4, 3);
             panelControlWarEvents.Name = "panelControlWarEvents";
-            panelControlWarEvents.Size = new Size(243, 520);
+            panelControlWarEvents.Size = new Size(255, 373);
             panelControlWarEvents.TabIndex = 2;
             // 
             // buttonNewWarEvent
             // 
             buttonNewWarEvent.FlatStyle = FlatStyle.Flat;
+            buttonNewWarEvent.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonNewWarEvent.ForeColor = Color.Black;
-            buttonNewWarEvent.Location = new Point(4, 3);
+            buttonNewWarEvent.Location = new Point(8, 9);
             buttonNewWarEvent.Margin = new Padding(4, 3, 4, 3);
             buttonNewWarEvent.Name = "buttonNewWarEvent";
-            buttonNewWarEvent.Size = new Size(236, 67);
+            buttonNewWarEvent.Size = new Size(236, 45);
             buttonNewWarEvent.TabIndex = 0;
             buttonNewWarEvent.Text = "Новая запись";
             buttonNewWarEvent.UseVisualStyleBackColor = true;
@@ -867,11 +841,12 @@
             // buttonDeleteWarEvent
             // 
             buttonDeleteWarEvent.FlatStyle = FlatStyle.Flat;
+            buttonDeleteWarEvent.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonDeleteWarEvent.ForeColor = Color.Black;
-            buttonDeleteWarEvent.Location = new Point(4, 78);
+            buttonDeleteWarEvent.Location = new Point(8, 60);
             buttonDeleteWarEvent.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteWarEvent.Name = "buttonDeleteWarEvent";
-            buttonDeleteWarEvent.Size = new Size(236, 67);
+            buttonDeleteWarEvent.Size = new Size(236, 45);
             buttonDeleteWarEvent.TabIndex = 1;
             buttonDeleteWarEvent.Text = "Удалить";
             buttonDeleteWarEvent.UseVisualStyleBackColor = true;
@@ -880,11 +855,12 @@
             // buttonChangeWarEvent
             // 
             buttonChangeWarEvent.FlatStyle = FlatStyle.Flat;
+            buttonChangeWarEvent.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonChangeWarEvent.ForeColor = Color.Black;
-            buttonChangeWarEvent.Location = new Point(4, 152);
+            buttonChangeWarEvent.Location = new Point(8, 111);
             buttonChangeWarEvent.Margin = new Padding(4, 3, 4, 3);
             buttonChangeWarEvent.Name = "buttonChangeWarEvent";
-            buttonChangeWarEvent.Size = new Size(236, 67);
+            buttonChangeWarEvent.Size = new Size(236, 45);
             buttonChangeWarEvent.TabIndex = 2;
             buttonChangeWarEvent.Text = "Изменить";
             buttonChangeWarEvent.UseVisualStyleBackColor = true;
@@ -893,11 +869,12 @@
             // buttonSaveWarEvent
             // 
             buttonSaveWarEvent.FlatStyle = FlatStyle.Flat;
+            buttonSaveWarEvent.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonSaveWarEvent.ForeColor = Color.Black;
-            buttonSaveWarEvent.Location = new Point(4, 226);
+            buttonSaveWarEvent.Location = new Point(8, 162);
             buttonSaveWarEvent.Margin = new Padding(4, 3, 4, 3);
             buttonSaveWarEvent.Name = "buttonSaveWarEvent";
-            buttonSaveWarEvent.Size = new Size(236, 67);
+            buttonSaveWarEvent.Size = new Size(236, 45);
             buttonSaveWarEvent.TabIndex = 3;
             buttonSaveWarEvent.Text = "Сохранить";
             buttonSaveWarEvent.UseVisualStyleBackColor = true;
@@ -906,11 +883,12 @@
             // buttonWordWarEvent
             // 
             buttonWordWarEvent.FlatStyle = FlatStyle.Flat;
+            buttonWordWarEvent.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonWordWarEvent.ForeColor = Color.Black;
-            buttonWordWarEvent.Location = new Point(4, 301);
+            buttonWordWarEvent.Location = new Point(8, 214);
             buttonWordWarEvent.Margin = new Padding(4, 3, 4, 3);
             buttonWordWarEvent.Name = "buttonWordWarEvent";
-            buttonWordWarEvent.Size = new Size(236, 67);
+            buttonWordWarEvent.Size = new Size(236, 45);
             buttonWordWarEvent.TabIndex = 4;
             buttonWordWarEvent.Text = "Вывод в Word";
             buttonWordWarEvent.UseVisualStyleBackColor = true;
@@ -919,11 +897,12 @@
             // buttonExcelWarEvent
             // 
             buttonExcelWarEvent.FlatStyle = FlatStyle.Flat;
+            buttonExcelWarEvent.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonExcelWarEvent.ForeColor = Color.Black;
-            buttonExcelWarEvent.Location = new Point(4, 375);
+            buttonExcelWarEvent.Location = new Point(8, 265);
             buttonExcelWarEvent.Margin = new Padding(4, 3, 4, 3);
             buttonExcelWarEvent.Name = "buttonExcelWarEvent";
-            buttonExcelWarEvent.Size = new Size(236, 67);
+            buttonExcelWarEvent.Size = new Size(236, 45);
             buttonExcelWarEvent.TabIndex = 5;
             buttonExcelWarEvent.Text = "Вывод в Excel";
             buttonExcelWarEvent.UseVisualStyleBackColor = true;
@@ -932,11 +911,12 @@
             // buttonTXTWarEvent
             // 
             buttonTXTWarEvent.FlatStyle = FlatStyle.Flat;
+            buttonTXTWarEvent.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonTXTWarEvent.ForeColor = Color.Black;
-            buttonTXTWarEvent.Location = new Point(4, 449);
+            buttonTXTWarEvent.Location = new Point(8, 316);
             buttonTXTWarEvent.Margin = new Padding(4, 3, 4, 3);
             buttonTXTWarEvent.Name = "buttonTXTWarEvent";
-            buttonTXTWarEvent.Size = new Size(236, 67);
+            buttonTXTWarEvent.Size = new Size(236, 45);
             buttonTXTWarEvent.TabIndex = 6;
             buttonTXTWarEvent.Text = "Вывод в TXT";
             buttonTXTWarEvent.UseVisualStyleBackColor = true;
@@ -944,6 +924,7 @@
             // 
             // tabPageVeterans
             // 
+            tabPageVeterans.BackgroundImage = (Image)resources.GetObject("tabPageVeterans.BackgroundImage");
             tabPageVeterans.Controls.Add(panelTitleVeterans);
             tabPageVeterans.Controls.Add(dataGridViewVeterans);
             tabPageVeterans.Controls.Add(panelRecordVeterans);
@@ -960,6 +941,7 @@
             // 
             // panelTitleVeterans
             // 
+            panelTitleVeterans.Controls.Add(panel3);
             panelTitleVeterans.Controls.Add(labelTitleVeterans);
             panelTitleVeterans.Controls.Add(buttonReportVeterans);
             panelTitleVeterans.Controls.Add(buttonClearVeterans);
@@ -968,7 +950,7 @@
             panelTitleVeterans.Location = new Point(0, 0);
             panelTitleVeterans.Margin = new Padding(4, 3, 4, 3);
             panelTitleVeterans.Name = "panelTitleVeterans";
-            panelTitleVeterans.Size = new Size(876, 84);
+            panelTitleVeterans.Size = new Size(889, 84);
             panelTitleVeterans.TabIndex = 3;
             // 
             // labelTitleVeterans
@@ -989,10 +971,10 @@
             buttonReportVeterans.BackgroundImageLayout = ImageLayout.Stretch;
             buttonReportVeterans.FlatStyle = FlatStyle.Flat;
             buttonReportVeterans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonReportVeterans.Location = new Point(442, 3);
+            buttonReportVeterans.Location = new Point(252, 8);
             buttonReportVeterans.Margin = new Padding(4, 3, 4, 3);
             buttonReportVeterans.Name = "buttonReportVeterans";
-            buttonReportVeterans.Size = new Size(78, 77);
+            buttonReportVeterans.Size = new Size(60, 60);
             buttonReportVeterans.TabIndex = 1;
             buttonReportVeterans.UseVisualStyleBackColor = true;
             buttonReportVeterans.Click += ButtonReportVeterans_Click;
@@ -1003,10 +985,10 @@
             buttonClearVeterans.BackgroundImageLayout = ImageLayout.Stretch;
             buttonClearVeterans.FlatStyle = FlatStyle.Flat;
             buttonClearVeterans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearVeterans.Location = new Point(528, 3);
+            buttonClearVeterans.Location = new Point(320, 10);
             buttonClearVeterans.Margin = new Padding(4, 3, 4, 3);
             buttonClearVeterans.Name = "buttonClearVeterans";
-            buttonClearVeterans.Size = new Size(78, 77);
+            buttonClearVeterans.Size = new Size(60, 60);
             buttonClearVeterans.TabIndex = 2;
             buttonClearVeterans.UseVisualStyleBackColor = true;
             buttonClearVeterans.Click += ButtonClear_Click;
@@ -1017,10 +999,10 @@
             buttonRefreshVeterans.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshVeterans.FlatStyle = FlatStyle.Flat;
             buttonRefreshVeterans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshVeterans.Location = new Point(614, 3);
+            buttonRefreshVeterans.Location = new Point(388, 10);
             buttonRefreshVeterans.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshVeterans.Name = "buttonRefreshVeterans";
-            buttonRefreshVeterans.Size = new Size(78, 77);
+            buttonRefreshVeterans.Size = new Size(60, 60);
             buttonRefreshVeterans.TabIndex = 3;
             buttonRefreshVeterans.UseVisualStyleBackColor = true;
             buttonRefreshVeterans.Click += ButtonRefresh_Click;
@@ -1028,10 +1010,10 @@
             // textBoxSearchVeterans
             // 
             textBoxSearchVeterans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchVeterans.Location = new Point(699, 37);
+            textBoxSearchVeterans.Location = new Point(654, 25);
             textBoxSearchVeterans.Margin = new Padding(4, 3, 4, 3);
             textBoxSearchVeterans.Name = "textBoxSearchVeterans";
-            textBoxSearchVeterans.Size = new Size(173, 33);
+            textBoxSearchVeterans.Size = new Size(227, 33);
             textBoxSearchVeterans.TabIndex = 4;
             textBoxSearchVeterans.TextChanged += TextBoxSearchVeterans_TextChanged;
             // 
@@ -1064,10 +1046,10 @@
             panelRecordVeterans.Controls.Add(textBoxMilitaryRank);
             panelRecordVeterans.Controls.Add(labelUnitID);
             panelRecordVeterans.Controls.Add(textBoxUnitID);
-            panelRecordVeterans.Location = new Point(9, 450);
+            panelRecordVeterans.Location = new Point(8, 472);
             panelRecordVeterans.Margin = new Padding(4, 3, 4, 3);
             panelRecordVeterans.Name = "panelRecordVeterans";
-            panelRecordVeterans.Size = new Size(611, 552);
+            panelRecordVeterans.Size = new Size(609, 356);
             panelRecordVeterans.TabIndex = 0;
             // 
             // labelRecordVeterans
@@ -1085,119 +1067,125 @@
             // labelVeteranID
             // 
             labelVeteranID.AutoSize = true;
+            labelVeteranID.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelVeteranID.ForeColor = Color.Black;
-            labelVeteranID.Location = new Point(93, 82);
+            labelVeteranID.Location = new Point(81, 79);
             labelVeteranID.Margin = new Padding(4, 0, 4, 0);
             labelVeteranID.Name = "labelVeteranID";
-            labelVeteranID.Size = new Size(48, 15);
+            labelVeteranID.Size = new Size(62, 20);
             labelVeteranID.TabIndex = 7;
             labelVeteranID.Text = "Номер:";
             // 
             // textBoxVeteranID
             // 
             textBoxVeteranID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxVeteranID.Location = new Point(152, 68);
+            textBoxVeteranID.Location = new Point(151, 72);
             textBoxVeteranID.Margin = new Padding(4, 3, 4, 3);
             textBoxVeteranID.Name = "textBoxVeteranID";
-            textBoxVeteranID.Size = new Size(455, 33);
+            textBoxVeteranID.Size = new Size(431, 33);
             textBoxVeteranID.TabIndex = 0;
             // 
             // labelFullName
             // 
             labelFullName.AutoSize = true;
+            labelFullName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelFullName.ForeColor = Color.Black;
-            labelFullName.Location = new Point(106, 123);
+            labelFullName.Location = new Point(94, 124);
             labelFullName.Margin = new Padding(4, 0, 4, 0);
             labelFullName.Name = "labelFullName";
-            labelFullName.Size = new Size(37, 15);
+            labelFullName.Size = new Size(49, 20);
             labelFullName.TabIndex = 8;
             labelFullName.Text = "ФИО:";
             // 
             // textBoxFullName
             // 
             textBoxFullName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxFullName.Location = new Point(152, 113);
+            textBoxFullName.Location = new Point(151, 117);
             textBoxFullName.Margin = new Padding(4, 3, 4, 3);
             textBoxFullName.Name = "textBoxFullName";
-            textBoxFullName.Size = new Size(455, 33);
+            textBoxFullName.Size = new Size(431, 33);
             textBoxFullName.TabIndex = 1;
             // 
             // labelBirthDate
             // 
             labelBirthDate.AutoSize = true;
+            labelBirthDate.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelBirthDate.ForeColor = Color.Black;
-            labelBirthDate.Location = new Point(41, 170);
+            labelBirthDate.Location = new Point(17, 172);
             labelBirthDate.Margin = new Padding(4, 0, 4, 0);
             labelBirthDate.Name = "labelBirthDate";
-            labelBirthDate.Size = new Size(93, 15);
+            labelBirthDate.Size = new Size(127, 20);
             labelBirthDate.TabIndex = 9;
             labelBirthDate.Text = "Дата рождения:";
             // 
             // dateTimePickerBirthDate
             // 
             dateTimePickerBirthDate.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerBirthDate.Location = new Point(152, 158);
+            dateTimePickerBirthDate.Location = new Point(151, 162);
             dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
-            dateTimePickerBirthDate.Size = new Size(455, 33);
+            dateTimePickerBirthDate.Size = new Size(431, 33);
             dateTimePickerBirthDate.TabIndex = 2;
             // 
             // labelDeathDate
             // 
             labelDeathDate.AutoSize = true;
+            labelDeathDate.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelDeathDate.ForeColor = Color.Black;
-            labelDeathDate.Location = new Point(60, 210);
+            labelDeathDate.Location = new Point(39, 214);
             labelDeathDate.Margin = new Padding(4, 0, 4, 0);
             labelDeathDate.Name = "labelDeathDate";
-            labelDeathDate.Size = new Size(78, 15);
+            labelDeathDate.Size = new Size(104, 20);
             labelDeathDate.TabIndex = 10;
             labelDeathDate.Text = "Дата смерти:";
             // 
             // dateTimePickerDeathDate
             // 
             dateTimePickerDeathDate.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerDeathDate.Location = new Point(152, 203);
+            dateTimePickerDeathDate.Location = new Point(151, 207);
             dateTimePickerDeathDate.Name = "dateTimePickerDeathDate";
-            dateTimePickerDeathDate.Size = new Size(455, 33);
+            dateTimePickerDeathDate.Size = new Size(431, 33);
             dateTimePickerDeathDate.TabIndex = 3;
             // 
             // labelMilitaryRank
             // 
             labelMilitaryRank.AutoSize = true;
+            labelMilitaryRank.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelMilitaryRank.ForeColor = Color.Black;
-            labelMilitaryRank.Location = new Point(91, 258);
+            labelMilitaryRank.Location = new Point(79, 259);
             labelMilitaryRank.Margin = new Padding(4, 0, 4, 0);
             labelMilitaryRank.Name = "labelMilitaryRank";
-            labelMilitaryRank.Size = new Size(49, 15);
+            labelMilitaryRank.Size = new Size(64, 20);
             labelMilitaryRank.TabIndex = 11;
             labelMilitaryRank.Text = "Звание:";
             // 
             // textBoxMilitaryRank
             // 
             textBoxMilitaryRank.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMilitaryRank.Location = new Point(152, 248);
+            textBoxMilitaryRank.Location = new Point(151, 252);
             textBoxMilitaryRank.Margin = new Padding(4, 3, 4, 3);
             textBoxMilitaryRank.Name = "textBoxMilitaryRank";
-            textBoxMilitaryRank.Size = new Size(455, 33);
+            textBoxMilitaryRank.Size = new Size(431, 33);
             textBoxMilitaryRank.TabIndex = 4;
             // 
             // labelUnitID
             // 
             labelUnitID.AutoSize = true;
+            labelUnitID.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelUnitID.ForeColor = Color.Black;
-            labelUnitID.Location = new Point(87, 303);
+            labelUnitID.Location = new Point(73, 304);
             labelUnitID.Margin = new Padding(4, 0, 4, 0);
             labelUnitID.Name = "labelUnitID";
-            labelUnitID.Size = new Size(54, 15);
+            labelUnitID.Size = new Size(71, 20);
             labelUnitID.TabIndex = 12;
             labelUnitID.Text = "Оружие:";
             // 
             // textBoxUnitID
             // 
             textBoxUnitID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxUnitID.Location = new Point(152, 293);
+            textBoxUnitID.Location = new Point(151, 297);
             textBoxUnitID.Margin = new Padding(4, 3, 4, 3);
             textBoxUnitID.Name = "textBoxUnitID";
-            textBoxUnitID.Size = new Size(455, 33);
+            textBoxUnitID.Size = new Size(431, 33);
             textBoxUnitID.TabIndex = 5;
             // 
             // labelControlVeterans
@@ -1206,7 +1194,7 @@
             labelControlVeterans.BackColor = Color.Transparent;
             labelControlVeterans.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             labelControlVeterans.ForeColor = Color.Black;
-            labelControlVeterans.Location = new Point(636, 456);
+            labelControlVeterans.Location = new Point(645, 453);
             labelControlVeterans.Margin = new Padding(4, 0, 4, 0);
             labelControlVeterans.Name = "labelControlVeterans";
             labelControlVeterans.Size = new Size(213, 25);
@@ -1222,20 +1210,21 @@
             panelControlVeterans.Controls.Add(buttonWordVeteran);
             panelControlVeterans.Controls.Add(buttonExcelVeteran);
             panelControlVeterans.Controls.Add(buttonTXTVeteran);
-            panelControlVeterans.Location = new Point(634, 482);
+            panelControlVeterans.Location = new Point(626, 481);
             panelControlVeterans.Margin = new Padding(4, 3, 4, 3);
             panelControlVeterans.Name = "panelControlVeterans";
-            panelControlVeterans.Size = new Size(243, 520);
+            panelControlVeterans.Size = new Size(255, 373);
             panelControlVeterans.TabIndex = 2;
             // 
             // buttonNewVeteran
             // 
             buttonNewVeteran.FlatStyle = FlatStyle.Flat;
+            buttonNewVeteran.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonNewVeteran.ForeColor = Color.Black;
-            buttonNewVeteran.Location = new Point(4, 3);
+            buttonNewVeteran.Location = new Point(10, 11);
             buttonNewVeteran.Margin = new Padding(4, 3, 4, 3);
             buttonNewVeteran.Name = "buttonNewVeteran";
-            buttonNewVeteran.Size = new Size(236, 67);
+            buttonNewVeteran.Size = new Size(236, 45);
             buttonNewVeteran.TabIndex = 0;
             buttonNewVeteran.Text = "Новая запись";
             buttonNewVeteran.UseVisualStyleBackColor = true;
@@ -1244,11 +1233,12 @@
             // buttonDeleteVeteran
             // 
             buttonDeleteVeteran.FlatStyle = FlatStyle.Flat;
+            buttonDeleteVeteran.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonDeleteVeteran.ForeColor = Color.Black;
-            buttonDeleteVeteran.Location = new Point(4, 78);
+            buttonDeleteVeteran.Location = new Point(10, 62);
             buttonDeleteVeteran.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteVeteran.Name = "buttonDeleteVeteran";
-            buttonDeleteVeteran.Size = new Size(236, 67);
+            buttonDeleteVeteran.Size = new Size(236, 45);
             buttonDeleteVeteran.TabIndex = 1;
             buttonDeleteVeteran.Text = "Удалить";
             buttonDeleteVeteran.UseVisualStyleBackColor = true;
@@ -1257,11 +1247,12 @@
             // buttonChangeVeteran
             // 
             buttonChangeVeteran.FlatStyle = FlatStyle.Flat;
+            buttonChangeVeteran.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonChangeVeteran.ForeColor = Color.Black;
-            buttonChangeVeteran.Location = new Point(4, 152);
+            buttonChangeVeteran.Location = new Point(10, 113);
             buttonChangeVeteran.Margin = new Padding(4, 3, 4, 3);
             buttonChangeVeteran.Name = "buttonChangeVeteran";
-            buttonChangeVeteran.Size = new Size(236, 67);
+            buttonChangeVeteran.Size = new Size(236, 45);
             buttonChangeVeteran.TabIndex = 2;
             buttonChangeVeteran.Text = "Изменить";
             buttonChangeVeteran.UseVisualStyleBackColor = true;
@@ -1270,11 +1261,12 @@
             // buttonSaveVeteran
             // 
             buttonSaveVeteran.FlatStyle = FlatStyle.Flat;
+            buttonSaveVeteran.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonSaveVeteran.ForeColor = Color.Black;
-            buttonSaveVeteran.Location = new Point(4, 226);
+            buttonSaveVeteran.Location = new Point(10, 164);
             buttonSaveVeteran.Margin = new Padding(4, 3, 4, 3);
             buttonSaveVeteran.Name = "buttonSaveVeteran";
-            buttonSaveVeteran.Size = new Size(236, 67);
+            buttonSaveVeteran.Size = new Size(236, 45);
             buttonSaveVeteran.TabIndex = 3;
             buttonSaveVeteran.Text = "Сохранить";
             buttonSaveVeteran.UseVisualStyleBackColor = true;
@@ -1283,11 +1275,12 @@
             // buttonWordVeteran
             // 
             buttonWordVeteran.FlatStyle = FlatStyle.Flat;
+            buttonWordVeteran.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonWordVeteran.ForeColor = Color.Black;
-            buttonWordVeteran.Location = new Point(4, 301);
+            buttonWordVeteran.Location = new Point(10, 215);
             buttonWordVeteran.Margin = new Padding(4, 3, 4, 3);
             buttonWordVeteran.Name = "buttonWordVeteran";
-            buttonWordVeteran.Size = new Size(236, 67);
+            buttonWordVeteran.Size = new Size(236, 45);
             buttonWordVeteran.TabIndex = 4;
             buttonWordVeteran.Text = "Вывод в Word";
             buttonWordVeteran.UseVisualStyleBackColor = true;
@@ -1296,11 +1289,12 @@
             // buttonExcelVeteran
             // 
             buttonExcelVeteran.FlatStyle = FlatStyle.Flat;
+            buttonExcelVeteran.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonExcelVeteran.ForeColor = Color.Black;
-            buttonExcelVeteran.Location = new Point(4, 375);
+            buttonExcelVeteran.Location = new Point(10, 266);
             buttonExcelVeteran.Margin = new Padding(4, 3, 4, 3);
             buttonExcelVeteran.Name = "buttonExcelVeteran";
-            buttonExcelVeteran.Size = new Size(236, 67);
+            buttonExcelVeteran.Size = new Size(236, 45);
             buttonExcelVeteran.TabIndex = 5;
             buttonExcelVeteran.Text = "Вывод в Excel";
             buttonExcelVeteran.UseVisualStyleBackColor = true;
@@ -1309,11 +1303,12 @@
             // buttonTXTVeteran
             // 
             buttonTXTVeteran.FlatStyle = FlatStyle.Flat;
+            buttonTXTVeteran.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonTXTVeteran.ForeColor = Color.Black;
-            buttonTXTVeteran.Location = new Point(4, 449);
+            buttonTXTVeteran.Location = new Point(10, 317);
             buttonTXTVeteran.Margin = new Padding(4, 3, 4, 3);
             buttonTXTVeteran.Name = "buttonTXTVeteran";
-            buttonTXTVeteran.Size = new Size(236, 67);
+            buttonTXTVeteran.Size = new Size(236, 45);
             buttonTXTVeteran.TabIndex = 6;
             buttonTXTVeteran.Text = "Вывод в TXT";
             buttonTXTVeteran.UseVisualStyleBackColor = true;
@@ -1321,6 +1316,7 @@
             // 
             // tabPageMedals
             // 
+            tabPageMedals.BackgroundImage = (Image)resources.GetObject("tabPageMedals.BackgroundImage");
             tabPageMedals.Controls.Add(panelTitleMedals);
             tabPageMedals.Controls.Add(dataGridViewMedals);
             tabPageMedals.Controls.Add(panelRecordMedals);
@@ -1337,6 +1333,7 @@
             // 
             // panelTitleMedals
             // 
+            panelTitleMedals.Controls.Add(panel4);
             panelTitleMedals.Controls.Add(labelTitleMedals);
             panelTitleMedals.Controls.Add(buttonReportMedals);
             panelTitleMedals.Controls.Add(buttonClearMedals);
@@ -1345,7 +1342,7 @@
             panelTitleMedals.Location = new Point(0, 0);
             panelTitleMedals.Margin = new Padding(4, 3, 4, 3);
             panelTitleMedals.Name = "panelTitleMedals";
-            panelTitleMedals.Size = new Size(876, 84);
+            panelTitleMedals.Size = new Size(889, 84);
             panelTitleMedals.TabIndex = 3;
             // 
             // labelTitleMedals
@@ -1366,10 +1363,10 @@
             buttonReportMedals.BackgroundImageLayout = ImageLayout.Stretch;
             buttonReportMedals.FlatStyle = FlatStyle.Flat;
             buttonReportMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonReportMedals.Location = new Point(442, 3);
+            buttonReportMedals.Location = new Point(447, 10);
             buttonReportMedals.Margin = new Padding(4, 3, 4, 3);
             buttonReportMedals.Name = "buttonReportMedals";
-            buttonReportMedals.Size = new Size(78, 77);
+            buttonReportMedals.Size = new Size(60, 60);
             buttonReportMedals.TabIndex = 0;
             buttonReportMedals.UseVisualStyleBackColor = true;
             buttonReportMedals.Click += ButtonReportMedals_Click;
@@ -1380,10 +1377,10 @@
             buttonClearMedals.BackgroundImageLayout = ImageLayout.Stretch;
             buttonClearMedals.FlatStyle = FlatStyle.Flat;
             buttonClearMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearMedals.Location = new Point(528, 3);
+            buttonClearMedals.Location = new Point(515, 10);
             buttonClearMedals.Margin = new Padding(4, 3, 4, 3);
             buttonClearMedals.Name = "buttonClearMedals";
-            buttonClearMedals.Size = new Size(78, 77);
+            buttonClearMedals.Size = new Size(60, 60);
             buttonClearMedals.TabIndex = 1;
             buttonClearMedals.UseVisualStyleBackColor = true;
             buttonClearMedals.Click += ButtonClear_Click;
@@ -1394,10 +1391,10 @@
             buttonRefreshMedals.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshMedals.FlatStyle = FlatStyle.Flat;
             buttonRefreshMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshMedals.Location = new Point(614, 3);
+            buttonRefreshMedals.Location = new Point(583, 10);
             buttonRefreshMedals.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshMedals.Name = "buttonRefreshMedals";
-            buttonRefreshMedals.Size = new Size(78, 77);
+            buttonRefreshMedals.Size = new Size(60, 60);
             buttonRefreshMedals.TabIndex = 2;
             buttonRefreshMedals.UseVisualStyleBackColor = true;
             buttonRefreshMedals.Click += ButtonRefresh_Click;
@@ -1405,10 +1402,10 @@
             // textBoxSearchMedals
             // 
             textBoxSearchMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchMedals.Location = new Point(699, 37);
+            textBoxSearchMedals.Location = new Point(699, 25);
             textBoxSearchMedals.Margin = new Padding(4, 3, 4, 3);
             textBoxSearchMedals.Name = "textBoxSearchMedals";
-            textBoxSearchMedals.Size = new Size(173, 33);
+            textBoxSearchMedals.Size = new Size(182, 33);
             textBoxSearchMedals.TabIndex = 3;
             textBoxSearchMedals.TextChanged += TextBoxSearchMedals_TextChanged;
             // 
@@ -1435,10 +1432,10 @@
             panelRecordMedals.Controls.Add(textBoxMedalName);
             panelRecordMedals.Controls.Add(labelDescriptionMedals);
             panelRecordMedals.Controls.Add(textBoxDescriptionMedals);
-            panelRecordMedals.Location = new Point(9, 450);
+            panelRecordMedals.Location = new Point(7, 529);
             panelRecordMedals.Margin = new Padding(4, 3, 4, 3);
             panelRecordMedals.Name = "panelRecordMedals";
-            panelRecordMedals.Size = new Size(611, 552);
+            panelRecordMedals.Size = new Size(611, 242);
             panelRecordMedals.TabIndex = 0;
             // 
             // labelRecordMedals
@@ -1456,61 +1453,64 @@
             // labelMedalID
             // 
             labelMedalID.AutoSize = true;
+            labelMedalID.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelMedalID.ForeColor = Color.Black;
-            labelMedalID.Location = new Point(93, 82);
+            labelMedalID.Location = new Point(80, 75);
             labelMedalID.Margin = new Padding(4, 0, 4, 0);
             labelMedalID.Name = "labelMedalID";
-            labelMedalID.Size = new Size(48, 15);
+            labelMedalID.Size = new Size(62, 20);
             labelMedalID.TabIndex = 4;
             labelMedalID.Text = "Номер:";
             // 
             // textBoxMedalID
             // 
             textBoxMedalID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMedalID.Location = new Point(152, 68);
+            textBoxMedalID.Location = new Point(150, 68);
             textBoxMedalID.Margin = new Padding(4, 3, 4, 3);
             textBoxMedalID.Name = "textBoxMedalID";
-            textBoxMedalID.Size = new Size(455, 33);
+            textBoxMedalID.Size = new Size(428, 33);
             textBoxMedalID.TabIndex = 0;
             // 
             // labelMedalName
             // 
             labelMedalName.AutoSize = true;
+            labelMedalName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelMedalName.ForeColor = Color.Black;
-            labelMedalName.Location = new Point(48, 124);
+            labelMedalName.Location = new Point(20, 120);
             labelMedalName.Margin = new Padding(4, 0, 4, 0);
             labelMedalName.Name = "labelMedalName";
-            labelMedalName.Size = new Size(93, 15);
+            labelMedalName.Size = new Size(122, 20);
             labelMedalName.TabIndex = 5;
             labelMedalName.Text = "Наименование:";
             // 
             // textBoxMedalName
             // 
             textBoxMedalName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMedalName.Location = new Point(152, 113);
+            textBoxMedalName.Location = new Point(150, 113);
             textBoxMedalName.Margin = new Padding(4, 3, 4, 3);
             textBoxMedalName.Name = "textBoxMedalName";
-            textBoxMedalName.Size = new Size(455, 33);
+            textBoxMedalName.Size = new Size(428, 33);
             textBoxMedalName.TabIndex = 1;
             // 
             // labelDescriptionMedals
             // 
             labelDescriptionMedals.AutoSize = true;
+            labelDescriptionMedals.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelDescriptionMedals.ForeColor = Color.Black;
-            labelDescriptionMedals.Location = new Point(76, 169);
+            labelDescriptionMedals.Location = new Point(59, 165);
             labelDescriptionMedals.Margin = new Padding(4, 0, 4, 0);
             labelDescriptionMedals.Name = "labelDescriptionMedals";
-            labelDescriptionMedals.Size = new Size(65, 15);
+            labelDescriptionMedals.Size = new Size(83, 20);
             labelDescriptionMedals.TabIndex = 6;
             labelDescriptionMedals.Text = "Описание:";
             // 
             // textBoxDescriptionMedals
             // 
             textBoxDescriptionMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxDescriptionMedals.Location = new Point(152, 158);
+            textBoxDescriptionMedals.Location = new Point(150, 158);
             textBoxDescriptionMedals.Margin = new Padding(4, 3, 4, 3);
             textBoxDescriptionMedals.Name = "textBoxDescriptionMedals";
-            textBoxDescriptionMedals.Size = new Size(455, 33);
+            textBoxDescriptionMedals.Size = new Size(428, 33);
             textBoxDescriptionMedals.TabIndex = 2;
             // 
             // labelControlMedals
@@ -1519,7 +1519,7 @@
             labelControlMedals.BackColor = Color.Transparent;
             labelControlMedals.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             labelControlMedals.ForeColor = Color.Black;
-            labelControlMedals.Location = new Point(636, 456);
+            labelControlMedals.Location = new Point(645, 453);
             labelControlMedals.Margin = new Padding(4, 0, 4, 0);
             labelControlMedals.Name = "labelControlMedals";
             labelControlMedals.Size = new Size(213, 25);
@@ -1535,20 +1535,21 @@
             panelControlMedals.Controls.Add(buttonWordMedal);
             panelControlMedals.Controls.Add(buttonExcelMedal);
             panelControlMedals.Controls.Add(buttonTXTMedal);
-            panelControlMedals.Location = new Point(634, 482);
+            panelControlMedals.Location = new Point(626, 481);
             panelControlMedals.Margin = new Padding(4, 3, 4, 3);
             panelControlMedals.Name = "panelControlMedals";
-            panelControlMedals.Size = new Size(243, 520);
+            panelControlMedals.Size = new Size(255, 373);
             panelControlMedals.TabIndex = 2;
             // 
             // buttonNewMedal
             // 
             buttonNewMedal.FlatStyle = FlatStyle.Flat;
+            buttonNewMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonNewMedal.ForeColor = Color.Black;
-            buttonNewMedal.Location = new Point(4, 3);
+            buttonNewMedal.Location = new Point(10, 13);
             buttonNewMedal.Margin = new Padding(4, 3, 4, 3);
             buttonNewMedal.Name = "buttonNewMedal";
-            buttonNewMedal.Size = new Size(236, 67);
+            buttonNewMedal.Size = new Size(236, 45);
             buttonNewMedal.TabIndex = 0;
             buttonNewMedal.Text = "Новая запись";
             buttonNewMedal.UseVisualStyleBackColor = true;
@@ -1557,11 +1558,12 @@
             // buttonDeleteMedal
             // 
             buttonDeleteMedal.FlatStyle = FlatStyle.Flat;
+            buttonDeleteMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonDeleteMedal.ForeColor = Color.Black;
-            buttonDeleteMedal.Location = new Point(4, 78);
+            buttonDeleteMedal.Location = new Point(10, 64);
             buttonDeleteMedal.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteMedal.Name = "buttonDeleteMedal";
-            buttonDeleteMedal.Size = new Size(236, 67);
+            buttonDeleteMedal.Size = new Size(236, 45);
             buttonDeleteMedal.TabIndex = 1;
             buttonDeleteMedal.Text = "Удалить";
             buttonDeleteMedal.UseVisualStyleBackColor = true;
@@ -1570,11 +1572,12 @@
             // buttonChangeMedal
             // 
             buttonChangeMedal.FlatStyle = FlatStyle.Flat;
+            buttonChangeMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonChangeMedal.ForeColor = Color.Black;
-            buttonChangeMedal.Location = new Point(4, 152);
+            buttonChangeMedal.Location = new Point(10, 115);
             buttonChangeMedal.Margin = new Padding(4, 3, 4, 3);
             buttonChangeMedal.Name = "buttonChangeMedal";
-            buttonChangeMedal.Size = new Size(236, 67);
+            buttonChangeMedal.Size = new Size(236, 45);
             buttonChangeMedal.TabIndex = 2;
             buttonChangeMedal.Text = "Изменить";
             buttonChangeMedal.UseVisualStyleBackColor = true;
@@ -1583,11 +1586,12 @@
             // buttonSaveMedal
             // 
             buttonSaveMedal.FlatStyle = FlatStyle.Flat;
+            buttonSaveMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonSaveMedal.ForeColor = Color.Black;
-            buttonSaveMedal.Location = new Point(4, 226);
+            buttonSaveMedal.Location = new Point(10, 166);
             buttonSaveMedal.Margin = new Padding(4, 3, 4, 3);
             buttonSaveMedal.Name = "buttonSaveMedal";
-            buttonSaveMedal.Size = new Size(236, 67);
+            buttonSaveMedal.Size = new Size(236, 45);
             buttonSaveMedal.TabIndex = 3;
             buttonSaveMedal.Text = "Сохранить";
             buttonSaveMedal.UseVisualStyleBackColor = true;
@@ -1596,11 +1600,12 @@
             // buttonWordMedal
             // 
             buttonWordMedal.FlatStyle = FlatStyle.Flat;
+            buttonWordMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonWordMedal.ForeColor = Color.Black;
-            buttonWordMedal.Location = new Point(4, 301);
+            buttonWordMedal.Location = new Point(10, 217);
             buttonWordMedal.Margin = new Padding(4, 3, 4, 3);
             buttonWordMedal.Name = "buttonWordMedal";
-            buttonWordMedal.Size = new Size(236, 67);
+            buttonWordMedal.Size = new Size(236, 45);
             buttonWordMedal.TabIndex = 4;
             buttonWordMedal.Text = "Вывод в Word";
             buttonWordMedal.UseVisualStyleBackColor = true;
@@ -1609,11 +1614,12 @@
             // buttonExcelMedal
             // 
             buttonExcelMedal.FlatStyle = FlatStyle.Flat;
+            buttonExcelMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonExcelMedal.ForeColor = Color.Black;
-            buttonExcelMedal.Location = new Point(4, 375);
+            buttonExcelMedal.Location = new Point(10, 268);
             buttonExcelMedal.Margin = new Padding(4, 3, 4, 3);
             buttonExcelMedal.Name = "buttonExcelMedal";
-            buttonExcelMedal.Size = new Size(236, 67);
+            buttonExcelMedal.Size = new Size(236, 45);
             buttonExcelMedal.TabIndex = 5;
             buttonExcelMedal.Text = "Вывод в Excel";
             buttonExcelMedal.UseVisualStyleBackColor = true;
@@ -1622,11 +1628,12 @@
             // buttonTXTMedal
             // 
             buttonTXTMedal.FlatStyle = FlatStyle.Flat;
+            buttonTXTMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonTXTMedal.ForeColor = Color.Black;
-            buttonTXTMedal.Location = new Point(4, 449);
+            buttonTXTMedal.Location = new Point(10, 319);
             buttonTXTMedal.Margin = new Padding(4, 3, 4, 3);
             buttonTXTMedal.Name = "buttonTXTMedal";
-            buttonTXTMedal.Size = new Size(236, 67);
+            buttonTXTMedal.Size = new Size(236, 45);
             buttonTXTMedal.TabIndex = 6;
             buttonTXTMedal.Text = "Вывод в TXT";
             buttonTXTMedal.UseVisualStyleBackColor = true;
@@ -1634,6 +1641,7 @@
             // 
             // tabPageVeteranMedals
             // 
+            tabPageVeteranMedals.BackgroundImage = (Image)resources.GetObject("tabPageVeteranMedals.BackgroundImage");
             tabPageVeteranMedals.Controls.Add(panelTitleVeteranMedals);
             tabPageVeteranMedals.Controls.Add(dataGridViewVeteranMedals);
             tabPageVeteranMedals.Controls.Add(panelRecordVeteranMedals);
@@ -1650,6 +1658,7 @@
             // 
             // panelTitleVeteranMedals
             // 
+            panelTitleVeteranMedals.Controls.Add(panel5);
             panelTitleVeteranMedals.Controls.Add(labelTitleVeteranMedals);
             panelTitleVeteranMedals.Controls.Add(buttonClearVeteranMedals);
             panelTitleVeteranMedals.Controls.Add(buttonRefreshVeteranMedals);
@@ -1657,7 +1666,7 @@
             panelTitleVeteranMedals.Location = new Point(0, 0);
             panelTitleVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             panelTitleVeteranMedals.Name = "panelTitleVeteranMedals";
-            panelTitleVeteranMedals.Size = new Size(876, 84);
+            panelTitleVeteranMedals.Size = new Size(889, 84);
             panelTitleVeteranMedals.TabIndex = 3;
             // 
             // labelTitleVeteranMedals
@@ -1678,10 +1687,10 @@
             buttonClearVeteranMedals.BackgroundImageLayout = ImageLayout.Stretch;
             buttonClearVeteranMedals.FlatStyle = FlatStyle.Flat;
             buttonClearVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearVeteranMedals.Location = new Point(528, 3);
+            buttonClearVeteranMedals.Location = new Point(479, 10);
             buttonClearVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             buttonClearVeteranMedals.Name = "buttonClearVeteranMedals";
-            buttonClearVeteranMedals.Size = new Size(78, 77);
+            buttonClearVeteranMedals.Size = new Size(60, 60);
             buttonClearVeteranMedals.TabIndex = 0;
             buttonClearVeteranMedals.UseVisualStyleBackColor = true;
             buttonClearVeteranMedals.Click += ButtonClear_Click;
@@ -1692,10 +1701,10 @@
             buttonRefreshVeteranMedals.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshVeteranMedals.FlatStyle = FlatStyle.Flat;
             buttonRefreshVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshVeteranMedals.Location = new Point(614, 3);
+            buttonRefreshVeteranMedals.Location = new Point(547, 10);
             buttonRefreshVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshVeteranMedals.Name = "buttonRefreshVeteranMedals";
-            buttonRefreshVeteranMedals.Size = new Size(78, 77);
+            buttonRefreshVeteranMedals.Size = new Size(60, 60);
             buttonRefreshVeteranMedals.TabIndex = 1;
             buttonRefreshVeteranMedals.UseVisualStyleBackColor = true;
             buttonRefreshVeteranMedals.Click += ButtonRefresh_Click;
@@ -1703,10 +1712,10 @@
             // textBoxSearchVeteranMedals
             // 
             textBoxSearchVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchVeteranMedals.Location = new Point(699, 37);
+            textBoxSearchVeteranMedals.Location = new Point(671, 25);
             textBoxSearchVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             textBoxSearchVeteranMedals.Name = "textBoxSearchVeteranMedals";
-            textBoxSearchVeteranMedals.Size = new Size(173, 33);
+            textBoxSearchVeteranMedals.Size = new Size(201, 33);
             textBoxSearchVeteranMedals.TabIndex = 2;
             textBoxSearchVeteranMedals.TextChanged += TextBoxSearchVeteranMedals_TextChanged;
             // 
@@ -1735,10 +1744,10 @@
             panelRecordVeteranMedals.Controls.Add(textBoxMedalIDVeteranMedals);
             panelRecordVeteranMedals.Controls.Add(labelAwardDate);
             panelRecordVeteranMedals.Controls.Add(dateTimePickerAwardDate);
-            panelRecordVeteranMedals.Location = new Point(9, 450);
+            panelRecordVeteranMedals.Location = new Point(7, 501);
             panelRecordVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             panelRecordVeteranMedals.Name = "panelRecordVeteranMedals";
-            panelRecordVeteranMedals.Size = new Size(611, 552);
+            panelRecordVeteranMedals.Size = new Size(611, 293);
             panelRecordVeteranMedals.TabIndex = 1;
             // 
             // labelRecordVeteranMedals
@@ -1756,80 +1765,84 @@
             // labelVeteranMedalID
             // 
             labelVeteranMedalID.AutoSize = true;
+            labelVeteranMedalID.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelVeteranMedalID.ForeColor = Color.Black;
-            labelVeteranMedalID.Location = new Point(93, 82);
+            labelVeteranMedalID.Location = new Point(95, 74);
             labelVeteranMedalID.Margin = new Padding(4, 0, 4, 0);
             labelVeteranMedalID.Name = "labelVeteranMedalID";
-            labelVeteranMedalID.Size = new Size(48, 15);
+            labelVeteranMedalID.Size = new Size(62, 20);
             labelVeteranMedalID.TabIndex = 5;
             labelVeteranMedalID.Text = "Номер:";
             // 
             // textBoxVeteranMedalID
             // 
             textBoxVeteranMedalID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxVeteranMedalID.Location = new Point(152, 68);
+            textBoxVeteranMedalID.Location = new Point(165, 67);
             textBoxVeteranMedalID.Margin = new Padding(4, 3, 4, 3);
             textBoxVeteranMedalID.Name = "textBoxVeteranMedalID";
-            textBoxVeteranMedalID.Size = new Size(455, 33);
+            textBoxVeteranMedalID.Size = new Size(433, 33);
             textBoxVeteranMedalID.TabIndex = 0;
             // 
             // labelVeteranIDVeteranMedals
             // 
             labelVeteranIDVeteranMedals.AutoSize = true;
+            labelVeteranIDVeteranMedals.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelVeteranIDVeteranMedals.ForeColor = Color.Black;
-            labelVeteranIDVeteranMedals.Location = new Point(87, 124);
+            labelVeteranIDVeteranMedals.Location = new Point(85, 119);
             labelVeteranIDVeteranMedals.Margin = new Padding(4, 0, 4, 0);
             labelVeteranIDVeteranMedals.Name = "labelVeteranIDVeteranMedals";
-            labelVeteranIDVeteranMedals.Size = new Size(54, 15);
+            labelVeteranIDVeteranMedals.Size = new Size(72, 20);
             labelVeteranIDVeteranMedals.TabIndex = 6;
             labelVeteranIDVeteranMedals.Text = "Ветеран:";
             // 
             // textBoxVeteranIDVeteranMedals
             // 
             textBoxVeteranIDVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxVeteranIDVeteranMedals.Location = new Point(152, 113);
+            textBoxVeteranIDVeteranMedals.Location = new Point(165, 112);
             textBoxVeteranIDVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             textBoxVeteranIDVeteranMedals.Name = "textBoxVeteranIDVeteranMedals";
-            textBoxVeteranIDVeteranMedals.Size = new Size(455, 33);
+            textBoxVeteranIDVeteranMedals.Size = new Size(433, 33);
             textBoxVeteranIDVeteranMedals.TabIndex = 1;
             // 
             // labelMedalIDVeteranMedals
             // 
             labelMedalIDVeteranMedals.AutoSize = true;
+            labelMedalIDVeteranMedals.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelMedalIDVeteranMedals.ForeColor = Color.Black;
-            labelMedalIDVeteranMedals.Location = new Point(89, 169);
+            labelMedalIDVeteranMedals.Location = new Point(85, 164);
             labelMedalIDVeteranMedals.Margin = new Padding(4, 0, 4, 0);
             labelMedalIDVeteranMedals.Name = "labelMedalIDVeteranMedals";
-            labelMedalIDVeteranMedals.Size = new Size(52, 15);
+            labelMedalIDVeteranMedals.Size = new Size(69, 20);
             labelMedalIDVeteranMedals.TabIndex = 7;
             labelMedalIDVeteranMedals.Text = "Медаль:";
             // 
             // textBoxMedalIDVeteranMedals
             // 
             textBoxMedalIDVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMedalIDVeteranMedals.Location = new Point(152, 158);
+            textBoxMedalIDVeteranMedals.Location = new Point(165, 157);
             textBoxMedalIDVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             textBoxMedalIDVeteranMedals.Name = "textBoxMedalIDVeteranMedals";
-            textBoxMedalIDVeteranMedals.Size = new Size(455, 33);
+            textBoxMedalIDVeteranMedals.Size = new Size(433, 33);
             textBoxMedalIDVeteranMedals.TabIndex = 2;
             // 
             // labelAwardDate
             // 
             labelAwardDate.AutoSize = true;
+            labelAwardDate.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelAwardDate.ForeColor = Color.Black;
-            labelAwardDate.Location = new Point(31, 217);
+            labelAwardDate.Location = new Point(8, 211);
             labelAwardDate.Margin = new Padding(4, 0, 4, 0);
             labelAwardDate.Name = "labelAwardDate";
-            labelAwardDate.Size = new Size(110, 15);
+            labelAwardDate.Size = new Size(149, 20);
             labelAwardDate.TabIndex = 8;
             labelAwardDate.Text = "Дата награждения:";
             // 
             // dateTimePickerAwardDate
             // 
             dateTimePickerAwardDate.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerAwardDate.Location = new Point(152, 203);
+            dateTimePickerAwardDate.Location = new Point(165, 202);
             dateTimePickerAwardDate.Name = "dateTimePickerAwardDate";
-            dateTimePickerAwardDate.Size = new Size(455, 33);
+            dateTimePickerAwardDate.Size = new Size(433, 33);
             dateTimePickerAwardDate.TabIndex = 3;
             // 
             // labelControlVeteranMedals
@@ -1838,7 +1851,7 @@
             labelControlVeteranMedals.BackColor = Color.Transparent;
             labelControlVeteranMedals.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             labelControlVeteranMedals.ForeColor = Color.Black;
-            labelControlVeteranMedals.Location = new Point(636, 456);
+            labelControlVeteranMedals.Location = new Point(645, 453);
             labelControlVeteranMedals.Margin = new Padding(4, 0, 4, 0);
             labelControlVeteranMedals.Name = "labelControlVeteranMedals";
             labelControlVeteranMedals.Size = new Size(213, 25);
@@ -1854,20 +1867,21 @@
             panelControlVeteranMedals.Controls.Add(buttonWordVeteranMedal);
             panelControlVeteranMedals.Controls.Add(buttonExcelVeteranMedal);
             panelControlVeteranMedals.Controls.Add(buttonTXTVeteranMedal);
-            panelControlVeteranMedals.Location = new Point(634, 482);
+            panelControlVeteranMedals.Location = new Point(626, 481);
             panelControlVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             panelControlVeteranMedals.Name = "panelControlVeteranMedals";
-            panelControlVeteranMedals.Size = new Size(243, 520);
+            panelControlVeteranMedals.Size = new Size(255, 373);
             panelControlVeteranMedals.TabIndex = 2;
             // 
             // buttonNewVeteranMedal
             // 
             buttonNewVeteranMedal.FlatStyle = FlatStyle.Flat;
+            buttonNewVeteranMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonNewVeteranMedal.ForeColor = Color.Black;
-            buttonNewVeteranMedal.Location = new Point(4, 3);
+            buttonNewVeteranMedal.Location = new Point(10, 13);
             buttonNewVeteranMedal.Margin = new Padding(4, 3, 4, 3);
             buttonNewVeteranMedal.Name = "buttonNewVeteranMedal";
-            buttonNewVeteranMedal.Size = new Size(236, 67);
+            buttonNewVeteranMedal.Size = new Size(236, 45);
             buttonNewVeteranMedal.TabIndex = 0;
             buttonNewVeteranMedal.Text = "Новая запись";
             buttonNewVeteranMedal.UseVisualStyleBackColor = true;
@@ -1876,11 +1890,12 @@
             // buttonDeleteVeteranMedal
             // 
             buttonDeleteVeteranMedal.FlatStyle = FlatStyle.Flat;
+            buttonDeleteVeteranMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonDeleteVeteranMedal.ForeColor = Color.Black;
-            buttonDeleteVeteranMedal.Location = new Point(4, 78);
+            buttonDeleteVeteranMedal.Location = new Point(10, 64);
             buttonDeleteVeteranMedal.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteVeteranMedal.Name = "buttonDeleteVeteranMedal";
-            buttonDeleteVeteranMedal.Size = new Size(236, 67);
+            buttonDeleteVeteranMedal.Size = new Size(236, 45);
             buttonDeleteVeteranMedal.TabIndex = 1;
             buttonDeleteVeteranMedal.Text = "Удалить";
             buttonDeleteVeteranMedal.UseVisualStyleBackColor = true;
@@ -1889,11 +1904,12 @@
             // buttonChangeVeteranMedal
             // 
             buttonChangeVeteranMedal.FlatStyle = FlatStyle.Flat;
+            buttonChangeVeteranMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonChangeVeteranMedal.ForeColor = Color.Black;
-            buttonChangeVeteranMedal.Location = new Point(4, 152);
+            buttonChangeVeteranMedal.Location = new Point(10, 115);
             buttonChangeVeteranMedal.Margin = new Padding(4, 3, 4, 3);
             buttonChangeVeteranMedal.Name = "buttonChangeVeteranMedal";
-            buttonChangeVeteranMedal.Size = new Size(236, 67);
+            buttonChangeVeteranMedal.Size = new Size(236, 45);
             buttonChangeVeteranMedal.TabIndex = 2;
             buttonChangeVeteranMedal.Text = "Изменить";
             buttonChangeVeteranMedal.UseVisualStyleBackColor = true;
@@ -1902,11 +1918,12 @@
             // buttonSaveVeteranMedal
             // 
             buttonSaveVeteranMedal.FlatStyle = FlatStyle.Flat;
+            buttonSaveVeteranMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonSaveVeteranMedal.ForeColor = Color.Black;
-            buttonSaveVeteranMedal.Location = new Point(4, 226);
+            buttonSaveVeteranMedal.Location = new Point(10, 166);
             buttonSaveVeteranMedal.Margin = new Padding(4, 3, 4, 3);
             buttonSaveVeteranMedal.Name = "buttonSaveVeteranMedal";
-            buttonSaveVeteranMedal.Size = new Size(236, 67);
+            buttonSaveVeteranMedal.Size = new Size(236, 45);
             buttonSaveVeteranMedal.TabIndex = 3;
             buttonSaveVeteranMedal.Text = "Сохранить";
             buttonSaveVeteranMedal.UseVisualStyleBackColor = true;
@@ -1915,11 +1932,12 @@
             // buttonWordVeteranMedal
             // 
             buttonWordVeteranMedal.FlatStyle = FlatStyle.Flat;
+            buttonWordVeteranMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonWordVeteranMedal.ForeColor = Color.Black;
-            buttonWordVeteranMedal.Location = new Point(4, 301);
+            buttonWordVeteranMedal.Location = new Point(10, 217);
             buttonWordVeteranMedal.Margin = new Padding(4, 3, 4, 3);
             buttonWordVeteranMedal.Name = "buttonWordVeteranMedal";
-            buttonWordVeteranMedal.Size = new Size(236, 67);
+            buttonWordVeteranMedal.Size = new Size(236, 45);
             buttonWordVeteranMedal.TabIndex = 4;
             buttonWordVeteranMedal.Text = "Вывод в Word";
             buttonWordVeteranMedal.UseVisualStyleBackColor = true;
@@ -1928,11 +1946,12 @@
             // buttonExcelVeteranMedal
             // 
             buttonExcelVeteranMedal.FlatStyle = FlatStyle.Flat;
+            buttonExcelVeteranMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonExcelVeteranMedal.ForeColor = Color.Black;
-            buttonExcelVeteranMedal.Location = new Point(4, 375);
+            buttonExcelVeteranMedal.Location = new Point(10, 268);
             buttonExcelVeteranMedal.Margin = new Padding(4, 3, 4, 3);
             buttonExcelVeteranMedal.Name = "buttonExcelVeteranMedal";
-            buttonExcelVeteranMedal.Size = new Size(236, 67);
+            buttonExcelVeteranMedal.Size = new Size(236, 45);
             buttonExcelVeteranMedal.TabIndex = 5;
             buttonExcelVeteranMedal.Text = "Вывод в Excel";
             buttonExcelVeteranMedal.UseVisualStyleBackColor = true;
@@ -1941,11 +1960,12 @@
             // buttonTXTVeteranMedal
             // 
             buttonTXTVeteranMedal.FlatStyle = FlatStyle.Flat;
+            buttonTXTVeteranMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonTXTVeteranMedal.ForeColor = Color.Black;
-            buttonTXTVeteranMedal.Location = new Point(4, 449);
+            buttonTXTVeteranMedal.Location = new Point(10, 319);
             buttonTXTVeteranMedal.Margin = new Padding(4, 3, 4, 3);
             buttonTXTVeteranMedal.Name = "buttonTXTVeteranMedal";
-            buttonTXTVeteranMedal.Size = new Size(236, 67);
+            buttonTXTVeteranMedal.Size = new Size(236, 45);
             buttonTXTVeteranMedal.TabIndex = 6;
             buttonTXTVeteranMedal.Text = "Вывод в TXT";
             buttonTXTVeteranMedal.UseVisualStyleBackColor = true;
@@ -1953,6 +1973,8 @@
             // 
             // tabPageMilitaryEquipment
             // 
+            tabPageMilitaryEquipment.BackgroundImage = (Image)resources.GetObject("tabPageMilitaryEquipment.BackgroundImage");
+            tabPageMilitaryEquipment.BackgroundImageLayout = ImageLayout.None;
             tabPageMilitaryEquipment.Controls.Add(panelTitleMilitaryEquipment);
             tabPageMilitaryEquipment.Controls.Add(dataGridViewMilitaryEquipment);
             tabPageMilitaryEquipment.Controls.Add(panelRecordMilitaryEquipment);
@@ -1969,6 +1991,7 @@
             // 
             // panelTitleMilitaryEquipment
             // 
+            panelTitleMilitaryEquipment.Controls.Add(panel6);
             panelTitleMilitaryEquipment.Controls.Add(labelTitleMilitaryEquipment);
             panelTitleMilitaryEquipment.Controls.Add(buttonClearMilitaryEquipment);
             panelTitleMilitaryEquipment.Controls.Add(buttonRefreshMilitaryEquipment);
@@ -1976,7 +1999,7 @@
             panelTitleMilitaryEquipment.Location = new Point(0, 0);
             panelTitleMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             panelTitleMilitaryEquipment.Name = "panelTitleMilitaryEquipment";
-            panelTitleMilitaryEquipment.Size = new Size(876, 84);
+            panelTitleMilitaryEquipment.Size = new Size(889, 84);
             panelTitleMilitaryEquipment.TabIndex = 3;
             // 
             // labelTitleMilitaryEquipment
@@ -1997,10 +2020,10 @@
             buttonClearMilitaryEquipment.BackgroundImageLayout = ImageLayout.Stretch;
             buttonClearMilitaryEquipment.FlatStyle = FlatStyle.Flat;
             buttonClearMilitaryEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearMilitaryEquipment.Location = new Point(528, 3);
+            buttonClearMilitaryEquipment.Location = new Point(409, 10);
             buttonClearMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonClearMilitaryEquipment.Name = "buttonClearMilitaryEquipment";
-            buttonClearMilitaryEquipment.Size = new Size(78, 77);
+            buttonClearMilitaryEquipment.Size = new Size(60, 60);
             buttonClearMilitaryEquipment.TabIndex = 0;
             buttonClearMilitaryEquipment.UseVisualStyleBackColor = true;
             buttonClearMilitaryEquipment.Click += ButtonClear_Click;
@@ -2011,10 +2034,10 @@
             buttonRefreshMilitaryEquipment.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshMilitaryEquipment.FlatStyle = FlatStyle.Flat;
             buttonRefreshMilitaryEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshMilitaryEquipment.Location = new Point(614, 3);
+            buttonRefreshMilitaryEquipment.Location = new Point(477, 10);
             buttonRefreshMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshMilitaryEquipment.Name = "buttonRefreshMilitaryEquipment";
-            buttonRefreshMilitaryEquipment.Size = new Size(78, 77);
+            buttonRefreshMilitaryEquipment.Size = new Size(60, 60);
             buttonRefreshMilitaryEquipment.TabIndex = 1;
             buttonRefreshMilitaryEquipment.UseVisualStyleBackColor = true;
             buttonRefreshMilitaryEquipment.Click += ButtonRefresh_Click;
@@ -2022,10 +2045,10 @@
             // textBoxSearchMilitaryEquipment
             // 
             textBoxSearchMilitaryEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchMilitaryEquipment.Location = new Point(699, 37);
+            textBoxSearchMilitaryEquipment.Location = new Point(671, 25);
             textBoxSearchMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             textBoxSearchMilitaryEquipment.Name = "textBoxSearchMilitaryEquipment";
-            textBoxSearchMilitaryEquipment.Size = new Size(173, 33);
+            textBoxSearchMilitaryEquipment.Size = new Size(201, 33);
             textBoxSearchMilitaryEquipment.TabIndex = 2;
             textBoxSearchMilitaryEquipment.TextChanged += TextBoxSearchMilitaryEquipment_TextChanged;
             // 
@@ -2054,10 +2077,10 @@
             panelRecordMilitaryEquipment.Controls.Add(textBoxEquipmentType);
             panelRecordMilitaryEquipment.Controls.Add(labelDescriptionMilitaryEquipment);
             panelRecordMilitaryEquipment.Controls.Add(textBoxDescriptionMilitaryEquipment);
-            panelRecordMilitaryEquipment.Location = new Point(9, 450);
+            panelRecordMilitaryEquipment.Location = new Point(7, 504);
             panelRecordMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             panelRecordMilitaryEquipment.Name = "panelRecordMilitaryEquipment";
-            panelRecordMilitaryEquipment.Size = new Size(611, 552);
+            panelRecordMilitaryEquipment.Size = new Size(611, 300);
             panelRecordMilitaryEquipment.TabIndex = 1;
             // 
             // labelRecordMilitaryEquipment
@@ -2075,81 +2098,85 @@
             // labelMilitaryEquipmentID
             // 
             labelMilitaryEquipmentID.AutoSize = true;
+            labelMilitaryEquipmentID.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelMilitaryEquipmentID.ForeColor = Color.Black;
-            labelMilitaryEquipmentID.Location = new Point(98, 79);
+            labelMilitaryEquipmentID.Location = new Point(84, 84);
             labelMilitaryEquipmentID.Margin = new Padding(4, 0, 4, 0);
             labelMilitaryEquipmentID.Name = "labelMilitaryEquipmentID";
-            labelMilitaryEquipmentID.Size = new Size(48, 15);
+            labelMilitaryEquipmentID.Size = new Size(62, 20);
             labelMilitaryEquipmentID.TabIndex = 5;
             labelMilitaryEquipmentID.Text = "Номер:";
             // 
             // textBoxMilitaryEquipmentID
             // 
             textBoxMilitaryEquipmentID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMilitaryEquipmentID.Location = new Point(152, 68);
+            textBoxMilitaryEquipmentID.Location = new Point(154, 77);
             textBoxMilitaryEquipmentID.Margin = new Padding(4, 3, 4, 3);
             textBoxMilitaryEquipmentID.Name = "textBoxMilitaryEquipmentID";
-            textBoxMilitaryEquipmentID.Size = new Size(455, 33);
+            textBoxMilitaryEquipmentID.Size = new Size(425, 33);
             textBoxMilitaryEquipmentID.TabIndex = 0;
             // 
             // labelEquipmentName
             // 
             labelEquipmentName.AutoSize = true;
+            labelEquipmentName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelEquipmentName.ForeColor = Color.Black;
-            labelEquipmentName.Location = new Point(53, 124);
+            labelEquipmentName.Location = new Point(24, 126);
             labelEquipmentName.Margin = new Padding(4, 0, 4, 0);
             labelEquipmentName.Name = "labelEquipmentName";
-            labelEquipmentName.Size = new Size(93, 15);
+            labelEquipmentName.Size = new Size(122, 20);
             labelEquipmentName.TabIndex = 6;
             labelEquipmentName.Text = "Наименование:";
             // 
             // textBoxEquipmentName
             // 
             textBoxEquipmentName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEquipmentName.Location = new Point(152, 113);
+            textBoxEquipmentName.Location = new Point(154, 122);
             textBoxEquipmentName.Margin = new Padding(4, 3, 4, 3);
             textBoxEquipmentName.Name = "textBoxEquipmentName";
-            textBoxEquipmentName.Size = new Size(455, 33);
+            textBoxEquipmentName.Size = new Size(425, 33);
             textBoxEquipmentName.TabIndex = 1;
             // 
             // labelEquipmentType
             // 
             labelEquipmentType.AutoSize = true;
+            labelEquipmentType.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelEquipmentType.ForeColor = Color.Black;
-            labelEquipmentType.Location = new Point(69, 169);
+            labelEquipmentType.Location = new Point(45, 174);
             labelEquipmentType.Margin = new Padding(4, 0, 4, 0);
             labelEquipmentType.Name = "labelEquipmentType";
-            labelEquipmentType.Size = new Size(77, 15);
+            labelEquipmentType.Size = new Size(101, 20);
             labelEquipmentType.TabIndex = 7;
             labelEquipmentType.Text = "Тип техники:";
             // 
             // textBoxEquipmentType
             // 
             textBoxEquipmentType.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEquipmentType.Location = new Point(152, 158);
+            textBoxEquipmentType.Location = new Point(154, 167);
             textBoxEquipmentType.Margin = new Padding(4, 3, 4, 3);
             textBoxEquipmentType.Name = "textBoxEquipmentType";
-            textBoxEquipmentType.Size = new Size(455, 33);
+            textBoxEquipmentType.Size = new Size(425, 33);
             textBoxEquipmentType.TabIndex = 2;
             // 
             // labelDescriptionMilitaryEquipment
             // 
             labelDescriptionMilitaryEquipment.AutoSize = true;
+            labelDescriptionMilitaryEquipment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelDescriptionMilitaryEquipment.ForeColor = Color.Black;
-            labelDescriptionMilitaryEquipment.Location = new Point(81, 217);
+            labelDescriptionMilitaryEquipment.Location = new Point(63, 222);
             labelDescriptionMilitaryEquipment.Margin = new Padding(4, 0, 4, 0);
             labelDescriptionMilitaryEquipment.Name = "labelDescriptionMilitaryEquipment";
-            labelDescriptionMilitaryEquipment.Size = new Size(65, 15);
+            labelDescriptionMilitaryEquipment.Size = new Size(83, 20);
             labelDescriptionMilitaryEquipment.TabIndex = 8;
             labelDescriptionMilitaryEquipment.Text = "Описание:";
             // 
             // textBoxDescriptionMilitaryEquipment
             // 
             textBoxDescriptionMilitaryEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxDescriptionMilitaryEquipment.Location = new Point(152, 206);
+            textBoxDescriptionMilitaryEquipment.Location = new Point(154, 215);
             textBoxDescriptionMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             textBoxDescriptionMilitaryEquipment.Name = "textBoxDescriptionMilitaryEquipment";
-            textBoxDescriptionMilitaryEquipment.Size = new Size(455, 33);
+            textBoxDescriptionMilitaryEquipment.Size = new Size(425, 33);
             textBoxDescriptionMilitaryEquipment.TabIndex = 3;
             // 
             // labelControlMilitaryEquipment
@@ -2158,7 +2185,7 @@
             labelControlMilitaryEquipment.BackColor = Color.Transparent;
             labelControlMilitaryEquipment.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             labelControlMilitaryEquipment.ForeColor = Color.Black;
-            labelControlMilitaryEquipment.Location = new Point(636, 456);
+            labelControlMilitaryEquipment.Location = new Point(645, 453);
             labelControlMilitaryEquipment.Margin = new Padding(4, 0, 4, 0);
             labelControlMilitaryEquipment.Name = "labelControlMilitaryEquipment";
             labelControlMilitaryEquipment.Size = new Size(213, 25);
@@ -2174,20 +2201,21 @@
             panelControlMilitaryEquipment.Controls.Add(buttonWordMilitaryEquipment);
             panelControlMilitaryEquipment.Controls.Add(buttonExcelMilitaryEquipment);
             panelControlMilitaryEquipment.Controls.Add(buttonTXTMilitaryEquipment);
-            panelControlMilitaryEquipment.Location = new Point(634, 482);
+            panelControlMilitaryEquipment.Location = new Point(626, 481);
             panelControlMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             panelControlMilitaryEquipment.Name = "panelControlMilitaryEquipment";
-            panelControlMilitaryEquipment.Size = new Size(243, 520);
+            panelControlMilitaryEquipment.Size = new Size(255, 373);
             panelControlMilitaryEquipment.TabIndex = 2;
             // 
             // buttonNewMilitaryEquipment
             // 
             buttonNewMilitaryEquipment.FlatStyle = FlatStyle.Flat;
+            buttonNewMilitaryEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonNewMilitaryEquipment.ForeColor = Color.Black;
-            buttonNewMilitaryEquipment.Location = new Point(4, 3);
+            buttonNewMilitaryEquipment.Location = new Point(10, 10);
             buttonNewMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonNewMilitaryEquipment.Name = "buttonNewMilitaryEquipment";
-            buttonNewMilitaryEquipment.Size = new Size(236, 67);
+            buttonNewMilitaryEquipment.Size = new Size(236, 45);
             buttonNewMilitaryEquipment.TabIndex = 0;
             buttonNewMilitaryEquipment.Text = "Новая запись";
             buttonNewMilitaryEquipment.UseVisualStyleBackColor = true;
@@ -2196,11 +2224,12 @@
             // buttonDeleteMilitaryEquipment
             // 
             buttonDeleteMilitaryEquipment.FlatStyle = FlatStyle.Flat;
+            buttonDeleteMilitaryEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonDeleteMilitaryEquipment.ForeColor = Color.Black;
-            buttonDeleteMilitaryEquipment.Location = new Point(4, 78);
+            buttonDeleteMilitaryEquipment.Location = new Point(10, 61);
             buttonDeleteMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteMilitaryEquipment.Name = "buttonDeleteMilitaryEquipment";
-            buttonDeleteMilitaryEquipment.Size = new Size(236, 67);
+            buttonDeleteMilitaryEquipment.Size = new Size(236, 45);
             buttonDeleteMilitaryEquipment.TabIndex = 1;
             buttonDeleteMilitaryEquipment.Text = "Удалить";
             buttonDeleteMilitaryEquipment.UseVisualStyleBackColor = true;
@@ -2209,11 +2238,12 @@
             // buttonChangeMilitaryEquipment
             // 
             buttonChangeMilitaryEquipment.FlatStyle = FlatStyle.Flat;
+            buttonChangeMilitaryEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonChangeMilitaryEquipment.ForeColor = Color.Black;
-            buttonChangeMilitaryEquipment.Location = new Point(4, 152);
+            buttonChangeMilitaryEquipment.Location = new Point(10, 112);
             buttonChangeMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonChangeMilitaryEquipment.Name = "buttonChangeMilitaryEquipment";
-            buttonChangeMilitaryEquipment.Size = new Size(236, 67);
+            buttonChangeMilitaryEquipment.Size = new Size(236, 45);
             buttonChangeMilitaryEquipment.TabIndex = 2;
             buttonChangeMilitaryEquipment.Text = "Изменить";
             buttonChangeMilitaryEquipment.UseVisualStyleBackColor = true;
@@ -2222,11 +2252,12 @@
             // buttonSaveMilitaryEquipment
             // 
             buttonSaveMilitaryEquipment.FlatStyle = FlatStyle.Flat;
+            buttonSaveMilitaryEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonSaveMilitaryEquipment.ForeColor = Color.Black;
-            buttonSaveMilitaryEquipment.Location = new Point(4, 226);
+            buttonSaveMilitaryEquipment.Location = new Point(10, 163);
             buttonSaveMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonSaveMilitaryEquipment.Name = "buttonSaveMilitaryEquipment";
-            buttonSaveMilitaryEquipment.Size = new Size(236, 67);
+            buttonSaveMilitaryEquipment.Size = new Size(236, 45);
             buttonSaveMilitaryEquipment.TabIndex = 3;
             buttonSaveMilitaryEquipment.Text = "Сохранить";
             buttonSaveMilitaryEquipment.UseVisualStyleBackColor = true;
@@ -2235,11 +2266,12 @@
             // buttonWordMilitaryEquipment
             // 
             buttonWordMilitaryEquipment.FlatStyle = FlatStyle.Flat;
+            buttonWordMilitaryEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonWordMilitaryEquipment.ForeColor = Color.Black;
-            buttonWordMilitaryEquipment.Location = new Point(4, 301);
+            buttonWordMilitaryEquipment.Location = new Point(10, 214);
             buttonWordMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonWordMilitaryEquipment.Name = "buttonWordMilitaryEquipment";
-            buttonWordMilitaryEquipment.Size = new Size(236, 67);
+            buttonWordMilitaryEquipment.Size = new Size(236, 45);
             buttonWordMilitaryEquipment.TabIndex = 4;
             buttonWordMilitaryEquipment.Text = "Вывод в Word";
             buttonWordMilitaryEquipment.UseVisualStyleBackColor = true;
@@ -2248,11 +2280,12 @@
             // buttonExcelMilitaryEquipment
             // 
             buttonExcelMilitaryEquipment.FlatStyle = FlatStyle.Flat;
+            buttonExcelMilitaryEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonExcelMilitaryEquipment.ForeColor = Color.Black;
-            buttonExcelMilitaryEquipment.Location = new Point(4, 375);
+            buttonExcelMilitaryEquipment.Location = new Point(10, 265);
             buttonExcelMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonExcelMilitaryEquipment.Name = "buttonExcelMilitaryEquipment";
-            buttonExcelMilitaryEquipment.Size = new Size(236, 67);
+            buttonExcelMilitaryEquipment.Size = new Size(236, 45);
             buttonExcelMilitaryEquipment.TabIndex = 5;
             buttonExcelMilitaryEquipment.Text = "Вывод в Excel";
             buttonExcelMilitaryEquipment.UseVisualStyleBackColor = true;
@@ -2261,11 +2294,12 @@
             // buttonTXTMilitaryEquipment
             // 
             buttonTXTMilitaryEquipment.FlatStyle = FlatStyle.Flat;
+            buttonTXTMilitaryEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonTXTMilitaryEquipment.ForeColor = Color.Black;
-            buttonTXTMilitaryEquipment.Location = new Point(4, 449);
+            buttonTXTMilitaryEquipment.Location = new Point(10, 316);
             buttonTXTMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonTXTMilitaryEquipment.Name = "buttonTXTMilitaryEquipment";
-            buttonTXTMilitaryEquipment.Size = new Size(236, 67);
+            buttonTXTMilitaryEquipment.Size = new Size(236, 45);
             buttonTXTMilitaryEquipment.TabIndex = 6;
             buttonTXTMilitaryEquipment.Text = "Вывод в TXT";
             buttonTXTMilitaryEquipment.UseVisualStyleBackColor = true;
@@ -2273,6 +2307,8 @@
             // 
             // tabPageMilitaryRoutes
             // 
+            tabPageMilitaryRoutes.BackgroundImage = (Image)resources.GetObject("tabPageMilitaryRoutes.BackgroundImage");
+            tabPageMilitaryRoutes.BackgroundImageLayout = ImageLayout.None;
             tabPageMilitaryRoutes.Controls.Add(panelTitleMilitaryRoutes);
             tabPageMilitaryRoutes.Controls.Add(dataGridViewMilitaryRoutes);
             tabPageMilitaryRoutes.Controls.Add(panelRecordMilitaryRoutes);
@@ -2289,6 +2325,7 @@
             // 
             // panelTitleMilitaryRoutes
             // 
+            panelTitleMilitaryRoutes.Controls.Add(panel7);
             panelTitleMilitaryRoutes.Controls.Add(buttonReportMilitaryRoutes);
             panelTitleMilitaryRoutes.Controls.Add(labelTitleMilitaryRoutes);
             panelTitleMilitaryRoutes.Controls.Add(buttonClearMilitaryRoutes);
@@ -2297,7 +2334,7 @@
             panelTitleMilitaryRoutes.Location = new Point(0, 0);
             panelTitleMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             panelTitleMilitaryRoutes.Name = "panelTitleMilitaryRoutes";
-            panelTitleMilitaryRoutes.Size = new Size(876, 84);
+            panelTitleMilitaryRoutes.Size = new Size(889, 84);
             panelTitleMilitaryRoutes.TabIndex = 3;
             // 
             // buttonReportMilitaryRoutes
@@ -2306,10 +2343,10 @@
             buttonReportMilitaryRoutes.BackgroundImageLayout = ImageLayout.Stretch;
             buttonReportMilitaryRoutes.FlatStyle = FlatStyle.Flat;
             buttonReportMilitaryRoutes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonReportMilitaryRoutes.Location = new Point(442, 3);
+            buttonReportMilitaryRoutes.Location = new Point(447, 10);
             buttonReportMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             buttonReportMilitaryRoutes.Name = "buttonReportMilitaryRoutes";
-            buttonReportMilitaryRoutes.Size = new Size(78, 77);
+            buttonReportMilitaryRoutes.Size = new Size(60, 60);
             buttonReportMilitaryRoutes.TabIndex = 5;
             buttonReportMilitaryRoutes.UseVisualStyleBackColor = true;
             buttonReportMilitaryRoutes.Click += ButtonReportMilitaryRoutes_Click;
@@ -2332,10 +2369,10 @@
             buttonClearMilitaryRoutes.BackgroundImageLayout = ImageLayout.Stretch;
             buttonClearMilitaryRoutes.FlatStyle = FlatStyle.Flat;
             buttonClearMilitaryRoutes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearMilitaryRoutes.Location = new Point(528, 3);
+            buttonClearMilitaryRoutes.Location = new Point(515, 10);
             buttonClearMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             buttonClearMilitaryRoutes.Name = "buttonClearMilitaryRoutes";
-            buttonClearMilitaryRoutes.Size = new Size(78, 77);
+            buttonClearMilitaryRoutes.Size = new Size(60, 60);
             buttonClearMilitaryRoutes.TabIndex = 0;
             buttonClearMilitaryRoutes.UseVisualStyleBackColor = true;
             buttonClearMilitaryRoutes.Click += ButtonClear_Click;
@@ -2346,10 +2383,10 @@
             buttonRefreshMilitaryRoutes.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshMilitaryRoutes.FlatStyle = FlatStyle.Flat;
             buttonRefreshMilitaryRoutes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshMilitaryRoutes.Location = new Point(614, 3);
+            buttonRefreshMilitaryRoutes.Location = new Point(583, 10);
             buttonRefreshMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshMilitaryRoutes.Name = "buttonRefreshMilitaryRoutes";
-            buttonRefreshMilitaryRoutes.Size = new Size(78, 77);
+            buttonRefreshMilitaryRoutes.Size = new Size(60, 60);
             buttonRefreshMilitaryRoutes.TabIndex = 1;
             buttonRefreshMilitaryRoutes.UseVisualStyleBackColor = true;
             buttonRefreshMilitaryRoutes.Click += ButtonRefresh_Click;
@@ -2357,7 +2394,7 @@
             // textBoxSearchMilitaryRoutes
             // 
             textBoxSearchMilitaryRoutes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchMilitaryRoutes.Location = new Point(699, 37);
+            textBoxSearchMilitaryRoutes.Location = new Point(708, 29);
             textBoxSearchMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             textBoxSearchMilitaryRoutes.Name = "textBoxSearchMilitaryRoutes";
             textBoxSearchMilitaryRoutes.Size = new Size(173, 33);
@@ -2391,10 +2428,10 @@
             panelRecordMilitaryRoutes.Controls.Add(textBoxEndLocation);
             panelRecordMilitaryRoutes.Controls.Add(labelDescriptionMilitaryRoutes);
             panelRecordMilitaryRoutes.Controls.Add(textBoxDescriptionMilitaryRoutes);
-            panelRecordMilitaryRoutes.Location = new Point(9, 450);
+            panelRecordMilitaryRoutes.Location = new Point(7, 507);
             panelRecordMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             panelRecordMilitaryRoutes.Name = "panelRecordMilitaryRoutes";
-            panelRecordMilitaryRoutes.Size = new Size(611, 552);
+            panelRecordMilitaryRoutes.Size = new Size(611, 300);
             panelRecordMilitaryRoutes.TabIndex = 1;
             // 
             // labelRecordMilitaryRoutes
@@ -2412,101 +2449,106 @@
             // labelMilitaryRouteID
             // 
             labelMilitaryRouteID.AutoSize = true;
+            labelMilitaryRouteID.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelMilitaryRouteID.ForeColor = Color.Black;
-            labelMilitaryRouteID.Location = new Point(98, 79);
+            labelMilitaryRouteID.Location = new Point(96, 72);
             labelMilitaryRouteID.Margin = new Padding(4, 0, 4, 0);
             labelMilitaryRouteID.Name = "labelMilitaryRouteID";
-            labelMilitaryRouteID.Size = new Size(48, 15);
+            labelMilitaryRouteID.Size = new Size(62, 20);
             labelMilitaryRouteID.TabIndex = 6;
             labelMilitaryRouteID.Text = "Номер:";
             // 
             // textBoxMilitaryRouteID
             // 
             textBoxMilitaryRouteID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMilitaryRouteID.Location = new Point(152, 68);
+            textBoxMilitaryRouteID.Location = new Point(166, 65);
             textBoxMilitaryRouteID.Margin = new Padding(4, 3, 4, 3);
             textBoxMilitaryRouteID.Name = "textBoxMilitaryRouteID";
-            textBoxMilitaryRouteID.Size = new Size(455, 33);
+            textBoxMilitaryRouteID.Size = new Size(419, 33);
             textBoxMilitaryRouteID.TabIndex = 0;
             // 
             // labelRouteName
             // 
             labelRouteName.AutoSize = true;
+            labelRouteName.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelRouteName.ForeColor = Color.Black;
-            labelRouteName.Location = new Point(53, 124);
+            labelRouteName.Location = new Point(36, 117);
             labelRouteName.Margin = new Padding(4, 0, 4, 0);
             labelRouteName.Name = "labelRouteName";
-            labelRouteName.Size = new Size(93, 15);
+            labelRouteName.Size = new Size(122, 20);
             labelRouteName.TabIndex = 7;
             labelRouteName.Text = "Наименование:";
             // 
             // textBoxRouteName
             // 
             textBoxRouteName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxRouteName.Location = new Point(152, 113);
+            textBoxRouteName.Location = new Point(166, 110);
             textBoxRouteName.Margin = new Padding(4, 3, 4, 3);
             textBoxRouteName.Name = "textBoxRouteName";
-            textBoxRouteName.Size = new Size(455, 33);
+            textBoxRouteName.Size = new Size(419, 33);
             textBoxRouteName.TabIndex = 1;
             // 
             // labelStartLocation
             // 
             labelStartLocation.AutoSize = true;
+            labelStartLocation.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelStartLocation.ForeColor = Color.Black;
-            labelStartLocation.Location = new Point(42, 169);
+            labelStartLocation.Location = new Point(21, 162);
             labelStartLocation.Margin = new Padding(4, 0, 4, 0);
             labelStartLocation.Name = "labelStartLocation";
-            labelStartLocation.Size = new Size(104, 15);
+            labelStartLocation.Size = new Size(137, 20);
             labelStartLocation.TabIndex = 8;
             labelStartLocation.Text = "Начальная точка:";
             // 
             // textBoxStartLocation
             // 
             textBoxStartLocation.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxStartLocation.Location = new Point(152, 158);
+            textBoxStartLocation.Location = new Point(166, 155);
             textBoxStartLocation.Margin = new Padding(4, 3, 4, 3);
             textBoxStartLocation.Name = "textBoxStartLocation";
-            textBoxStartLocation.Size = new Size(455, 33);
+            textBoxStartLocation.Size = new Size(419, 33);
             textBoxStartLocation.TabIndex = 2;
             // 
             // labelEndLocation
             // 
             labelEndLocation.AutoSize = true;
+            labelEndLocation.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelEndLocation.ForeColor = Color.Black;
-            labelEndLocation.Location = new Point(49, 217);
+            labelEndLocation.Location = new Point(29, 210);
             labelEndLocation.Margin = new Padding(4, 0, 4, 0);
             labelEndLocation.Name = "labelEndLocation";
-            labelEndLocation.Size = new Size(97, 15);
+            labelEndLocation.Size = new Size(129, 20);
             labelEndLocation.TabIndex = 9;
             labelEndLocation.Text = "Конечная точка:";
             // 
             // textBoxEndLocation
             // 
             textBoxEndLocation.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEndLocation.Location = new Point(152, 206);
+            textBoxEndLocation.Location = new Point(166, 203);
             textBoxEndLocation.Margin = new Padding(4, 3, 4, 3);
             textBoxEndLocation.Name = "textBoxEndLocation";
-            textBoxEndLocation.Size = new Size(455, 33);
+            textBoxEndLocation.Size = new Size(419, 33);
             textBoxEndLocation.TabIndex = 3;
             // 
             // labelDescriptionMilitaryRoutes
             // 
             labelDescriptionMilitaryRoutes.AutoSize = true;
+            labelDescriptionMilitaryRoutes.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelDescriptionMilitaryRoutes.ForeColor = Color.Black;
-            labelDescriptionMilitaryRoutes.Location = new Point(81, 259);
+            labelDescriptionMilitaryRoutes.Location = new Point(75, 252);
             labelDescriptionMilitaryRoutes.Margin = new Padding(4, 0, 4, 0);
             labelDescriptionMilitaryRoutes.Name = "labelDescriptionMilitaryRoutes";
-            labelDescriptionMilitaryRoutes.Size = new Size(65, 15);
+            labelDescriptionMilitaryRoutes.Size = new Size(83, 20);
             labelDescriptionMilitaryRoutes.TabIndex = 10;
             labelDescriptionMilitaryRoutes.Text = "Описание:";
             // 
             // textBoxDescriptionMilitaryRoutes
             // 
             textBoxDescriptionMilitaryRoutes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxDescriptionMilitaryRoutes.Location = new Point(152, 248);
+            textBoxDescriptionMilitaryRoutes.Location = new Point(166, 245);
             textBoxDescriptionMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             textBoxDescriptionMilitaryRoutes.Name = "textBoxDescriptionMilitaryRoutes";
-            textBoxDescriptionMilitaryRoutes.Size = new Size(455, 33);
+            textBoxDescriptionMilitaryRoutes.Size = new Size(419, 33);
             textBoxDescriptionMilitaryRoutes.TabIndex = 4;
             // 
             // labelControlMilitaryRoutes
@@ -2515,7 +2557,7 @@
             labelControlMilitaryRoutes.BackColor = Color.Transparent;
             labelControlMilitaryRoutes.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             labelControlMilitaryRoutes.ForeColor = Color.Black;
-            labelControlMilitaryRoutes.Location = new Point(640, 459);
+            labelControlMilitaryRoutes.Location = new Point(645, 453);
             labelControlMilitaryRoutes.Margin = new Padding(4, 0, 4, 0);
             labelControlMilitaryRoutes.Name = "labelControlMilitaryRoutes";
             labelControlMilitaryRoutes.Size = new Size(213, 25);
@@ -2531,20 +2573,21 @@
             panelControlMilitaryRoutes.Controls.Add(buttonWordMilitaryRoute);
             panelControlMilitaryRoutes.Controls.Add(buttonExcelMilitaryRoute);
             panelControlMilitaryRoutes.Controls.Add(buttonTXTMilitaryRoute);
-            panelControlMilitaryRoutes.Location = new Point(634, 482);
+            panelControlMilitaryRoutes.Location = new Point(626, 481);
             panelControlMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             panelControlMilitaryRoutes.Name = "panelControlMilitaryRoutes";
-            panelControlMilitaryRoutes.Size = new Size(243, 520);
+            panelControlMilitaryRoutes.Size = new Size(255, 373);
             panelControlMilitaryRoutes.TabIndex = 2;
             // 
             // buttonNewMilitaryRoute
             // 
             buttonNewMilitaryRoute.FlatStyle = FlatStyle.Flat;
+            buttonNewMilitaryRoute.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonNewMilitaryRoute.ForeColor = Color.Black;
-            buttonNewMilitaryRoute.Location = new Point(4, 3);
+            buttonNewMilitaryRoute.Location = new Point(10, 10);
             buttonNewMilitaryRoute.Margin = new Padding(4, 3, 4, 3);
             buttonNewMilitaryRoute.Name = "buttonNewMilitaryRoute";
-            buttonNewMilitaryRoute.Size = new Size(236, 67);
+            buttonNewMilitaryRoute.Size = new Size(236, 45);
             buttonNewMilitaryRoute.TabIndex = 0;
             buttonNewMilitaryRoute.Text = "Новая запись";
             buttonNewMilitaryRoute.UseVisualStyleBackColor = true;
@@ -2553,11 +2596,12 @@
             // buttonDeleteMilitaryRoute
             // 
             buttonDeleteMilitaryRoute.FlatStyle = FlatStyle.Flat;
+            buttonDeleteMilitaryRoute.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonDeleteMilitaryRoute.ForeColor = Color.Black;
-            buttonDeleteMilitaryRoute.Location = new Point(4, 78);
+            buttonDeleteMilitaryRoute.Location = new Point(10, 61);
             buttonDeleteMilitaryRoute.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteMilitaryRoute.Name = "buttonDeleteMilitaryRoute";
-            buttonDeleteMilitaryRoute.Size = new Size(236, 67);
+            buttonDeleteMilitaryRoute.Size = new Size(236, 45);
             buttonDeleteMilitaryRoute.TabIndex = 1;
             buttonDeleteMilitaryRoute.Text = "Удалить";
             buttonDeleteMilitaryRoute.UseVisualStyleBackColor = true;
@@ -2566,11 +2610,12 @@
             // buttonChangeMilitaryRoute
             // 
             buttonChangeMilitaryRoute.FlatStyle = FlatStyle.Flat;
+            buttonChangeMilitaryRoute.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonChangeMilitaryRoute.ForeColor = Color.Black;
-            buttonChangeMilitaryRoute.Location = new Point(4, 152);
+            buttonChangeMilitaryRoute.Location = new Point(10, 112);
             buttonChangeMilitaryRoute.Margin = new Padding(4, 3, 4, 3);
             buttonChangeMilitaryRoute.Name = "buttonChangeMilitaryRoute";
-            buttonChangeMilitaryRoute.Size = new Size(236, 67);
+            buttonChangeMilitaryRoute.Size = new Size(236, 45);
             buttonChangeMilitaryRoute.TabIndex = 2;
             buttonChangeMilitaryRoute.Text = "Изменить";
             buttonChangeMilitaryRoute.UseVisualStyleBackColor = true;
@@ -2579,11 +2624,12 @@
             // buttonSaveMilitaryRoute
             // 
             buttonSaveMilitaryRoute.FlatStyle = FlatStyle.Flat;
+            buttonSaveMilitaryRoute.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonSaveMilitaryRoute.ForeColor = Color.Black;
-            buttonSaveMilitaryRoute.Location = new Point(4, 226);
+            buttonSaveMilitaryRoute.Location = new Point(10, 163);
             buttonSaveMilitaryRoute.Margin = new Padding(4, 3, 4, 3);
             buttonSaveMilitaryRoute.Name = "buttonSaveMilitaryRoute";
-            buttonSaveMilitaryRoute.Size = new Size(236, 67);
+            buttonSaveMilitaryRoute.Size = new Size(236, 45);
             buttonSaveMilitaryRoute.TabIndex = 3;
             buttonSaveMilitaryRoute.Text = "Сохранить";
             buttonSaveMilitaryRoute.UseVisualStyleBackColor = true;
@@ -2592,11 +2638,12 @@
             // buttonWordMilitaryRoute
             // 
             buttonWordMilitaryRoute.FlatStyle = FlatStyle.Flat;
+            buttonWordMilitaryRoute.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonWordMilitaryRoute.ForeColor = Color.Black;
-            buttonWordMilitaryRoute.Location = new Point(4, 301);
+            buttonWordMilitaryRoute.Location = new Point(10, 214);
             buttonWordMilitaryRoute.Margin = new Padding(4, 3, 4, 3);
             buttonWordMilitaryRoute.Name = "buttonWordMilitaryRoute";
-            buttonWordMilitaryRoute.Size = new Size(236, 67);
+            buttonWordMilitaryRoute.Size = new Size(236, 45);
             buttonWordMilitaryRoute.TabIndex = 4;
             buttonWordMilitaryRoute.Text = "Вывод в Word";
             buttonWordMilitaryRoute.UseVisualStyleBackColor = true;
@@ -2605,11 +2652,12 @@
             // buttonExcelMilitaryRoute
             // 
             buttonExcelMilitaryRoute.FlatStyle = FlatStyle.Flat;
+            buttonExcelMilitaryRoute.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonExcelMilitaryRoute.ForeColor = Color.Black;
-            buttonExcelMilitaryRoute.Location = new Point(4, 375);
+            buttonExcelMilitaryRoute.Location = new Point(10, 265);
             buttonExcelMilitaryRoute.Margin = new Padding(4, 3, 4, 3);
             buttonExcelMilitaryRoute.Name = "buttonExcelMilitaryRoute";
-            buttonExcelMilitaryRoute.Size = new Size(236, 67);
+            buttonExcelMilitaryRoute.Size = new Size(236, 45);
             buttonExcelMilitaryRoute.TabIndex = 5;
             buttonExcelMilitaryRoute.Text = "Вывод в Excel";
             buttonExcelMilitaryRoute.UseVisualStyleBackColor = true;
@@ -2618,11 +2666,12 @@
             // buttonTXTMilitaryRoute
             // 
             buttonTXTMilitaryRoute.FlatStyle = FlatStyle.Flat;
+            buttonTXTMilitaryRoute.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonTXTMilitaryRoute.ForeColor = Color.Black;
-            buttonTXTMilitaryRoute.Location = new Point(4, 449);
+            buttonTXTMilitaryRoute.Location = new Point(10, 316);
             buttonTXTMilitaryRoute.Margin = new Padding(4, 3, 4, 3);
             buttonTXTMilitaryRoute.Name = "buttonTXTMilitaryRoute";
-            buttonTXTMilitaryRoute.Size = new Size(236, 67);
+            buttonTXTMilitaryRoute.Size = new Size(236, 45);
             buttonTXTMilitaryRoute.TabIndex = 6;
             buttonTXTMilitaryRoute.Text = "Вывод в TXT";
             buttonTXTMilitaryRoute.UseVisualStyleBackColor = true;
@@ -2630,6 +2679,7 @@
             // 
             // tabPageEventEquipment
             // 
+            tabPageEventEquipment.BackgroundImage = (Image)resources.GetObject("tabPageEventEquipment.BackgroundImage");
             tabPageEventEquipment.Controls.Add(panelTitleEventEquipment);
             tabPageEventEquipment.Controls.Add(dataGridViewEventEquipment);
             tabPageEventEquipment.Controls.Add(panelRecordEventEquipment);
@@ -2646,6 +2696,7 @@
             // 
             // panelTitleEventEquipment
             // 
+            panelTitleEventEquipment.Controls.Add(panel8);
             panelTitleEventEquipment.Controls.Add(labelTitleEventEquipment);
             panelTitleEventEquipment.Controls.Add(buttonClearEventEquipment);
             panelTitleEventEquipment.Controls.Add(buttonRefreshEventEquipment);
@@ -2653,7 +2704,7 @@
             panelTitleEventEquipment.Location = new Point(0, 0);
             panelTitleEventEquipment.Margin = new Padding(4, 3, 4, 3);
             panelTitleEventEquipment.Name = "panelTitleEventEquipment";
-            panelTitleEventEquipment.Size = new Size(876, 84);
+            panelTitleEventEquipment.Size = new Size(889, 84);
             panelTitleEventEquipment.TabIndex = 3;
             // 
             // labelTitleEventEquipment
@@ -2674,10 +2725,10 @@
             buttonClearEventEquipment.BackgroundImageLayout = ImageLayout.Stretch;
             buttonClearEventEquipment.FlatStyle = FlatStyle.Flat;
             buttonClearEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearEventEquipment.Location = new Point(528, 3);
+            buttonClearEventEquipment.Location = new Point(420, 10);
             buttonClearEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonClearEventEquipment.Name = "buttonClearEventEquipment";
-            buttonClearEventEquipment.Size = new Size(78, 77);
+            buttonClearEventEquipment.Size = new Size(60, 60);
             buttonClearEventEquipment.TabIndex = 0;
             buttonClearEventEquipment.UseVisualStyleBackColor = true;
             buttonClearEventEquipment.Click += ButtonClear_Click;
@@ -2688,10 +2739,10 @@
             buttonRefreshEventEquipment.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshEventEquipment.FlatStyle = FlatStyle.Flat;
             buttonRefreshEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshEventEquipment.Location = new Point(614, 3);
+            buttonRefreshEventEquipment.Location = new Point(488, 10);
             buttonRefreshEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshEventEquipment.Name = "buttonRefreshEventEquipment";
-            buttonRefreshEventEquipment.Size = new Size(78, 77);
+            buttonRefreshEventEquipment.Size = new Size(60, 60);
             buttonRefreshEventEquipment.TabIndex = 1;
             buttonRefreshEventEquipment.UseVisualStyleBackColor = true;
             buttonRefreshEventEquipment.Click += ButtonRefresh_Click;
@@ -2699,10 +2750,10 @@
             // textBoxSearchEventEquipment
             // 
             textBoxSearchEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchEventEquipment.Location = new Point(699, 37);
+            textBoxSearchEventEquipment.Location = new Point(658, 29);
             textBoxSearchEventEquipment.Margin = new Padding(4, 3, 4, 3);
             textBoxSearchEventEquipment.Name = "textBoxSearchEventEquipment";
-            textBoxSearchEventEquipment.Size = new Size(173, 33);
+            textBoxSearchEventEquipment.Size = new Size(223, 33);
             textBoxSearchEventEquipment.TabIndex = 2;
             textBoxSearchEventEquipment.TextChanged += TextBoxSearchEventEquipment_TextChanged;
             // 
@@ -2729,10 +2780,10 @@
             panelRecordEventEquipment.Controls.Add(textBoxEventIDEventEquipment);
             panelRecordEventEquipment.Controls.Add(labelEquipmentIDEventEquipment);
             panelRecordEventEquipment.Controls.Add(textBoxEquipmentIDEventEquipment);
-            panelRecordEventEquipment.Location = new Point(9, 450);
+            panelRecordEventEquipment.Location = new Point(7, 528);
             panelRecordEventEquipment.Margin = new Padding(4, 3, 4, 3);
             panelRecordEventEquipment.Name = "panelRecordEventEquipment";
-            panelRecordEventEquipment.Size = new Size(611, 552);
+            panelRecordEventEquipment.Size = new Size(611, 239);
             panelRecordEventEquipment.TabIndex = 1;
             // 
             // labelRecordEventEquipment
@@ -2750,61 +2801,64 @@
             // labelEventEquipmentID
             // 
             labelEventEquipmentID.AutoSize = true;
+            labelEventEquipmentID.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelEventEquipmentID.ForeColor = Color.Black;
-            labelEventEquipmentID.Location = new Point(98, 79);
+            labelEventEquipmentID.Location = new Point(81, 72);
             labelEventEquipmentID.Margin = new Padding(4, 0, 4, 0);
             labelEventEquipmentID.Name = "labelEventEquipmentID";
-            labelEventEquipmentID.Size = new Size(48, 15);
+            labelEventEquipmentID.Size = new Size(62, 20);
             labelEventEquipmentID.TabIndex = 4;
             labelEventEquipmentID.Text = "Номер:";
             // 
             // textBoxEventEquipmentID
             // 
             textBoxEventEquipmentID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEventEquipmentID.Location = new Point(152, 68);
+            textBoxEventEquipmentID.Location = new Point(151, 65);
             textBoxEventEquipmentID.Margin = new Padding(4, 3, 4, 3);
             textBoxEventEquipmentID.Name = "textBoxEventEquipmentID";
-            textBoxEventEquipmentID.Size = new Size(455, 33);
+            textBoxEventEquipmentID.Size = new Size(418, 33);
             textBoxEventEquipmentID.TabIndex = 0;
             // 
             // labelEventIDEventEquipment
             // 
             labelEventIDEventEquipment.AutoSize = true;
+            labelEventIDEventEquipment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelEventIDEventEquipment.ForeColor = Color.Black;
-            labelEventIDEventEquipment.Location = new Point(87, 124);
+            labelEventIDEventEquipment.Location = new Point(67, 117);
             labelEventIDEventEquipment.Margin = new Padding(4, 0, 4, 0);
             labelEventIDEventEquipment.Name = "labelEventIDEventEquipment";
-            labelEventIDEventEquipment.Size = new Size(59, 15);
+            labelEventIDEventEquipment.Size = new Size(76, 20);
             labelEventIDEventEquipment.TabIndex = 5;
             labelEventIDEventEquipment.Text = "Событие:";
             // 
             // textBoxEventIDEventEquipment
             // 
             textBoxEventIDEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEventIDEventEquipment.Location = new Point(152, 113);
+            textBoxEventIDEventEquipment.Location = new Point(151, 110);
             textBoxEventIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
             textBoxEventIDEventEquipment.Name = "textBoxEventIDEventEquipment";
-            textBoxEventIDEventEquipment.Size = new Size(455, 33);
+            textBoxEventIDEventEquipment.Size = new Size(418, 33);
             textBoxEventIDEventEquipment.TabIndex = 1;
             // 
             // labelEquipmentIDEventEquipment
             // 
             labelEquipmentIDEventEquipment.AutoSize = true;
+            labelEquipmentIDEventEquipment.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             labelEquipmentIDEventEquipment.ForeColor = Color.Black;
-            labelEquipmentIDEventEquipment.Location = new Point(55, 169);
+            labelEquipmentIDEventEquipment.Location = new Point(24, 162);
             labelEquipmentIDEventEquipment.Margin = new Padding(4, 0, 4, 0);
             labelEquipmentIDEventEquipment.Name = "labelEquipmentIDEventEquipment";
-            labelEquipmentIDEventEquipment.Size = new Size(91, 15);
+            labelEquipmentIDEventEquipment.Size = new Size(119, 20);
             labelEquipmentIDEventEquipment.TabIndex = 6;
             labelEquipmentIDEventEquipment.Text = "Оборудование:";
             // 
             // textBoxEquipmentIDEventEquipment
             // 
             textBoxEquipmentIDEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEquipmentIDEventEquipment.Location = new Point(152, 158);
+            textBoxEquipmentIDEventEquipment.Location = new Point(151, 155);
             textBoxEquipmentIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
             textBoxEquipmentIDEventEquipment.Name = "textBoxEquipmentIDEventEquipment";
-            textBoxEquipmentIDEventEquipment.Size = new Size(455, 33);
+            textBoxEquipmentIDEventEquipment.Size = new Size(418, 33);
             textBoxEquipmentIDEventEquipment.TabIndex = 2;
             // 
             // labelControlEventEquipment
@@ -2813,7 +2867,7 @@
             labelControlEventEquipment.BackColor = Color.Transparent;
             labelControlEventEquipment.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             labelControlEventEquipment.ForeColor = Color.Black;
-            labelControlEventEquipment.Location = new Point(640, 459);
+            labelControlEventEquipment.Location = new Point(645, 453);
             labelControlEventEquipment.Margin = new Padding(4, 0, 4, 0);
             labelControlEventEquipment.Name = "labelControlEventEquipment";
             labelControlEventEquipment.Size = new Size(213, 25);
@@ -2829,20 +2883,21 @@
             panelControlEventEquipment.Controls.Add(buttonWordEventEquipment);
             panelControlEventEquipment.Controls.Add(buttonExcelEventEquipment);
             panelControlEventEquipment.Controls.Add(buttonTXTEventEquipment);
-            panelControlEventEquipment.Location = new Point(634, 482);
+            panelControlEventEquipment.Location = new Point(626, 481);
             panelControlEventEquipment.Margin = new Padding(4, 3, 4, 3);
             panelControlEventEquipment.Name = "panelControlEventEquipment";
-            panelControlEventEquipment.Size = new Size(243, 520);
+            panelControlEventEquipment.Size = new Size(255, 373);
             panelControlEventEquipment.TabIndex = 2;
             // 
             // buttonNewEventEquipment
             // 
             buttonNewEventEquipment.FlatStyle = FlatStyle.Flat;
+            buttonNewEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonNewEventEquipment.ForeColor = Color.Black;
-            buttonNewEventEquipment.Location = new Point(4, 3);
+            buttonNewEventEquipment.Location = new Point(10, 10);
             buttonNewEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonNewEventEquipment.Name = "buttonNewEventEquipment";
-            buttonNewEventEquipment.Size = new Size(236, 67);
+            buttonNewEventEquipment.Size = new Size(236, 45);
             buttonNewEventEquipment.TabIndex = 0;
             buttonNewEventEquipment.Text = "Новая запись";
             buttonNewEventEquipment.UseVisualStyleBackColor = true;
@@ -2851,11 +2906,12 @@
             // buttonDeleteEventEquipment
             // 
             buttonDeleteEventEquipment.FlatStyle = FlatStyle.Flat;
+            buttonDeleteEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonDeleteEventEquipment.ForeColor = Color.Black;
-            buttonDeleteEventEquipment.Location = new Point(4, 78);
+            buttonDeleteEventEquipment.Location = new Point(10, 61);
             buttonDeleteEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteEventEquipment.Name = "buttonDeleteEventEquipment";
-            buttonDeleteEventEquipment.Size = new Size(236, 67);
+            buttonDeleteEventEquipment.Size = new Size(236, 45);
             buttonDeleteEventEquipment.TabIndex = 1;
             buttonDeleteEventEquipment.Text = "Удалить";
             buttonDeleteEventEquipment.UseVisualStyleBackColor = true;
@@ -2864,11 +2920,12 @@
             // buttonChangeEventEquipment
             // 
             buttonChangeEventEquipment.FlatStyle = FlatStyle.Flat;
+            buttonChangeEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonChangeEventEquipment.ForeColor = Color.Black;
-            buttonChangeEventEquipment.Location = new Point(4, 152);
+            buttonChangeEventEquipment.Location = new Point(10, 112);
             buttonChangeEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonChangeEventEquipment.Name = "buttonChangeEventEquipment";
-            buttonChangeEventEquipment.Size = new Size(236, 67);
+            buttonChangeEventEquipment.Size = new Size(236, 45);
             buttonChangeEventEquipment.TabIndex = 2;
             buttonChangeEventEquipment.Text = "Изменить";
             buttonChangeEventEquipment.UseVisualStyleBackColor = true;
@@ -2877,11 +2934,12 @@
             // buttonSaveEventEquipment
             // 
             buttonSaveEventEquipment.FlatStyle = FlatStyle.Flat;
+            buttonSaveEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonSaveEventEquipment.ForeColor = Color.Black;
-            buttonSaveEventEquipment.Location = new Point(4, 226);
+            buttonSaveEventEquipment.Location = new Point(10, 163);
             buttonSaveEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonSaveEventEquipment.Name = "buttonSaveEventEquipment";
-            buttonSaveEventEquipment.Size = new Size(236, 67);
+            buttonSaveEventEquipment.Size = new Size(236, 45);
             buttonSaveEventEquipment.TabIndex = 3;
             buttonSaveEventEquipment.Text = "Сохранить";
             buttonSaveEventEquipment.UseVisualStyleBackColor = true;
@@ -2890,11 +2948,12 @@
             // buttonWordEventEquipment
             // 
             buttonWordEventEquipment.FlatStyle = FlatStyle.Flat;
+            buttonWordEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonWordEventEquipment.ForeColor = Color.Black;
-            buttonWordEventEquipment.Location = new Point(4, 301);
+            buttonWordEventEquipment.Location = new Point(10, 214);
             buttonWordEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonWordEventEquipment.Name = "buttonWordEventEquipment";
-            buttonWordEventEquipment.Size = new Size(236, 67);
+            buttonWordEventEquipment.Size = new Size(236, 45);
             buttonWordEventEquipment.TabIndex = 4;
             buttonWordEventEquipment.Text = "Вывод в Word";
             buttonWordEventEquipment.UseVisualStyleBackColor = true;
@@ -2903,11 +2962,12 @@
             // buttonExcelEventEquipment
             // 
             buttonExcelEventEquipment.FlatStyle = FlatStyle.Flat;
+            buttonExcelEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonExcelEventEquipment.ForeColor = Color.Black;
-            buttonExcelEventEquipment.Location = new Point(4, 375);
+            buttonExcelEventEquipment.Location = new Point(10, 265);
             buttonExcelEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonExcelEventEquipment.Name = "buttonExcelEventEquipment";
-            buttonExcelEventEquipment.Size = new Size(236, 67);
+            buttonExcelEventEquipment.Size = new Size(236, 45);
             buttonExcelEventEquipment.TabIndex = 5;
             buttonExcelEventEquipment.Text = "Вывод в Excel";
             buttonExcelEventEquipment.UseVisualStyleBackColor = true;
@@ -2916,21 +2976,157 @@
             // buttonTXTEventEquipment
             // 
             buttonTXTEventEquipment.FlatStyle = FlatStyle.Flat;
+            buttonTXTEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             buttonTXTEventEquipment.ForeColor = Color.Black;
-            buttonTXTEventEquipment.Location = new Point(4, 449);
+            buttonTXTEventEquipment.Location = new Point(10, 316);
             buttonTXTEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonTXTEventEquipment.Name = "buttonTXTEventEquipment";
-            buttonTXTEventEquipment.Size = new Size(236, 67);
+            buttonTXTEventEquipment.Size = new Size(236, 45);
             buttonTXTEventEquipment.TabIndex = 6;
             buttonTXTEventEquipment.Text = "Вывод в TXT";
             buttonTXTEventEquipment.UseVisualStyleBackColor = true;
             buttonTXTEventEquipment.Click += ButtonTXTEventEquipment_Click;
             // 
+            // labelTitleMilitaryUnits
+            // 
+            labelTitleMilitaryUnits.AutoSize = true;
+            labelTitleMilitaryUnits.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            labelTitleMilitaryUnits.ForeColor = Color.Black;
+            labelTitleMilitaryUnits.Location = new Point(4, 3);
+            labelTitleMilitaryUnits.Margin = new Padding(4, 0, 4, 0);
+            labelTitleMilitaryUnits.Name = "labelTitleMilitaryUnits";
+            labelTitleMilitaryUnits.Size = new Size(435, 65);
+            labelTitleMilitaryUnits.TabIndex = 4;
+            labelTitleMilitaryUnits.Text = "Военные единицы";
+            // 
+            // textBoxSearchMilitaryUnits
+            // 
+            textBoxSearchMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSearchMilitaryUnits.Location = new Point(654, 25);
+            textBoxSearchMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
+            textBoxSearchMilitaryUnits.Name = "textBoxSearchMilitaryUnits";
+            textBoxSearchMilitaryUnits.Size = new Size(227, 33);
+            textBoxSearchMilitaryUnits.TabIndex = 2;
+            textBoxSearchMilitaryUnits.TextChanged += TextBoxSearchMilitaryUnits_TextChanged;
+            // 
+            // buttonRefreshMilitaryUnits
+            // 
+            buttonRefreshMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonRefreshMilitaryUnits.BackgroundImage");
+            buttonRefreshMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshMilitaryUnits.FlatStyle = FlatStyle.Flat;
+            buttonRefreshMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshMilitaryUnits.Location = new Point(515, 10);
+            buttonRefreshMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshMilitaryUnits.Name = "buttonRefreshMilitaryUnits";
+            buttonRefreshMilitaryUnits.Size = new Size(60, 60);
+            buttonRefreshMilitaryUnits.TabIndex = 1;
+            buttonRefreshMilitaryUnits.UseVisualStyleBackColor = true;
+            buttonRefreshMilitaryUnits.Click += ButtonRefresh_Click;
+            // 
+            // buttonClearMilitaryUnits
+            // 
+            buttonClearMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonClearMilitaryUnits.BackgroundImage");
+            buttonClearMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonClearMilitaryUnits.FlatStyle = FlatStyle.Flat;
+            buttonClearMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonClearMilitaryUnits.Location = new Point(447, 10);
+            buttonClearMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
+            buttonClearMilitaryUnits.Name = "buttonClearMilitaryUnits";
+            buttonClearMilitaryUnits.Size = new Size(60, 60);
+            buttonClearMilitaryUnits.TabIndex = 0;
+            buttonClearMilitaryUnits.UseVisualStyleBackColor = true;
+            buttonClearMilitaryUnits.Click += ButtonClear_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Location = new Point(621, 25);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(33, 33);
+            panel1.TabIndex = 5;
+            // 
+            // panelTitleMilitaryUnits
+            // 
+            panelTitleMilitaryUnits.Controls.Add(panel1);
+            panelTitleMilitaryUnits.Controls.Add(labelTitleMilitaryUnits);
+            panelTitleMilitaryUnits.Controls.Add(buttonClearMilitaryUnits);
+            panelTitleMilitaryUnits.Controls.Add(buttonRefreshMilitaryUnits);
+            panelTitleMilitaryUnits.Controls.Add(textBoxSearchMilitaryUnits);
+            panelTitleMilitaryUnits.Location = new Point(0, 0);
+            panelTitleMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
+            panelTitleMilitaryUnits.Name = "panelTitleMilitaryUnits";
+            panelTitleMilitaryUnits.Size = new Size(889, 84);
+            panelTitleMilitaryUnits.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
+            panel2.BackgroundImageLayout = ImageLayout.Stretch;
+            panel2.Location = new Point(621, 25);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(33, 33);
+            panel2.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
+            panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Location = new Point(621, 25);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(33, 33);
+            panel3.TabIndex = 7;
+            // 
+            // panel4
+            // 
+            panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
+            panel4.BackgroundImageLayout = ImageLayout.Stretch;
+            panel4.Location = new Point(666, 25);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(33, 33);
+            panel4.TabIndex = 8;
+            // 
+            // panel5
+            // 
+            panel5.BackgroundImage = (Image)resources.GetObject("panel5.BackgroundImage");
+            panel5.BackgroundImageLayout = ImageLayout.Stretch;
+            panel5.Location = new Point(638, 25);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(33, 33);
+            panel5.TabIndex = 9;
+            // 
+            // panel6
+            // 
+            panel6.BackgroundImage = (Image)resources.GetObject("panel6.BackgroundImage");
+            panel6.BackgroundImageLayout = ImageLayout.Stretch;
+            panel6.Location = new Point(638, 25);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(33, 33);
+            panel6.TabIndex = 10;
+            // 
+            // panel7
+            // 
+            panel7.BackgroundImage = (Image)resources.GetObject("panel7.BackgroundImage");
+            panel7.BackgroundImageLayout = ImageLayout.Stretch;
+            panel7.Location = new Point(675, 29);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(33, 33);
+            panel7.TabIndex = 11;
+            // 
+            // panel8
+            // 
+            panel8.BackgroundImage = (Image)resources.GetObject("panel8.BackgroundImage");
+            panel8.BackgroundImageLayout = ImageLayout.Stretch;
+            panel8.Location = new Point(625, 29);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(33, 33);
+            panel8.TabIndex = 12;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(895, 1033);
+            ClientSize = new Size(895, 881);
             Controls.Add(tabControl1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -2941,8 +3137,6 @@
             Load += Form1_Load;
             tabPageMilitaryUnits.ResumeLayout(false);
             tabPageMilitaryUnits.PerformLayout();
-            panelTitleMilitaryUnits.ResumeLayout(false);
-            panelTitleMilitaryUnits.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMilitaryUnits).EndInit();
             panelRecordMilitaryUnits.ResumeLayout(false);
             panelRecordMilitaryUnits.PerformLayout();
@@ -3004,17 +3198,14 @@
             panelRecordEventEquipment.ResumeLayout(false);
             panelRecordEventEquipment.PerformLayout();
             panelControlEventEquipment.ResumeLayout(false);
+            panelTitleMilitaryUnits.ResumeLayout(false);
+            panelTitleMilitaryUnits.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private TabPage tabPageMilitaryUnits;
-        private Panel panelTitleMilitaryUnits;
-        private Label labelTitleMilitaryUnits;
-        private Button buttonClearMilitaryUnits;
-        private Button buttonRefreshMilitaryUnits;
-        private TextBox textBoxSearchMilitaryUnits;
         private DataGridView dataGridViewMilitaryUnits;
         private Panel panelRecordMilitaryUnits;
         private Label labelRecordMilitaryUnits;
@@ -3229,5 +3420,18 @@
         private DateTimePicker dateTimePickerBirthDate;
         private DateTimePicker dateTimePickerAwardDate;
         private Button buttonReportMilitaryRoutes;
+        private Panel panelTitleMilitaryUnits;
+        private Panel panel1;
+        private Label labelTitleMilitaryUnits;
+        private Button buttonClearMilitaryUnits;
+        private Button buttonRefreshMilitaryUnits;
+        private TextBox textBoxSearchMilitaryUnits;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
+        private Panel panel5;
+        private Panel panel6;
+        private Panel panel7;
+        private Panel panel8;
     }
 }
