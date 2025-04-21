@@ -63,7 +63,7 @@ namespace WWII
                 dataGridViewVeterans.Columns.Add("BirthDate", "Дата рождения");
                 dataGridViewVeterans.Columns.Add("DeathDate", "Дата смерти");
                 dataGridViewVeterans.Columns.Add("MilitaryRank", "Воинское звание");
-                dataGridViewVeterans.Columns.Add("UnitID", "ID воинской части");
+                dataGridViewVeterans.Columns.Add("UnitID", "ID оружия");
                 dataGridViewVeterans.Columns.Add("IsNew", String.Empty);
                 dataGridViewMedals.Columns.Add("MedalID", "Номер");
                 dataGridViewMedals.Columns.Add("MedalName", "Наименование");
@@ -703,7 +703,7 @@ namespace WWII
                                 var deathDate = dataGridView.Rows[index].Cells[3].Value != null ? Convert.ToDateTime(dataGridView.Rows[index].Cells[3].Value).ToString("yyyy-MM-dd") : "NULL";
                                 var rank = dataGridView.Rows[index].Cells[4].Value?.ToString();
                                 var unitID = dataGridView.Rows[index].Cells[5].Value?.ToString();
-                                var changeQuery = $"update Veterans set FullName = '{fullName}', BirthDate = '{birthDate}', DeathDate = {deathDate}, MilitaryRank = '{rank}', UnitID = {unitID ?? "NULL"} where VeteranID = '{veteranID}'";
+                                var changeQuery = $"update Veterans set FullName = '{fullName}', BirthDate = '{birthDate}', DeathDate = '{deathDate}', MilitaryRank = '{rank}', UnitID = {unitID ?? "NULL"} where VeteranID = '{veteranID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }

@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabPageMilitaryUnits = new TabPage();
+            panelTitleMilitaryUnits = new Panel();
+            panel1 = new Panel();
+            labelTitleMilitaryUnits = new Label();
+            buttonClearMilitaryUnits = new Button();
+            buttonRefreshMilitaryUnits = new Button();
+            textBoxSearchMilitaryUnits = new TextBox();
             dataGridViewMilitaryUnits = new DataGridView();
             panelRecordMilitaryUnits = new Panel();
             labelRecordMilitaryUnits = new Label();
@@ -51,6 +57,7 @@
             tabControl1 = new TabControl();
             tabPageWarEvents = new TabPage();
             panelTitleWarEvents = new Panel();
+            panel2 = new Panel();
             labelTitleWarEvents = new Label();
             buttonClearWarEvents = new Button();
             buttonRefreshWarEvents = new Button();
@@ -79,6 +86,7 @@
             buttonTXTWarEvent = new Button();
             tabPageVeterans = new TabPage();
             panelTitleVeterans = new Panel();
+            panel3 = new Panel();
             labelTitleVeterans = new Label();
             buttonReportVeterans = new Button();
             buttonClearVeterans = new Button();
@@ -110,6 +118,7 @@
             buttonTXTVeteran = new Button();
             tabPageMedals = new TabPage();
             panelTitleMedals = new Panel();
+            panel4 = new Panel();
             labelTitleMedals = new Label();
             buttonReportMedals = new Button();
             buttonClearMedals = new Button();
@@ -135,6 +144,7 @@
             buttonTXTMedal = new Button();
             tabPageVeteranMedals = new TabPage();
             panelTitleVeteranMedals = new Panel();
+            panel5 = new Panel();
             labelTitleVeteranMedals = new Label();
             buttonClearVeteranMedals = new Button();
             buttonRefreshVeteranMedals = new Button();
@@ -161,6 +171,7 @@
             buttonTXTVeteranMedal = new Button();
             tabPageMilitaryEquipment = new TabPage();
             panelTitleMilitaryEquipment = new Panel();
+            panel6 = new Panel();
             labelTitleMilitaryEquipment = new Label();
             buttonClearMilitaryEquipment = new Button();
             buttonRefreshMilitaryEquipment = new Button();
@@ -187,6 +198,7 @@
             buttonTXTMilitaryEquipment = new Button();
             tabPageMilitaryRoutes = new TabPage();
             panelTitleMilitaryRoutes = new Panel();
+            panel7 = new Panel();
             buttonReportMilitaryRoutes = new Button();
             labelTitleMilitaryRoutes = new Label();
             buttonClearMilitaryRoutes = new Button();
@@ -216,6 +228,7 @@
             buttonTXTMilitaryRoute = new Button();
             tabPageEventEquipment = new TabPage();
             panelTitleEventEquipment = new Panel();
+            panel8 = new Panel();
             labelTitleEventEquipment = new Label();
             buttonClearEventEquipment = new Button();
             buttonRefreshEventEquipment = new Button();
@@ -238,20 +251,8 @@
             buttonWordEventEquipment = new Button();
             buttonExcelEventEquipment = new Button();
             buttonTXTEventEquipment = new Button();
-            labelTitleMilitaryUnits = new Label();
-            textBoxSearchMilitaryUnits = new TextBox();
-            buttonRefreshMilitaryUnits = new Button();
-            buttonClearMilitaryUnits = new Button();
-            panel1 = new Panel();
-            panelTitleMilitaryUnits = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            panel5 = new Panel();
-            panel6 = new Panel();
-            panel7 = new Panel();
-            panel8 = new Panel();
             tabPageMilitaryUnits.SuspendLayout();
+            panelTitleMilitaryUnits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMilitaryUnits).BeginInit();
             panelRecordMilitaryUnits.SuspendLayout();
             panelControlMilitaryUnits.SuspendLayout();
@@ -291,7 +292,6 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewEventEquipment).BeginInit();
             panelRecordEventEquipment.SuspendLayout();
             panelControlEventEquipment.SuspendLayout();
-            panelTitleMilitaryUnits.SuspendLayout();
             SuspendLayout();
             // 
             // tabPageMilitaryUnits
@@ -311,6 +311,78 @@
             tabPageMilitaryUnits.TabIndex = 1;
             tabPageMilitaryUnits.Text = "Военные единицы";
             tabPageMilitaryUnits.UseVisualStyleBackColor = true;
+            // 
+            // panelTitleMilitaryUnits
+            // 
+            panelTitleMilitaryUnits.Controls.Add(panel1);
+            panelTitleMilitaryUnits.Controls.Add(labelTitleMilitaryUnits);
+            panelTitleMilitaryUnits.Controls.Add(buttonClearMilitaryUnits);
+            panelTitleMilitaryUnits.Controls.Add(buttonRefreshMilitaryUnits);
+            panelTitleMilitaryUnits.Controls.Add(textBoxSearchMilitaryUnits);
+            panelTitleMilitaryUnits.Location = new Point(0, 0);
+            panelTitleMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
+            panelTitleMilitaryUnits.Name = "panelTitleMilitaryUnits";
+            panelTitleMilitaryUnits.Size = new Size(889, 84);
+            panelTitleMilitaryUnits.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Location = new Point(621, 25);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(33, 33);
+            panel1.TabIndex = 5;
+            // 
+            // labelTitleMilitaryUnits
+            // 
+            labelTitleMilitaryUnits.AutoSize = true;
+            labelTitleMilitaryUnits.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            labelTitleMilitaryUnits.ForeColor = Color.Black;
+            labelTitleMilitaryUnits.Location = new Point(4, 3);
+            labelTitleMilitaryUnits.Margin = new Padding(4, 0, 4, 0);
+            labelTitleMilitaryUnits.Name = "labelTitleMilitaryUnits";
+            labelTitleMilitaryUnits.Size = new Size(435, 65);
+            labelTitleMilitaryUnits.TabIndex = 4;
+            labelTitleMilitaryUnits.Text = "Военные единицы";
+            // 
+            // buttonClearMilitaryUnits
+            // 
+            buttonClearMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonClearMilitaryUnits.BackgroundImage");
+            buttonClearMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonClearMilitaryUnits.FlatStyle = FlatStyle.Flat;
+            buttonClearMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonClearMilitaryUnits.Location = new Point(447, 10);
+            buttonClearMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
+            buttonClearMilitaryUnits.Name = "buttonClearMilitaryUnits";
+            buttonClearMilitaryUnits.Size = new Size(60, 60);
+            buttonClearMilitaryUnits.TabIndex = 0;
+            buttonClearMilitaryUnits.UseVisualStyleBackColor = true;
+            buttonClearMilitaryUnits.Click += ButtonClear_Click;
+            // 
+            // buttonRefreshMilitaryUnits
+            // 
+            buttonRefreshMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonRefreshMilitaryUnits.BackgroundImage");
+            buttonRefreshMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshMilitaryUnits.FlatStyle = FlatStyle.Flat;
+            buttonRefreshMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshMilitaryUnits.Location = new Point(515, 10);
+            buttonRefreshMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshMilitaryUnits.Name = "buttonRefreshMilitaryUnits";
+            buttonRefreshMilitaryUnits.Size = new Size(60, 60);
+            buttonRefreshMilitaryUnits.TabIndex = 1;
+            buttonRefreshMilitaryUnits.UseVisualStyleBackColor = true;
+            buttonRefreshMilitaryUnits.Click += ButtonRefresh_Click;
+            // 
+            // textBoxSearchMilitaryUnits
+            // 
+            textBoxSearchMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSearchMilitaryUnits.Location = new Point(654, 25);
+            textBoxSearchMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
+            textBoxSearchMilitaryUnits.Name = "textBoxSearchMilitaryUnits";
+            textBoxSearchMilitaryUnits.Size = new Size(227, 33);
+            textBoxSearchMilitaryUnits.TabIndex = 2;
+            textBoxSearchMilitaryUnits.TextChanged += TextBoxSearchMilitaryUnits_TextChanged;
             // 
             // dataGridViewMilitaryUnits
             // 
@@ -597,6 +669,15 @@
             panelTitleWarEvents.Size = new Size(889, 84);
             panelTitleWarEvents.TabIndex = 3;
             // 
+            // panel2
+            // 
+            panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
+            panel2.BackgroundImageLayout = ImageLayout.Stretch;
+            panel2.Location = new Point(621, 25);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(33, 33);
+            panel2.TabIndex = 6;
+            // 
             // labelTitleWarEvents
             // 
             labelTitleWarEvents.AutoSize = true;
@@ -652,7 +733,7 @@
             dataGridViewWarEvents.AllowUserToAddRows = false;
             dataGridViewWarEvents.AllowUserToDeleteRows = false;
             dataGridViewWarEvents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewWarEvents.Location = new Point(18, 71);
+            dataGridViewWarEvents.Location = new Point(18, 90);
             dataGridViewWarEvents.Margin = new Padding(4, 3, 4, 3);
             dataGridViewWarEvents.Name = "dataGridViewWarEvents";
             dataGridViewWarEvents.ReadOnly = true;
@@ -952,6 +1033,15 @@
             panelTitleVeterans.Name = "panelTitleVeterans";
             panelTitleVeterans.Size = new Size(889, 84);
             panelTitleVeterans.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
+            panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Location = new Point(621, 25);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(33, 33);
+            panel3.TabIndex = 7;
             // 
             // labelTitleVeterans
             // 
@@ -1345,6 +1435,15 @@
             panelTitleMedals.Size = new Size(889, 84);
             panelTitleMedals.TabIndex = 3;
             // 
+            // panel4
+            // 
+            panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
+            panel4.BackgroundImageLayout = ImageLayout.Stretch;
+            panel4.Location = new Point(666, 25);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(33, 33);
+            panel4.TabIndex = 8;
+            // 
             // labelTitleMedals
             // 
             labelTitleMedals.AutoSize = true;
@@ -1668,6 +1767,15 @@
             panelTitleVeteranMedals.Name = "panelTitleVeteranMedals";
             panelTitleVeteranMedals.Size = new Size(889, 84);
             panelTitleVeteranMedals.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            panel5.BackgroundImage = (Image)resources.GetObject("panel5.BackgroundImage");
+            panel5.BackgroundImageLayout = ImageLayout.Stretch;
+            panel5.Location = new Point(638, 25);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(33, 33);
+            panel5.TabIndex = 9;
             // 
             // labelTitleVeteranMedals
             // 
@@ -2001,6 +2109,15 @@
             panelTitleMilitaryEquipment.Name = "panelTitleMilitaryEquipment";
             panelTitleMilitaryEquipment.Size = new Size(889, 84);
             panelTitleMilitaryEquipment.TabIndex = 3;
+            // 
+            // panel6
+            // 
+            panel6.BackgroundImage = (Image)resources.GetObject("panel6.BackgroundImage");
+            panel6.BackgroundImageLayout = ImageLayout.Stretch;
+            panel6.Location = new Point(638, 25);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(33, 33);
+            panel6.TabIndex = 10;
             // 
             // labelTitleMilitaryEquipment
             // 
@@ -2336,6 +2453,15 @@
             panelTitleMilitaryRoutes.Name = "panelTitleMilitaryRoutes";
             panelTitleMilitaryRoutes.Size = new Size(889, 84);
             panelTitleMilitaryRoutes.TabIndex = 3;
+            // 
+            // panel7
+            // 
+            panel7.BackgroundImage = (Image)resources.GetObject("panel7.BackgroundImage");
+            panel7.BackgroundImageLayout = ImageLayout.Stretch;
+            panel7.Location = new Point(675, 29);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(33, 33);
+            panel7.TabIndex = 11;
             // 
             // buttonReportMilitaryRoutes
             // 
@@ -2707,6 +2833,15 @@
             panelTitleEventEquipment.Size = new Size(889, 84);
             panelTitleEventEquipment.TabIndex = 3;
             // 
+            // panel8
+            // 
+            panel8.BackgroundImage = (Image)resources.GetObject("panel8.BackgroundImage");
+            panel8.BackgroundImageLayout = ImageLayout.Stretch;
+            panel8.Location = new Point(625, 29);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(33, 33);
+            panel8.TabIndex = 12;
+            // 
             // labelTitleEventEquipment
             // 
             labelTitleEventEquipment.AutoSize = true;
@@ -2987,141 +3122,6 @@
             buttonTXTEventEquipment.UseVisualStyleBackColor = true;
             buttonTXTEventEquipment.Click += ButtonTXTEventEquipment_Click;
             // 
-            // labelTitleMilitaryUnits
-            // 
-            labelTitleMilitaryUnits.AutoSize = true;
-            labelTitleMilitaryUnits.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleMilitaryUnits.ForeColor = Color.Black;
-            labelTitleMilitaryUnits.Location = new Point(4, 3);
-            labelTitleMilitaryUnits.Margin = new Padding(4, 0, 4, 0);
-            labelTitleMilitaryUnits.Name = "labelTitleMilitaryUnits";
-            labelTitleMilitaryUnits.Size = new Size(435, 65);
-            labelTitleMilitaryUnits.TabIndex = 4;
-            labelTitleMilitaryUnits.Text = "Военные единицы";
-            // 
-            // textBoxSearchMilitaryUnits
-            // 
-            textBoxSearchMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchMilitaryUnits.Location = new Point(654, 25);
-            textBoxSearchMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
-            textBoxSearchMilitaryUnits.Name = "textBoxSearchMilitaryUnits";
-            textBoxSearchMilitaryUnits.Size = new Size(227, 33);
-            textBoxSearchMilitaryUnits.TabIndex = 2;
-            textBoxSearchMilitaryUnits.TextChanged += TextBoxSearchMilitaryUnits_TextChanged;
-            // 
-            // buttonRefreshMilitaryUnits
-            // 
-            buttonRefreshMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonRefreshMilitaryUnits.BackgroundImage");
-            buttonRefreshMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonRefreshMilitaryUnits.FlatStyle = FlatStyle.Flat;
-            buttonRefreshMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshMilitaryUnits.Location = new Point(515, 10);
-            buttonRefreshMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshMilitaryUnits.Name = "buttonRefreshMilitaryUnits";
-            buttonRefreshMilitaryUnits.Size = new Size(60, 60);
-            buttonRefreshMilitaryUnits.TabIndex = 1;
-            buttonRefreshMilitaryUnits.UseVisualStyleBackColor = true;
-            buttonRefreshMilitaryUnits.Click += ButtonRefresh_Click;
-            // 
-            // buttonClearMilitaryUnits
-            // 
-            buttonClearMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonClearMilitaryUnits.BackgroundImage");
-            buttonClearMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearMilitaryUnits.FlatStyle = FlatStyle.Flat;
-            buttonClearMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearMilitaryUnits.Location = new Point(447, 10);
-            buttonClearMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
-            buttonClearMilitaryUnits.Name = "buttonClearMilitaryUnits";
-            buttonClearMilitaryUnits.Size = new Size(60, 60);
-            buttonClearMilitaryUnits.TabIndex = 0;
-            buttonClearMilitaryUnits.UseVisualStyleBackColor = true;
-            buttonClearMilitaryUnits.Click += ButtonClear_Click;
-            // 
-            // panel1
-            // 
-            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
-            panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Location = new Point(621, 25);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(33, 33);
-            panel1.TabIndex = 5;
-            // 
-            // panelTitleMilitaryUnits
-            // 
-            panelTitleMilitaryUnits.Controls.Add(panel1);
-            panelTitleMilitaryUnits.Controls.Add(labelTitleMilitaryUnits);
-            panelTitleMilitaryUnits.Controls.Add(buttonClearMilitaryUnits);
-            panelTitleMilitaryUnits.Controls.Add(buttonRefreshMilitaryUnits);
-            panelTitleMilitaryUnits.Controls.Add(textBoxSearchMilitaryUnits);
-            panelTitleMilitaryUnits.Location = new Point(0, 0);
-            panelTitleMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
-            panelTitleMilitaryUnits.Name = "panelTitleMilitaryUnits";
-            panelTitleMilitaryUnits.Size = new Size(889, 84);
-            panelTitleMilitaryUnits.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
-            panel2.BackgroundImageLayout = ImageLayout.Stretch;
-            panel2.Location = new Point(621, 25);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(33, 33);
-            panel2.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
-            panel3.BackgroundImageLayout = ImageLayout.Stretch;
-            panel3.Location = new Point(621, 25);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(33, 33);
-            panel3.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
-            panel4.BackgroundImageLayout = ImageLayout.Stretch;
-            panel4.Location = new Point(666, 25);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(33, 33);
-            panel4.TabIndex = 8;
-            // 
-            // panel5
-            // 
-            panel5.BackgroundImage = (Image)resources.GetObject("panel5.BackgroundImage");
-            panel5.BackgroundImageLayout = ImageLayout.Stretch;
-            panel5.Location = new Point(638, 25);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(33, 33);
-            panel5.TabIndex = 9;
-            // 
-            // panel6
-            // 
-            panel6.BackgroundImage = (Image)resources.GetObject("panel6.BackgroundImage");
-            panel6.BackgroundImageLayout = ImageLayout.Stretch;
-            panel6.Location = new Point(638, 25);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(33, 33);
-            panel6.TabIndex = 10;
-            // 
-            // panel7
-            // 
-            panel7.BackgroundImage = (Image)resources.GetObject("panel7.BackgroundImage");
-            panel7.BackgroundImageLayout = ImageLayout.Stretch;
-            panel7.Location = new Point(675, 29);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(33, 33);
-            panel7.TabIndex = 11;
-            // 
-            // panel8
-            // 
-            panel8.BackgroundImage = (Image)resources.GetObject("panel8.BackgroundImage");
-            panel8.BackgroundImageLayout = ImageLayout.Stretch;
-            panel8.Location = new Point(625, 29);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(33, 33);
-            panel8.TabIndex = 12;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -3137,6 +3137,8 @@
             Load += Form1_Load;
             tabPageMilitaryUnits.ResumeLayout(false);
             tabPageMilitaryUnits.PerformLayout();
+            panelTitleMilitaryUnits.ResumeLayout(false);
+            panelTitleMilitaryUnits.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMilitaryUnits).EndInit();
             panelRecordMilitaryUnits.ResumeLayout(false);
             panelRecordMilitaryUnits.PerformLayout();
@@ -3198,8 +3200,6 @@
             panelRecordEventEquipment.ResumeLayout(false);
             panelRecordEventEquipment.PerformLayout();
             panelControlEventEquipment.ResumeLayout(false);
-            panelTitleMilitaryUnits.ResumeLayout(false);
-            panelTitleMilitaryUnits.PerformLayout();
             ResumeLayout(false);
         }
 
