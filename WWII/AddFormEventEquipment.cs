@@ -19,6 +19,25 @@ namespace WWII
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            dataBase.OpenConnection();
+            comboBoxEventIDEventEquipment.Items.Clear();
+            var eventsQuery = "SELECT EventName FROM WarEvents ORDER BY EventName";
+            var eventsCommand = new SqlCommand(eventsQuery, dataBase.GetConnection());
+            var eventsReader = eventsCommand.ExecuteReader();
+            while (eventsReader.Read())
+            {
+                comboBoxEventIDEventEquipment.Items.Add(eventsReader.GetString(0));
+            }
+            eventsReader.Close();
+            comboBoxEquipmentIDEventEquipment.Items.Clear();
+            var equipmentQuery = "SELECT EquipmentName FROM MilitaryEquipment ORDER BY EquipmentName";
+            var equipmentCommand = new SqlCommand(equipmentQuery, dataBase.GetConnection());
+            var equipmentReader = equipmentCommand.ExecuteReader();
+            while (equipmentReader.Read())
+            {
+                comboBoxEquipmentIDEventEquipment.Items.Add(equipmentReader.GetString(0));
+            }
+            equipmentReader.Close();
         }
 
         /// <summary>
@@ -31,8 +50,8 @@ namespace WWII
             try
             {
                 dataBase.OpenConnection();
-                var eventName = textBoxEventIDEventEquipment.Text;
-                var equipmentName = textBoxEquipmentIDEventEquipment.Text;
+                var eventName = comboBoxEventIDEventEquipment.Text;
+                var equipmentName = comboBoxEquipmentIDEventEquipment.Text;
                 string eventQuery = $"SELECT WarEventID FROM WarEvents WHERE EventName = '{eventName}'";
                 SqlCommand eventCommand = new(eventQuery, dataBase.GetConnection());
                 object eventResult = eventCommand.ExecuteScalar();

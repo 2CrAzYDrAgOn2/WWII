@@ -33,9 +33,9 @@
             label1 = new Label();
             buttonSave = new Button();
             labelEventIDEventEquipment = new Label();
-            textBoxEventIDEventEquipment = new TextBox();
             labelEquipmentIDEventEquipment = new Label();
-            textBoxEquipmentIDEventEquipment = new TextBox();
+            comboBoxEventIDEventEquipment = new ComboBox();
+            comboBoxEquipmentIDEventEquipment = new ComboBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -92,15 +92,6 @@
             labelEventIDEventEquipment.TabIndex = 5;
             labelEventIDEventEquipment.Text = "Событие:";
             // 
-            // textBoxEventIDEventEquipment
-            // 
-            textBoxEventIDEventEquipment.Font = new Font("Segoe UI", 15F);
-            textBoxEventIDEventEquipment.Location = new Point(227, 184);
-            textBoxEventIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
-            textBoxEventIDEventEquipment.Name = "textBoxEventIDEventEquipment";
-            textBoxEventIDEventEquipment.Size = new Size(455, 34);
-            textBoxEventIDEventEquipment.TabIndex = 0;
-            // 
             // labelEquipmentIDEventEquipment
             // 
             labelEquipmentIDEventEquipment.AutoSize = true;
@@ -114,14 +105,25 @@
             labelEquipmentIDEventEquipment.TabIndex = 6;
             labelEquipmentIDEventEquipment.Text = "Оборудование:";
             // 
-            // textBoxEquipmentIDEventEquipment
+            // comboBoxEventIDEventEquipment
             // 
-            textBoxEquipmentIDEventEquipment.Font = new Font("Segoe UI", 15F);
-            textBoxEquipmentIDEventEquipment.Location = new Point(227, 236);
-            textBoxEquipmentIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
-            textBoxEquipmentIDEventEquipment.Name = "textBoxEquipmentIDEventEquipment";
-            textBoxEquipmentIDEventEquipment.Size = new Size(455, 34);
-            textBoxEquipmentIDEventEquipment.TabIndex = 1;
+            comboBoxEventIDEventEquipment.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEventIDEventEquipment.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEventIDEventEquipment.FormattingEnabled = true;
+            comboBoxEventIDEventEquipment.Location = new Point(226, 187);
+            comboBoxEventIDEventEquipment.Name = "comboBoxEventIDEventEquipment";
+            comboBoxEventIDEventEquipment.Size = new Size(447, 33);
+            comboBoxEventIDEventEquipment.TabIndex = 0;
+            // 
+            // comboBoxEquipmentIDEventEquipment
+            // 
+            comboBoxEquipmentIDEventEquipment.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEquipmentIDEventEquipment.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEquipmentIDEventEquipment.FormattingEnabled = true;
+            comboBoxEquipmentIDEventEquipment.Location = new Point(226, 239);
+            comboBoxEquipmentIDEventEquipment.Name = "comboBoxEquipmentIDEventEquipment";
+            comboBoxEquipmentIDEventEquipment.Size = new Size(447, 33);
+            comboBoxEquipmentIDEventEquipment.TabIndex = 1;
             // 
             // AddFormEventEquipment
             // 
@@ -132,9 +134,9 @@
             Controls.Add(labelTitle);
             Controls.Add(label1);
             Controls.Add(labelEventIDEventEquipment);
-            Controls.Add(textBoxEventIDEventEquipment);
+            Controls.Add(comboBoxEventIDEventEquipment);
             Controls.Add(labelEquipmentIDEventEquipment);
-            Controls.Add(textBoxEquipmentIDEventEquipment);
+            Controls.Add(comboBoxEquipmentIDEventEquipment);
             Controls.Add(buttonSave);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -152,8 +154,8 @@
         private Label label1;
         private Button buttonSave;
         private Label labelEventIDEventEquipment;
-        private TextBox textBoxEventIDEventEquipment;
         private Label labelEquipmentIDEventEquipment;
-        private TextBox textBoxEquipmentIDEventEquipment;
+        private ComboBox comboBoxEventIDEventEquipment;
+        private ComboBox comboBoxEquipmentIDEventEquipment;
     }
 }

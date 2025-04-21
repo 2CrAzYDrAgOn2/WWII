@@ -48,52 +48,68 @@ namespace WWII
         {
             try
             {
-                dataGridViewMilitaryUnits.Columns.Add("MilitaryUnitID", "Номер");
-                dataGridViewMilitaryUnits.Columns.Add("UnitName", "Наименование");
-                dataGridViewMilitaryUnits.Columns.Add("Description", "Описание");
+                dataGridViewMilitaryUnits.Columns.Add("Номер", "Номер");
+                dataGridViewMilitaryUnits.Columns.Add("Наименование", "Наименование");
+                dataGridViewMilitaryUnits.Columns.Add("Описание", "Описание");
                 dataGridViewMilitaryUnits.Columns.Add("IsNew", String.Empty);
-                dataGridViewWarEvents.Columns.Add("WarEventID", "Номер");
-                dataGridViewWarEvents.Columns.Add("EventName", "Наименование");
-                dataGridViewWarEvents.Columns.Add("EventDate", "Дата");
-                dataGridViewWarEvents.Columns.Add("EventLocation", "Местоположение");
-                dataGridViewWarEvents.Columns.Add("Description", "Описание");
+                dataGridViewWarEvents.Columns.Add("Номер", "Номер");
+                dataGridViewWarEvents.Columns.Add("Наименование", "Наименование");
+                dataGridViewWarEvents.Columns.Add("Дата", "Дата");
+                dataGridViewWarEvents.Columns.Add("Местоположение", "Местоположение");
+                dataGridViewWarEvents.Columns.Add("Описание", "Описание");
                 dataGridViewWarEvents.Columns.Add("IsNew", String.Empty);
-                dataGridViewVeterans.Columns.Add("VeteranID", "Номер");
-                dataGridViewVeterans.Columns.Add("FullName", "ФИО");
-                dataGridViewVeterans.Columns.Add("BirthDate", "Дата рождения");
-                dataGridViewVeterans.Columns.Add("DeathDate", "Дата смерти");
-                dataGridViewVeterans.Columns.Add("MilitaryRank", "Воинское звание");
-                dataGridViewVeterans.Columns.Add("UnitID", "ID оружия");
+                dataGridViewVeterans.Columns.Add("Номер", "Номер");
+                dataGridViewVeterans.Columns.Add("ФИО", "ФИО");
+                dataGridViewVeterans.Columns.Add("Дата рождения", "Дата рождения");
+                dataGridViewVeterans.Columns.Add("Дата смерти", "Дата смерти");
+                dataGridViewVeterans.Columns.Add("Воинское звание", "Воинское звание");
+                dataGridViewVeterans.Columns.Add("Наименование оружия", "Наименование оружия");
                 dataGridViewVeterans.Columns.Add("IsNew", String.Empty);
-                dataGridViewMedals.Columns.Add("MedalID", "Номер");
-                dataGridViewMedals.Columns.Add("MedalName", "Наименование");
-                dataGridViewMedals.Columns.Add("Description", "Описание");
+                dataGridViewMedals.Columns.Add("Номер", "Номер");
+                dataGridViewMedals.Columns.Add("Наименование", "Наименование");
+                dataGridViewMedals.Columns.Add("Описание", "Описание");
                 dataGridViewMedals.Columns.Add("IsNew", String.Empty);
-                dataGridViewVeteranMedals.Columns.Add("VeteranMedalID", "Номер");
-                dataGridViewVeteranMedals.Columns.Add("VeteranID", "ID ветерана");
-                dataGridViewVeteranMedals.Columns.Add("MedalID", "ID медали");
-                dataGridViewVeteranMedals.Columns.Add("AwardDate", "Дата награждения");
+                dataGridViewVeteranMedals.Columns.Add("Номер", "Номер");
+                dataGridViewVeteranMedals.Columns.Add("ФИО ветерана", "ФИО ветерана");
+                dataGridViewVeteranMedals.Columns.Add("Наименование медали", "Наименование медали");
+                dataGridViewVeteranMedals.Columns.Add("Дата награждения", "Дата награждения");
                 dataGridViewVeteranMedals.Columns.Add("IsNew", String.Empty);
-                dataGridViewMilitaryEquipment.Columns.Add("MilitaryEquipmentID", "Номер");
-                dataGridViewMilitaryEquipment.Columns.Add("EquipmentName", "Наименование");
-                dataGridViewMilitaryEquipment.Columns.Add("EquipmentType", "Тип");
-                dataGridViewMilitaryEquipment.Columns.Add("Description", "Описание");
+                dataGridViewMilitaryEquipment.Columns.Add("Номер", "Номер");
+                dataGridViewMilitaryEquipment.Columns.Add("Наименование", "Наименование");
+                dataGridViewMilitaryEquipment.Columns.Add("Тип", "Тип");
+                dataGridViewMilitaryEquipment.Columns.Add("Описание", "Описание");
                 dataGridViewMilitaryEquipment.Columns.Add("IsNew", String.Empty);
-                dataGridViewMilitaryRoutes.Columns.Add("MilitaryRouteID", "Номер");
-                dataGridViewMilitaryRoutes.Columns.Add("RouteName", "Наименование");
-                dataGridViewMilitaryRoutes.Columns.Add("StartLocation", "Начальная точка");
-                dataGridViewMilitaryRoutes.Columns.Add("EndLocation", "Конечная точка");
-                dataGridViewMilitaryRoutes.Columns.Add("Description", "Описание");
+                dataGridViewMilitaryRoutes.Columns.Add("Номер", "Номер");
+                dataGridViewMilitaryRoutes.Columns.Add("Наименование", "Наименование");
+                dataGridViewMilitaryRoutes.Columns.Add("Начальная точка", "Начальная точка");
+                dataGridViewMilitaryRoutes.Columns.Add("Конечная точка", "Конечная точка");
+                dataGridViewMilitaryRoutes.Columns.Add("Описание", "Описание");
                 dataGridViewMilitaryRoutes.Columns.Add("IsNew", String.Empty);
-                dataGridViewEventEquipment.Columns.Add("EventEquipmentID", "Номер");
-                dataGridViewEventEquipment.Columns.Add("EventID", "ID события");
-                dataGridViewEventEquipment.Columns.Add("EquipmentID", "ID техники");
+                dataGridViewEventEquipment.Columns.Add("Номер", "Номер");
+                dataGridViewEventEquipment.Columns.Add("Наименование события", "Наименование события");
+                dataGridViewEventEquipment.Columns.Add("Наименование техники", "Наименование техники");
                 dataGridViewEventEquipment.Columns.Add("IsNew", String.Empty);
+                HideIsNewColumns();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        /// <summary>
+        /// HideIsNewColumns() вызывается при прятании колонок
+        /// </summary>
+        private void HideIsNewColumns()
+        {
+            dataGridViewMilitaryUnits.Columns["IsNew"].Visible = false;
+            dataGridViewWarEvents.Columns["IsNew"].Visible = false;
+            dataGridViewVeterans.Columns["IsNew"].Visible = false;
+            dataGridViewMedals.Columns["IsNew"].Visible = false;
+            dataGridViewVeteranMedals.Columns["IsNew"].Visible = false;
+            dataGridViewMilitaryEquipment.Columns["IsNew"].Visible = false;
+            dataGridViewMilitaryRoutes.Columns["IsNew"].Visible = false;
+            dataGridViewEventEquipment.Columns["IsNew"].Visible = false;
         }
 
         /// <summary>
@@ -113,13 +129,10 @@ namespace WWII
                 textBoxVeteranID.Text = "";
                 textBoxFullName.Text = "";
                 textBoxMilitaryRank.Text = "";
-                textBoxUnitID.Text = "";
                 textBoxMedalID.Text = "";
                 textBoxMedalName.Text = "";
                 textBoxDescriptionMedals.Text = "";
                 textBoxVeteranMedalID.Text = "";
-                textBoxVeteranIDVeteranMedals.Text = "";
-                textBoxMedalIDVeteranMedals.Text = "";
                 textBoxMilitaryEquipmentID.Text = "";
                 textBoxEquipmentName.Text = "";
                 textBoxEquipmentType.Text = "";
@@ -130,8 +143,6 @@ namespace WWII
                 textBoxEndLocation.Text = "";
                 textBoxDescriptionMilitaryRoutes.Text = "";
                 textBoxEventEquipmentID.Text = "";
-                textBoxEventIDEventEquipment.Text = "";
-                textBoxEquipmentIDEventEquipment.Text = "";
             }
             catch (Exception ex)
             {
@@ -159,7 +170,7 @@ namespace WWII
                         break;
 
                     case "dataGridViewVeterans":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.IsDBNull(3) ? string.Empty : iDataRecord.GetDateTime(3).ToString("yyyy-MM-dd"), iDataRecord.IsDBNull(4) ? string.Empty : iDataRecord.GetString(4), iDataRecord.IsDBNull(5) ? string.Empty : iDataRecord.GetInt32(5).ToString(), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.IsDBNull(3) ? string.Empty : iDataRecord.GetDateTime(3).ToString("yyyy-MM-dd"), iDataRecord.IsDBNull(4) ? string.Empty : iDataRecord.GetString(4), iDataRecord.IsDBNull(5) ? string.Empty : iDataRecord.GetString(5), RowState.Modified);
                         break;
 
                     case "dataGridViewMedals":
@@ -167,7 +178,7 @@ namespace WWII
                         break;
 
                     case "dataGridViewVeteranMedals":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetInt32(1), iDataRecord.GetInt32(2), iDataRecord.GetDateTime(3).ToString("yyyy-MM-dd"), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.GetString(2), iDataRecord.GetDateTime(3).ToString("yyyy-MM-dd"), RowState.Modified);
                         break;
 
                     case "dataGridViewMilitaryEquipment":
@@ -179,7 +190,7 @@ namespace WWII
                         break;
 
                     case "dataGridViewEventEquipment":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetInt32(1), iDataRecord.GetInt32(2), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.GetString(2), RowState.Modified);
                         break;
                 }
             }
@@ -199,7 +210,50 @@ namespace WWII
             try
             {
                 dataGridView.Rows.Clear();
-                string queryString = $"select * from {tableName}";
+                string queryString = "";
+                switch (tableName)
+                {
+                    case "MilitaryUnits":
+                        queryString = "SELECT * FROM MilitaryUnits";
+                        break;
+
+                    case "WarEvents":
+                        queryString = "SELECT * FROM WarEvents";
+                        break;
+
+                    case "Veterans":
+                        queryString = @"SELECT v.VeteranID, v.FullName, v.BirthDate, v.DeathDate, v.MilitaryRank,
+                              mu.UnitName
+                              FROM Veterans v
+                              LEFT JOIN MilitaryUnits mu ON v.UnitID = mu.MilitaryUnitID";
+                        break;
+
+                    case "Medals":
+                        queryString = "SELECT * FROM Medals";
+                        break;
+
+                    case "VeteranMedals":
+                        queryString = @"SELECT vm.VeteranMedalID, v.FullName AS VeteranName, m.MedalName, vm.AwardDate
+                              FROM VeteranMedals vm
+                              JOIN Veterans v ON vm.VeteranID = v.VeteranID
+                              JOIN Medals m ON vm.MedalID = m.MedalID";
+                        break;
+
+                    case "MilitaryEquipment":
+                        queryString = "SELECT * FROM MilitaryEquipment";
+                        break;
+
+                    case "MilitaryRoutes":
+                        queryString = "SELECT * FROM MilitaryRoutes";
+                        break;
+
+                    case "EventEquipment":
+                        queryString = @"SELECT ee.EventEquipmentID, we.EventName, me.EquipmentName
+                              FROM EventEquipment ee
+                              JOIN WarEvents we ON ee.EventID = we.WarEventID
+                              JOIN MilitaryEquipment me ON ee.EquipmentID = me.MilitaryEquipmentID";
+                        break;
+                }
                 SqlCommand sqlCommand = new(queryString, dataBase.GetConnection());
                 dataBase.OpenConnection();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
@@ -278,6 +332,7 @@ namespace WWII
                 RefreshDataGrid(dataGridViewMilitaryEquipment, "MilitaryEquipment");
                 RefreshDataGrid(dataGridViewMilitaryRoutes, "MilitaryRoutes");
                 RefreshDataGrid(dataGridViewEventEquipment, "EventEquipment");
+                FillAllComboBoxes();
             }
             catch (Exception ex)
             {
@@ -317,15 +372,7 @@ namespace WWII
                         dateTimePickerBirthDate.Text = dataGridViewRow.Cells[2].Value?.ToString();
                         dateTimePickerDeathDate.Text = dataGridViewRow.Cells[3].Value?.ToString();
                         textBoxMilitaryRank.Text = dataGridViewRow.Cells[4].Value?.ToString();
-                        var unitId = dataGridViewRow.Cells[5].Value?.ToString();
-                        if (!string.IsNullOrEmpty(unitId))
-                        {
-                            string unitQuery = $"SELECT UnitName FROM MilitaryUnits WHERE MilitaryUnitID = {unitId}";
-                            SqlCommand unitCommand = new(unitQuery, dataBase.GetConnection());
-                            dataBase.OpenConnection();
-                            object unitResult = unitCommand.ExecuteScalar();
-                            textBoxUnitID.Text = unitResult?.ToString();
-                        }
+                        comboBoxUnitID.Text = dataGridViewRow.Cells[5].Value?.ToString();
                         break;
 
                     case "dataGridViewMedals":
@@ -336,25 +383,8 @@ namespace WWII
 
                     case "dataGridViewVeteranMedals":
                         textBoxVeteranMedalID.Text = dataGridViewRow.Cells[0].Value?.ToString();
-                        var veteranId = dataGridViewRow.Cells[1].Value?.ToString();
-                        if (!string.IsNullOrEmpty(veteranId))
-                        {
-                            string veteranQuery = $"SELECT FullName FROM Veterans WHERE VeteranID = {veteranId}";
-                            SqlCommand veteranCommand = new(veteranQuery, dataBase.GetConnection());
-                            dataBase.OpenConnection();
-                            object veteranResult = veteranCommand.ExecuteScalar();
-                            textBoxVeteranIDVeteranMedals.Text = veteranResult?.ToString();
-                        }
-                        var medalId = dataGridViewRow.Cells[2].Value?.ToString();
-                        if (!string.IsNullOrEmpty(medalId))
-                        {
-                            string medalQuery = $"SELECT MedalName FROM Medals WHERE MedalID = {medalId}";
-                            SqlCommand medalCommand = new(medalQuery, dataBase.GetConnection());
-                            dataBase.OpenConnection();
-                            object medalResult = medalCommand.ExecuteScalar();
-                            textBoxMedalIDVeteranMedals.Text = medalResult?.ToString();
-                        }
-
+                        comboBoxVeteranIDVeteranMedals.Text = dataGridViewRow.Cells[1].Value?.ToString();
+                        comboBoxMedalIDVeteranMedals.Text = dataGridViewRow.Cells[2].Value?.ToString();
                         dateTimePickerAwardDate.Text = dataGridViewRow.Cells[3].Value?.ToString();
                         break;
 
@@ -375,24 +405,8 @@ namespace WWII
 
                     case "dataGridViewEventEquipment":
                         textBoxEventEquipmentID.Text = dataGridViewRow.Cells[0].Value?.ToString();
-                        var eventId = dataGridViewRow.Cells[1].Value?.ToString();
-                        if (!string.IsNullOrEmpty(eventId))
-                        {
-                            string eventQuery = $"SELECT EventName FROM WarEvents WHERE WarEventID = {eventId}";
-                            SqlCommand eventCommand = new(eventQuery, dataBase.GetConnection());
-                            dataBase.OpenConnection();
-                            object eventResult = eventCommand.ExecuteScalar();
-                            textBoxEventIDEventEquipment.Text = eventResult?.ToString();
-                        }
-                        var equipmentId = dataGridViewRow.Cells[2].Value?.ToString();
-                        if (!string.IsNullOrEmpty(equipmentId))
-                        {
-                            string equipmentQuery = $"SELECT EquipmentName FROM MilitaryEquipment WHERE MilitaryEquipmentID = {equipmentId}";
-                            SqlCommand equipmentCommand = new(equipmentQuery, dataBase.GetConnection());
-                            dataBase.OpenConnection();
-                            object equipmentResult = equipmentCommand.ExecuteScalar();
-                            textBoxEquipmentIDEventEquipment.Text = equipmentResult?.ToString();
-                        }
+                        comboBoxEventIDEventEquipment.Text = dataGridViewRow.Cells[1].Value?.ToString();
+                        comboBoxEquipmentIDEventEquipment.Text = dataGridViewRow.Cells[2].Value?.ToString();
                         break;
                 }
             }
@@ -630,6 +644,7 @@ namespace WWII
                                 var deleteQuery = $"delete from MilitaryUnits where MilitaryUnitID = '{unitID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateUnits == RowState.Modified)
                             {
@@ -639,6 +654,7 @@ namespace WWII
                                 var changeQuery = $"update MilitaryUnits set UnitName = '{unitName}', Description = '{description}' where MilitaryUnitID = '{unitID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateUnits == RowState.New)
                             {
@@ -647,6 +663,7 @@ namespace WWII
                                 var newQuery = $"insert into MilitaryUnits (UnitName, Description) values ('{unitName}', '{description}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             break;
 
@@ -660,6 +677,7 @@ namespace WWII
                                 var deleteQuery = $"delete from WarEvents where WarEventID = '{eventID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateEvents == RowState.Modified)
                             {
@@ -671,6 +689,7 @@ namespace WWII
                                 var changeQuery = $"update WarEvents set EventName = '{eventName}', EventDate = '{eventDate}', EventLocation = '{location}', Description = '{description}' where WarEventID = '{eventID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateEvents == RowState.New)
                             {
@@ -681,6 +700,7 @@ namespace WWII
                                 var newQuery = $"insert into WarEvents (EventName, EventDate, EventLocation, Description) values ('{eventName}', '{eventDate}', '{location}', '{description}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             break;
 
@@ -694,6 +714,7 @@ namespace WWII
                                 var deleteQuery = $"delete from Veterans where VeteranID = '{veteranID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateVeterans == RowState.Modified)
                             {
@@ -702,10 +723,22 @@ namespace WWII
                                 var birthDate = Convert.ToDateTime(dataGridView.Rows[index].Cells[2].Value).ToString("yyyy-MM-dd");
                                 var deathDate = dataGridView.Rows[index].Cells[3].Value != null ? Convert.ToDateTime(dataGridView.Rows[index].Cells[3].Value).ToString("yyyy-MM-dd") : "NULL";
                                 var rank = dataGridView.Rows[index].Cells[4].Value?.ToString();
-                                var unitID = dataGridView.Rows[index].Cells[5].Value?.ToString();
-                                var changeQuery = $"update Veterans set FullName = '{fullName}', BirthDate = '{birthDate}', DeathDate = '{deathDate}', MilitaryRank = '{rank}', UnitID = {unitID ?? "NULL"} where VeteranID = '{veteranID}'";
+                                var unitName = dataGridView.Rows[index].Cells[5].Value?.ToString();
+                                int? unitID = null;
+                                if (!string.IsNullOrEmpty(unitName))
+                                {
+                                    var getUnitIdQuery = $"SELECT MilitaryUnitID FROM MilitaryUnits WHERE UnitName = '{unitName}'";
+                                    var unitIdCommand = new SqlCommand(getUnitIdQuery, dataBase.GetConnection());
+                                    var result = unitIdCommand.ExecuteScalar();
+                                    if (result != null)
+                                    {
+                                        unitID = Convert.ToInt32(result);
+                                    }
+                                }
+                                var changeQuery = $"update Veterans set FullName = '{fullName}', BirthDate = '{birthDate}', DeathDate = '{deathDate}', MilitaryRank = '{rank}', UnitID = {unitID} where VeteranID = '{veteranID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateVeterans == RowState.New)
                             {
@@ -713,10 +746,22 @@ namespace WWII
                                 var birthDate = Convert.ToDateTime(dataGridView.Rows[index].Cells[2].Value).ToString("yyyy-MM-dd");
                                 var deathDate = dataGridView.Rows[index].Cells[3].Value != null ? $"'{Convert.ToDateTime(dataGridView.Rows[index].Cells[3].Value):yyyy-MM-dd}'" : "NULL";
                                 var rank = dataGridView.Rows[index].Cells[4].Value?.ToString();
-                                var unitID = dataGridView.Rows[index].Cells[5].Value?.ToString();
-                                var newQuery = $"insert into Veterans (FullName, BirthDate, DeathDate, MilitaryRank, UnitID) values ('{fullName}', '{birthDate}', {deathDate}, '{rank}', {unitID ?? "NULL"})";
+                                var unitName = dataGridView.Rows[index].Cells[5].Value?.ToString();
+                                string unitIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(unitName))
+                                {
+                                    var getUnitIdQuery = $"SELECT MilitaryUnitID FROM MilitaryUnits WHERE UnitName = '{unitName}'";
+                                    var unitIdCommand = new SqlCommand(getUnitIdQuery, dataBase.GetConnection());
+                                    var result = unitIdCommand.ExecuteScalar();
+                                    if (result != null)
+                                    {
+                                        unitIdValue = result.ToString();
+                                    }
+                                }
+                                var newQuery = $"insert into Veterans (FullName, BirthDate, DeathDate, MilitaryRank, UnitID) values ('{fullName}', '{birthDate}', {deathDate}, '{rank}', {unitIdValue})";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             break;
 
@@ -730,6 +775,7 @@ namespace WWII
                                 var deleteQuery = $"delete from Medals where MedalID = '{medalID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateMedals == RowState.Modified)
                             {
@@ -739,6 +785,7 @@ namespace WWII
                                 var changeQuery = $"update Medals set MedalName = '{medalName}', Description = '{description}' where MedalID = '{medalID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateMedals == RowState.New)
                             {
@@ -747,6 +794,7 @@ namespace WWII
                                 var newQuery = $"insert into Medals (MedalName, Description) values ('{medalName}', '{description}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             break;
 
@@ -764,8 +812,14 @@ namespace WWII
                             if (rowStateVeteranMedals == RowState.Modified)
                             {
                                 var veteranMedalID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var veteranID = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var medalID = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var veteranName = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var getVeteranIdQuery = $"SELECT VeteranID FROM Veterans WHERE FullName = '{veteranName}'";
+                                var veteranIdCommand = new SqlCommand(getVeteranIdQuery, dataBase.GetConnection());
+                                var veteranID = veteranIdCommand.ExecuteScalar()?.ToString();
+                                var medalName = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var getMedalIdQuery = $"SELECT MedalID FROM Medals WHERE MedalName = '{medalName}'";
+                                var medalIdCommand = new SqlCommand(getMedalIdQuery, dataBase.GetConnection());
+                                var medalID = medalIdCommand.ExecuteScalar()?.ToString();
                                 var awardDate = Convert.ToDateTime(dataGridView.Rows[index].Cells[3].Value).ToString("yyyy-MM-dd");
                                 var changeQuery = $"update VeteranMedals set VeteranID = '{veteranID}', MedalID = '{medalID}', AwardDate = '{awardDate}' where VeteranMedalID = '{veteranMedalID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
@@ -773,8 +827,14 @@ namespace WWII
                             }
                             if (rowStateVeteranMedals == RowState.New)
                             {
-                                var veteranID = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var medalID = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var veteranName = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var getVeteranIdQuery = $"SELECT VeteranID FROM Veterans WHERE FullName = '{veteranName}'";
+                                var veteranIdCommand = new SqlCommand(getVeteranIdQuery, dataBase.GetConnection());
+                                var veteranID = veteranIdCommand.ExecuteScalar()?.ToString();
+                                var medalName = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var getMedalIdQuery = $"SELECT MedalID FROM Medals WHERE MedalName = '{medalName}'";
+                                var medalIdCommand = new SqlCommand(getMedalIdQuery, dataBase.GetConnection());
+                                var medalID = medalIdCommand.ExecuteScalar()?.ToString();
                                 var awardDate = Convert.ToDateTime(dataGridView.Rows[index].Cells[3].Value).ToString("yyyy-MM-dd");
                                 var newQuery = $"insert into VeteranMedals (VeteranID, MedalID, AwardDate) values ('{veteranID}', '{medalID}', '{awardDate}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
@@ -792,6 +852,7 @@ namespace WWII
                                 var deleteQuery = $"delete from MilitaryEquipment where MilitaryEquipmentID = '{equipmentID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateEquipment == RowState.Modified)
                             {
@@ -802,6 +863,7 @@ namespace WWII
                                 var changeQuery = $"update MilitaryEquipment set EquipmentName = '{equipmentName}', EquipmentType = '{equipmentType}', Description = '{description}' where MilitaryEquipmentID = '{equipmentID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateEquipment == RowState.New)
                             {
@@ -811,6 +873,7 @@ namespace WWII
                                 var newQuery = $"insert into MilitaryEquipment (EquipmentName, EquipmentType, Description) values ('{equipmentName}', '{equipmentType}', '{description}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             break;
 
@@ -862,8 +925,14 @@ namespace WWII
                             if (rowStateEventEquipment == RowState.Modified)
                             {
                                 var eventEquipmentID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var eventID = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var equipmentID = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var eventName = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var getEventIdQuery = $"SELECT WarEventID FROM WarEvents WHERE EventName = '{eventName}'";
+                                var eventIdCommand = new SqlCommand(getEventIdQuery, dataBase.GetConnection());
+                                var eventID = eventIdCommand.ExecuteScalar()?.ToString();
+                                var equipmentName = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var getEquipmentIdQuery = $"SELECT MilitaryEquipmentID FROM MilitaryEquipment WHERE EquipmentName = '{equipmentName}'";
+                                var equipmentIdCommand = new SqlCommand(getEquipmentIdQuery, dataBase.GetConnection());
+                                var equipmentID = equipmentIdCommand.ExecuteScalar()?.ToString();
                                 var changeQuery = $"update EventEquipment set EventID = '{eventID}', EquipmentID = '{equipmentID}' where EventEquipmentID = '{eventEquipmentID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
@@ -925,12 +994,7 @@ namespace WWII
                         var birthDate = dateTimePickerBirthDate.Value;
                         var deathDate = dateTimePickerDeathDate.Value;
                         var militaryRank = textBoxMilitaryRank.Text;
-                        var unitNameVeterans = textBoxUnitID.Text;
-                        string unitQuery = $"SELECT MilitaryUnitID FROM MilitaryUnits WHERE UnitName = '{unitNameVeterans}'";
-                        SqlCommand unitCommand = new(unitQuery, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object unitResult = unitCommand.ExecuteScalar();
-                        var unitID = unitResult?.ToString() ?? "0";
+                        var unitID = comboBoxUnitID.Text;
                         dataBase.CloseConnection();
 
                         dataGridView.Rows[selectedRowIndex].SetValues(veteranID, fullName, birthDate, deathDate, militaryRank, unitID);
@@ -947,21 +1011,8 @@ namespace WWII
 
                     case "dataGridViewVeteranMedals":
                         var veteranMedalID = textBoxVeteranMedalID.Text;
-                        var veteranName = textBoxVeteranIDVeteranMedals.Text;
-                        string veteranQuery = $"SELECT VeteranID FROM Veterans WHERE FullName = '{veteranName}'";
-                        SqlCommand veteranCommand = new(veteranQuery, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object veteranResult = veteranCommand.ExecuteScalar();
-                        var veteranIDForMedal = veteranResult?.ToString() ?? "0";
-                        dataBase.CloseConnection();
-                        var medalNameVeteranMedals = textBoxMedalIDVeteranMedals.Text;
-                        string medalQuery = $"SELECT MedalID FROM Medals WHERE MedalName = '{medalNameVeteranMedals}'";
-                        SqlCommand medalCommand = new(medalQuery, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object medalResult = medalCommand.ExecuteScalar();
-                        var medalIDForVeteran = medalResult?.ToString() ?? "0";
-                        dataBase.CloseConnection();
-
+                        var veteranIDForMedal = comboBoxVeteranIDVeteranMedals.Text;
+                        var medalIDForVeteran = comboBoxMedalIDVeteranMedals.Text;
                         var awardDate = dateTimePickerAwardDate.Value;
                         dataGridView.Rows[selectedRowIndex].SetValues(veteranMedalID, veteranIDForMedal, medalIDForVeteran, awardDate);
                         dataGridView.Rows[selectedRowIndex].Cells[4].Value = RowState.Modified;
@@ -988,21 +1039,8 @@ namespace WWII
 
                     case "dataGridViewEventEquipment":
                         var eventEquipmentID = textBoxEventEquipmentID.Text;
-                        var eventNameEventEquipment = textBoxEventIDEventEquipment.Text;
-                        string eventQuery = $"SELECT WarEventID FROM WarEvents WHERE EventName = '{eventNameEventEquipment}'";
-                        SqlCommand eventCommand = new(eventQuery, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object eventResult = eventCommand.ExecuteScalar();
-                        var eventID = eventResult?.ToString() ?? "0";
-                        dataBase.CloseConnection();
-                        var equipmentNameEventEquipment = textBoxEquipmentIDEventEquipment.Text;
-                        string equipmentQuery = $"SELECT MilitaryEquipmentID FROM MilitaryEquipment WHERE EquipmentName = '{equipmentNameEventEquipment}'";
-                        SqlCommand equipmentCommand = new(equipmentQuery, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object equipmentResult = equipmentCommand.ExecuteScalar();
-                        var equipmentIDForEvent = equipmentResult?.ToString() ?? "0";
-                        dataBase.CloseConnection();
-
+                        var eventID = comboBoxEventIDEventEquipment.Text;
+                        var equipmentIDForEvent = comboBoxEquipmentIDEventEquipment.Text;
                         dataGridView.Rows[selectedRowIndex].SetValues(eventEquipmentID, eventID, equipmentIDForEvent);
                         dataGridView.Rows[selectedRowIndex].Cells[3].Value = RowState.Modified;
                         break;
@@ -1163,65 +1201,6 @@ namespace WWII
             }
         }
 
-        /// <summary>
-        /// ExportToTXT() вызывается при экспорте в .txt
-        /// </summary>
-        /// <param name="dataGridView"></param>
-        private static void ExportToTXT(DataGridView dataGridView)
-        {
-            string text = "";
-            switch (dataGridView.Name)
-            {
-                case "dataGridViewMilitaryUnits":
-                    text = "Данные военных единиц";
-                    break;
-
-                case "dataGridViewWarEvents":
-                    text = "Данные событий войны";
-                    break;
-
-                case "dataGridViewVeterans":
-                    text = "Данные ветеранов";
-                    break;
-
-                case "dataGridViewMedals":
-                    text = "Данные медалей и наград";
-                    break;
-
-                case "dataGridViewVeteranMedals":
-                    text = "Данные о награждении ветеранов";
-                    break;
-
-                case "dataGridViewMilitaryEquipment":
-                    text = "Данные военной техники";
-                    break;
-
-                case "dataGridViewMilitaryRoutes":
-                    text = "Данные военных маршрутов";
-                    break;
-
-                case "dataGridViewEventEquipment":
-                    text = "Данные техники в событиях";
-                    break;
-            }
-            for (int col = 0; col < dataGridView.ColumnCount; col++)
-            {
-                text += dataGridView.Columns[col].HeaderText + "\t";
-            }
-            text += "\n";
-            for (int row = 0; row < dataGridView.RowCount; row++)
-            {
-                for (int col = 0; col < dataGridView.ColumnCount - 1; col++)
-                {
-                    text += dataGridView[col, row].Value?.ToString() + "\t";
-                }
-                text += "\n";
-            }
-            string filePath = "данные.txt";
-            File.WriteAllText(filePath, text);
-            Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
-        }
-
         private void Reports(string report)
         {
             dataBase.OpenConnection();
@@ -1281,6 +1260,66 @@ namespace WWII
         }
 
         /// <summary>
+        /// FillAllComboBoxes() Заполняет все внешние ключи
+        /// </summary>
+        private void FillAllComboBoxes()
+        {
+            try
+            {
+                dataBase.OpenConnection();
+                comboBoxUnitID.Items.Clear();
+                var unitsQuery = "SELECT UnitName FROM MilitaryUnits ORDER BY UnitName";
+                var unitsCommand = new SqlCommand(unitsQuery, dataBase.GetConnection());
+                var unitsReader = unitsCommand.ExecuteReader();
+                while (unitsReader.Read())
+                {
+                    comboBoxUnitID.Items.Add(unitsReader.GetString(0));
+                }
+                unitsReader.Close();
+                comboBoxVeteranIDVeteranMedals.Items.Clear();
+                var veteransQuery = "SELECT FullName FROM Veterans ORDER BY FullName";
+                var veteransCommand = new SqlCommand(veteransQuery, dataBase.GetConnection());
+                var veteransReader = veteransCommand.ExecuteReader();
+                while (veteransReader.Read())
+                {
+                    comboBoxVeteranIDVeteranMedals.Items.Add(veteransReader.GetString(0));
+                }
+                veteransReader.Close();
+                comboBoxMedalIDVeteranMedals.Items.Clear();
+                var medalsQuery = "SELECT MedalName FROM Medals ORDER BY MedalName";
+                var medalsCommand = new SqlCommand(medalsQuery, dataBase.GetConnection());
+                var medalsReader = medalsCommand.ExecuteReader();
+                while (medalsReader.Read())
+                {
+                    comboBoxMedalIDVeteranMedals.Items.Add(medalsReader.GetString(0));
+                }
+                medalsReader.Close();
+                comboBoxEventIDEventEquipment.Items.Clear();
+                var eventsQuery = "SELECT EventName FROM WarEvents ORDER BY EventName";
+                var eventsCommand = new SqlCommand(eventsQuery, dataBase.GetConnection());
+                var eventsReader = eventsCommand.ExecuteReader();
+                while (eventsReader.Read())
+                {
+                    comboBoxEventIDEventEquipment.Items.Add(eventsReader.GetString(0));
+                }
+                eventsReader.Close();
+                comboBoxEquipmentIDEventEquipment.Items.Clear();
+                var equipmentQuery = "SELECT EquipmentName FROM MilitaryEquipment ORDER BY EquipmentName";
+                var equipmentCommand = new SqlCommand(equipmentQuery, dataBase.GetConnection());
+                var equipmentReader = equipmentCommand.ExecuteReader();
+                while (equipmentReader.Read())
+                {
+                    comboBoxEquipmentIDEventEquipment.Items.Add(equipmentReader.GetString(0));
+                }
+                equipmentReader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при загрузке данных в комбобоксы: {ex.Message}");
+            }
+        }
+
+        /// <summary>
         /// ButtonReportVeterans_Click() вызывается при нажатии на кнопку отчета на вкладке "Ветераны"
         /// </summary>
         /// <param name="sender"></param>
@@ -1327,23 +1366,6 @@ namespace WWII
                 RefreshDataGrid(dataGridViewMilitaryEquipment, "MilitaryEquipment");
                 RefreshDataGrid(dataGridViewMilitaryRoutes, "MilitaryRoutes");
                 RefreshDataGrid(dataGridViewEventEquipment, "EventEquipment");
-                ClearFields();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonClear_Click() вызывается при нажатии на кнопку очистки
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonClear_Click(object sender, EventArgs e)
-        {
-            try
-            {
                 ClearFields();
             }
             catch (Exception ex)
@@ -2228,142 +2250,6 @@ namespace WWII
             try
             {
                 ExportToExcel(dataGridViewEventEquipment);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTMilitaryUnit_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Военные единицы"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTMilitaryUnit_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewMilitaryUnits);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTWarEvent_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "События войны"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTWarEvent_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewWarEvents);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTVeteran_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Ветераны"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTVeteran_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewVeterans);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTMedal_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Медали и награды"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTMedal_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewMedals);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTVeteranMedal_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Награды ветеранов"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTVeteranMedal_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewVeteranMedals);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTMilitaryEquipment_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Военная техника"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTMilitaryEquipment_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewMilitaryEquipment);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTMilitaryRoute_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Военные маршруты"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTMilitaryRoute_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewMilitaryRoutes);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTEventEquipment_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "События техники"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTEventEquipment_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewEventEquipment);
             }
             catch (Exception ex)
             {

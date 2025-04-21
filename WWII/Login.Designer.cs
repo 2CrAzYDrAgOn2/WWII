@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             labelRegister = new Label();
-            buttonClear = new Button();
             textBoxLogin = new TextBox();
             textBoxPassword = new TextBox();
             buttonEnter = new Button();
@@ -51,19 +50,6 @@
             labelRegister.Size = new Size(317, 62);
             labelRegister.TabIndex = 6;
             labelRegister.Text = "Авторизация";
-            // 
-            // buttonClear
-            // 
-            buttonClear.BackColor = Color.Transparent;
-            buttonClear.BackgroundImage = (Image)resources.GetObject("buttonClear.BackgroundImage");
-            buttonClear.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClear.FlatStyle = FlatStyle.Flat;
-            buttonClear.Location = new Point(579, 12);
-            buttonClear.Name = "buttonClear";
-            buttonClear.Size = new Size(50, 50);
-            buttonClear.TabIndex = 4;
-            buttonClear.UseVisualStyleBackColor = false;
-            buttonClear.Click += ButtonClear_Click;
             // 
             // textBoxLogin
             // 
@@ -156,7 +142,6 @@
             Controls.Add(textBoxPassword);
             Controls.Add(buttonEnter);
             Controls.Add(labelAuth);
-            Controls.Add(buttonClear);
             Controls.Add(buttonShow);
             Controls.Add(labelRegister);
             Controls.Add(panel1);
@@ -172,7 +157,6 @@
 
         #endregion
         private Label labelRegister;
-        private Button buttonClear;
         private TextBox textBoxLogin;
         private TextBox textBoxPassword;
         private Button buttonEnter;

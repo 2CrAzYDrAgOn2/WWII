@@ -41,7 +41,7 @@
             labelMilitaryRank = new Label();
             textBoxMilitaryRank = new TextBox();
             labelUnitID = new Label();
-            textBoxUnitID = new TextBox();
+            comboBoxUnitID = new ComboBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -184,14 +184,15 @@
             labelUnitID.TabIndex = 12;
             labelUnitID.Text = "Оружие:";
             // 
-            // textBoxUnitID
+            // comboBoxUnitID
             // 
-            textBoxUnitID.Font = new Font("Segoe UI", 15F);
-            textBoxUnitID.Location = new Point(237, 389);
-            textBoxUnitID.Margin = new Padding(4, 3, 4, 3);
-            textBoxUnitID.Name = "textBoxUnitID";
-            textBoxUnitID.Size = new Size(455, 34);
-            textBoxUnitID.TabIndex = 4;
+            comboBoxUnitID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxUnitID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxUnitID.FormattingEnabled = true;
+            comboBoxUnitID.Location = new Point(237, 392);
+            comboBoxUnitID.Name = "comboBoxUnitID";
+            comboBoxUnitID.Size = new Size(455, 33);
+            comboBoxUnitID.TabIndex = 4;
             // 
             // AddFormVeterans
             // 
@@ -211,7 +212,7 @@
             Controls.Add(labelMilitaryRank);
             Controls.Add(textBoxMilitaryRank);
             Controls.Add(labelUnitID);
-            Controls.Add(textBoxUnitID);
+            Controls.Add(comboBoxUnitID);
             Controls.Add(buttonSave);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -237,6 +238,6 @@
         private Label labelMilitaryRank;
         private TextBox textBoxMilitaryRank;
         private Label labelUnitID;
-        private TextBox textBoxUnitID;
+        private ComboBox comboBoxUnitID;
     }
 }

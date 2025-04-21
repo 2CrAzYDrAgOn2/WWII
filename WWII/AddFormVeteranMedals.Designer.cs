@@ -33,11 +33,11 @@
             label1 = new Label();
             buttonSave = new Button();
             labelVeteranIDVeteranMedals = new Label();
-            textBoxVeteranIDVeteranMedals = new TextBox();
             labelMedalIDVeteranMedals = new Label();
-            textBoxMedalIDVeteranMedals = new TextBox();
             labelAwardDate = new Label();
             dateTimePickerAwardDate = new DateTimePicker();
+            comboBoxVeteranIDVeteranMedals = new ComboBox();
+            comboBoxMedalIDVeteranMedals = new ComboBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -94,15 +94,6 @@
             labelVeteranIDVeteranMedals.TabIndex = 6;
             labelVeteranIDVeteranMedals.Text = "Ветеран:";
             // 
-            // textBoxVeteranIDVeteranMedals
-            // 
-            textBoxVeteranIDVeteranMedals.Font = new Font("Segoe UI", 15F);
-            textBoxVeteranIDVeteranMedals.Location = new Point(237, 182);
-            textBoxVeteranIDVeteranMedals.Margin = new Padding(4, 3, 4, 3);
-            textBoxVeteranIDVeteranMedals.Name = "textBoxVeteranIDVeteranMedals";
-            textBoxVeteranIDVeteranMedals.Size = new Size(455, 34);
-            textBoxVeteranIDVeteranMedals.TabIndex = 0;
-            // 
             // labelMedalIDVeteranMedals
             // 
             labelMedalIDVeteranMedals.AutoSize = true;
@@ -115,15 +106,6 @@
             labelMedalIDVeteranMedals.Size = new Size(93, 28);
             labelMedalIDVeteranMedals.TabIndex = 7;
             labelMedalIDVeteranMedals.Text = "Медаль:";
-            // 
-            // textBoxMedalIDVeteranMedals
-            // 
-            textBoxMedalIDVeteranMedals.Font = new Font("Segoe UI", 15F);
-            textBoxMedalIDVeteranMedals.Location = new Point(237, 234);
-            textBoxMedalIDVeteranMedals.Margin = new Padding(4, 3, 4, 3);
-            textBoxMedalIDVeteranMedals.Name = "textBoxMedalIDVeteranMedals";
-            textBoxMedalIDVeteranMedals.Size = new Size(455, 34);
-            textBoxMedalIDVeteranMedals.TabIndex = 1;
             // 
             // labelAwardDate
             // 
@@ -146,6 +128,26 @@
             dateTimePickerAwardDate.Size = new Size(455, 34);
             dateTimePickerAwardDate.TabIndex = 2;
             // 
+            // comboBoxVeteranIDVeteranMedals
+            // 
+            comboBoxVeteranIDVeteranMedals.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxVeteranIDVeteranMedals.Font = new Font("Segoe UI", 14.25F);
+            comboBoxVeteranIDVeteranMedals.FormattingEnabled = true;
+            comboBoxVeteranIDVeteranMedals.Location = new Point(239, 185);
+            comboBoxVeteranIDVeteranMedals.Name = "comboBoxVeteranIDVeteranMedals";
+            comboBoxVeteranIDVeteranMedals.Size = new Size(453, 33);
+            comboBoxVeteranIDVeteranMedals.TabIndex = 0;
+            // 
+            // comboBoxMedalIDVeteranMedals
+            // 
+            comboBoxMedalIDVeteranMedals.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxMedalIDVeteranMedals.Font = new Font("Segoe UI", 14.25F);
+            comboBoxMedalIDVeteranMedals.FormattingEnabled = true;
+            comboBoxMedalIDVeteranMedals.Location = new Point(239, 237);
+            comboBoxMedalIDVeteranMedals.Name = "comboBoxMedalIDVeteranMedals";
+            comboBoxMedalIDVeteranMedals.Size = new Size(453, 33);
+            comboBoxMedalIDVeteranMedals.TabIndex = 1;
+            // 
             // AddFormVeteranMedals
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -156,9 +158,9 @@
             Controls.Add(labelTitle);
             Controls.Add(label1);
             Controls.Add(labelVeteranIDVeteranMedals);
-            Controls.Add(textBoxVeteranIDVeteranMedals);
+            Controls.Add(comboBoxVeteranIDVeteranMedals);
             Controls.Add(labelMedalIDVeteranMedals);
-            Controls.Add(textBoxMedalIDVeteranMedals);
+            Controls.Add(comboBoxMedalIDVeteranMedals);
             Controls.Add(labelAwardDate);
             Controls.Add(dateTimePickerAwardDate);
             Controls.Add(buttonSave);
@@ -178,10 +180,10 @@
         private Label label1;
         private Button buttonSave;
         private Label labelVeteranIDVeteranMedals;
-        private TextBox textBoxVeteranIDVeteranMedals;
         private Label labelMedalIDVeteranMedals;
-        private TextBox textBoxMedalIDVeteranMedals;
         private Label labelAwardDate;
         private DateTimePicker dateTimePickerAwardDate;
+        private ComboBox comboBoxVeteranIDVeteranMedals;
+        private ComboBox comboBoxMedalIDVeteranMedals;
     }
 }

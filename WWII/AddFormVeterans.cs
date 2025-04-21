@@ -11,6 +11,16 @@ namespace WWII
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            dataBase.OpenConnection();
+            comboBoxUnitID.Items.Clear();
+            var unitsQuery = "SELECT UnitName FROM MilitaryUnits ORDER BY UnitName";
+            var unitsCommand = new SqlCommand(unitsQuery, dataBase.GetConnection());
+            var unitsReader = unitsCommand.ExecuteReader();
+            while (unitsReader.Read())
+            {
+                comboBoxUnitID.Items.Add(unitsReader.GetString(0));
+            }
+            unitsReader.Close();
         }
 
         /// <summary>
@@ -27,7 +37,7 @@ namespace WWII
                 var birthDate = dateTimePickerBirthDate.Value.ToString("yyyy-MM-dd");
                 var deathDate = dateTimePickerDeathDate.Value.ToString("yyyy-MM-dd");
                 var militaryRank = textBoxMilitaryRank.Text;
-                var unitName = textBoxUnitID.Text;
+                var unitName = comboBoxUnitID.Text;
                 string query = $"SELECT MilitaryUnitID FROM MilitaryUnits WHERE UnitName = '{unitName}'";
                 SqlCommand command = new(query, dataBase.GetConnection());
                 object result = command.ExecuteScalar();

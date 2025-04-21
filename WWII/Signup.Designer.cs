@@ -33,7 +33,6 @@
             textBoxPassword = new TextBox();
             textBoxLogin = new TextBox();
             labelRegister = new Label();
-            buttonClear = new Button();
             buttonShow = new Button();
             panel2 = new Panel();
             panel1 = new Panel();
@@ -84,19 +83,6 @@
             labelRegister.TabIndex = 5;
             labelRegister.Text = "Регистрация";
             // 
-            // buttonClear
-            // 
-            buttonClear.BackColor = Color.Transparent;
-            buttonClear.BackgroundImage = (Image)resources.GetObject("buttonClear.BackgroundImage");
-            buttonClear.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClear.FlatStyle = FlatStyle.Flat;
-            buttonClear.Location = new Point(579, 12);
-            buttonClear.Name = "buttonClear";
-            buttonClear.Size = new Size(50, 50);
-            buttonClear.TabIndex = 3;
-            buttonClear.UseVisualStyleBackColor = false;
-            buttonClear.Click += ButtonClear_Click;
-            // 
             // buttonShow
             // 
             buttonShow.BackColor = Color.Transparent;
@@ -141,7 +127,6 @@
             Controls.Add(textBoxLogin);
             Controls.Add(textBoxPassword);
             Controls.Add(buttonEnter);
-            Controls.Add(buttonClear);
             Controls.Add(buttonShow);
             Controls.Add(labelRegister);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -159,7 +144,6 @@
         private TextBox textBoxPassword;
         private TextBox textBoxLogin;
         private Label labelRegister;
-        private Button buttonClear;
         private Button buttonShow;
         private Panel panel2;
         private Panel panel1;

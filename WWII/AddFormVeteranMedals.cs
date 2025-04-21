@@ -10,6 +10,25 @@ namespace WWII
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            dataBase.OpenConnection();
+            comboBoxVeteranIDVeteranMedals.Items.Clear();
+            var veteransQuery = "SELECT FullName FROM Veterans ORDER BY FullName";
+            var veteransCommand = new SqlCommand(veteransQuery, dataBase.GetConnection());
+            var veteransReader = veteransCommand.ExecuteReader();
+            while (veteransReader.Read())
+            {
+                comboBoxVeteranIDVeteranMedals.Items.Add(veteransReader.GetString(0));
+            }
+            veteransReader.Close();
+            comboBoxMedalIDVeteranMedals.Items.Clear();
+            var medalsQuery = "SELECT MedalName FROM Medals ORDER BY MedalName";
+            var medalsCommand = new SqlCommand(medalsQuery, dataBase.GetConnection());
+            var medalsReader = medalsCommand.ExecuteReader();
+            while (medalsReader.Read())
+            {
+                comboBoxMedalIDVeteranMedals.Items.Add(medalsReader.GetString(0));
+            }
+            medalsReader.Close();
         }
 
         /// <summary>
@@ -22,8 +41,8 @@ namespace WWII
             try
             {
                 dataBase.OpenConnection();
-                var veteranName = textBoxVeteranIDVeteranMedals.Text;
-                var medalName = textBoxMedalIDVeteranMedals.Text;
+                var veteranName = comboBoxVeteranIDVeteranMedals.Text;
+                var medalName = comboBoxMedalIDVeteranMedals.Text;
                 var awardDate = dateTimePickerAwardDate.Value.ToString("yyyy-MM-dd");
                 string veteranQuery = $"SELECT VeteranID FROM Veterans WHERE FullName = '{veteranName}'";
                 SqlCommand veteranCommand = new(veteranQuery, dataBase.GetConnection());

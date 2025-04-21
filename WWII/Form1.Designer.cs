@@ -33,7 +33,6 @@
             panelTitleMilitaryUnits = new Panel();
             panel1 = new Panel();
             labelTitleMilitaryUnits = new Label();
-            buttonClearMilitaryUnits = new Button();
             buttonRefreshMilitaryUnits = new Button();
             textBoxSearchMilitaryUnits = new TextBox();
             dataGridViewMilitaryUnits = new DataGridView();
@@ -53,13 +52,11 @@
             buttonSaveMilitaryUnit = new Button();
             buttonWordMilitaryUnit = new Button();
             buttonExcelMilitaryUnit = new Button();
-            buttonTXTMilitaryUnit = new Button();
             tabControl1 = new TabControl();
             tabPageWarEvents = new TabPage();
             panelTitleWarEvents = new Panel();
             panel2 = new Panel();
             labelTitleWarEvents = new Label();
-            buttonClearWarEvents = new Button();
             buttonRefreshWarEvents = new Button();
             textBoxSearchWarEvents = new TextBox();
             dataGridViewWarEvents = new DataGridView();
@@ -83,13 +80,11 @@
             buttonSaveWarEvent = new Button();
             buttonWordWarEvent = new Button();
             buttonExcelWarEvent = new Button();
-            buttonTXTWarEvent = new Button();
             tabPageVeterans = new TabPage();
             panelTitleVeterans = new Panel();
             panel3 = new Panel();
             labelTitleVeterans = new Label();
             buttonReportVeterans = new Button();
-            buttonClearVeterans = new Button();
             buttonRefreshVeterans = new Button();
             textBoxSearchVeterans = new TextBox();
             dataGridViewVeterans = new DataGridView();
@@ -106,7 +101,7 @@
             labelMilitaryRank = new Label();
             textBoxMilitaryRank = new TextBox();
             labelUnitID = new Label();
-            textBoxUnitID = new TextBox();
+            comboBoxUnitID = new ComboBox();
             labelControlVeterans = new Label();
             panelControlVeterans = new Panel();
             buttonNewVeteran = new Button();
@@ -115,13 +110,11 @@
             buttonSaveVeteran = new Button();
             buttonWordVeteran = new Button();
             buttonExcelVeteran = new Button();
-            buttonTXTVeteran = new Button();
             tabPageMedals = new TabPage();
             panelTitleMedals = new Panel();
             panel4 = new Panel();
             labelTitleMedals = new Label();
             buttonReportMedals = new Button();
-            buttonClearMedals = new Button();
             buttonRefreshMedals = new Button();
             textBoxSearchMedals = new TextBox();
             dataGridViewMedals = new DataGridView();
@@ -141,12 +134,10 @@
             buttonSaveMedal = new Button();
             buttonWordMedal = new Button();
             buttonExcelMedal = new Button();
-            buttonTXTMedal = new Button();
             tabPageVeteranMedals = new TabPage();
             panelTitleVeteranMedals = new Panel();
             panel5 = new Panel();
             labelTitleVeteranMedals = new Label();
-            buttonClearVeteranMedals = new Button();
             buttonRefreshVeteranMedals = new Button();
             textBoxSearchVeteranMedals = new TextBox();
             dataGridViewVeteranMedals = new DataGridView();
@@ -155,9 +146,9 @@
             labelVeteranMedalID = new Label();
             textBoxVeteranMedalID = new TextBox();
             labelVeteranIDVeteranMedals = new Label();
-            textBoxVeteranIDVeteranMedals = new TextBox();
+            comboBoxVeteranIDVeteranMedals = new ComboBox();
             labelMedalIDVeteranMedals = new Label();
-            textBoxMedalIDVeteranMedals = new TextBox();
+            comboBoxMedalIDVeteranMedals = new ComboBox();
             labelAwardDate = new Label();
             dateTimePickerAwardDate = new DateTimePicker();
             labelControlVeteranMedals = new Label();
@@ -168,12 +159,10 @@
             buttonSaveVeteranMedal = new Button();
             buttonWordVeteranMedal = new Button();
             buttonExcelVeteranMedal = new Button();
-            buttonTXTVeteranMedal = new Button();
             tabPageMilitaryEquipment = new TabPage();
             panelTitleMilitaryEquipment = new Panel();
             panel6 = new Panel();
             labelTitleMilitaryEquipment = new Label();
-            buttonClearMilitaryEquipment = new Button();
             buttonRefreshMilitaryEquipment = new Button();
             textBoxSearchMilitaryEquipment = new TextBox();
             dataGridViewMilitaryEquipment = new DataGridView();
@@ -195,13 +184,11 @@
             buttonSaveMilitaryEquipment = new Button();
             buttonWordMilitaryEquipment = new Button();
             buttonExcelMilitaryEquipment = new Button();
-            buttonTXTMilitaryEquipment = new Button();
             tabPageMilitaryRoutes = new TabPage();
             panelTitleMilitaryRoutes = new Panel();
             panel7 = new Panel();
             buttonReportMilitaryRoutes = new Button();
             labelTitleMilitaryRoutes = new Label();
-            buttonClearMilitaryRoutes = new Button();
             buttonRefreshMilitaryRoutes = new Button();
             textBoxSearchMilitaryRoutes = new TextBox();
             dataGridViewMilitaryRoutes = new DataGridView();
@@ -225,12 +212,10 @@
             buttonSaveMilitaryRoute = new Button();
             buttonWordMilitaryRoute = new Button();
             buttonExcelMilitaryRoute = new Button();
-            buttonTXTMilitaryRoute = new Button();
             tabPageEventEquipment = new TabPage();
             panelTitleEventEquipment = new Panel();
             panel8 = new Panel();
             labelTitleEventEquipment = new Label();
-            buttonClearEventEquipment = new Button();
             buttonRefreshEventEquipment = new Button();
             textBoxSearchEventEquipment = new TextBox();
             dataGridViewEventEquipment = new DataGridView();
@@ -239,9 +224,9 @@
             labelEventEquipmentID = new Label();
             textBoxEventEquipmentID = new TextBox();
             labelEventIDEventEquipment = new Label();
-            textBoxEventIDEventEquipment = new TextBox();
+            comboBoxEventIDEventEquipment = new ComboBox();
             labelEquipmentIDEventEquipment = new Label();
-            textBoxEquipmentIDEventEquipment = new TextBox();
+            comboBoxEquipmentIDEventEquipment = new ComboBox();
             labelControlEventEquipment = new Label();
             panelControlEventEquipment = new Panel();
             buttonNewEventEquipment = new Button();
@@ -250,7 +235,6 @@
             buttonSaveEventEquipment = new Button();
             buttonWordEventEquipment = new Button();
             buttonExcelEventEquipment = new Button();
-            buttonTXTEventEquipment = new Button();
             tabPageMilitaryUnits.SuspendLayout();
             panelTitleMilitaryUnits.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMilitaryUnits).BeginInit();
@@ -316,7 +300,6 @@
             // 
             panelTitleMilitaryUnits.Controls.Add(panel1);
             panelTitleMilitaryUnits.Controls.Add(labelTitleMilitaryUnits);
-            panelTitleMilitaryUnits.Controls.Add(buttonClearMilitaryUnits);
             panelTitleMilitaryUnits.Controls.Add(buttonRefreshMilitaryUnits);
             panelTitleMilitaryUnits.Controls.Add(textBoxSearchMilitaryUnits);
             panelTitleMilitaryUnits.Location = new Point(0, 0);
@@ -346,27 +329,13 @@
             labelTitleMilitaryUnits.TabIndex = 4;
             labelTitleMilitaryUnits.Text = "Военные единицы";
             // 
-            // buttonClearMilitaryUnits
-            // 
-            buttonClearMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonClearMilitaryUnits.BackgroundImage");
-            buttonClearMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearMilitaryUnits.FlatStyle = FlatStyle.Flat;
-            buttonClearMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearMilitaryUnits.Location = new Point(447, 10);
-            buttonClearMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
-            buttonClearMilitaryUnits.Name = "buttonClearMilitaryUnits";
-            buttonClearMilitaryUnits.Size = new Size(60, 60);
-            buttonClearMilitaryUnits.TabIndex = 0;
-            buttonClearMilitaryUnits.UseVisualStyleBackColor = true;
-            buttonClearMilitaryUnits.Click += ButtonClear_Click;
-            // 
             // buttonRefreshMilitaryUnits
             // 
             buttonRefreshMilitaryUnits.BackgroundImage = (Image)resources.GetObject("buttonRefreshMilitaryUnits.BackgroundImage");
             buttonRefreshMilitaryUnits.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshMilitaryUnits.FlatStyle = FlatStyle.Flat;
             buttonRefreshMilitaryUnits.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshMilitaryUnits.Location = new Point(515, 10);
+            buttonRefreshMilitaryUnits.Location = new Point(554, 10);
             buttonRefreshMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshMilitaryUnits.Name = "buttonRefreshMilitaryUnits";
             buttonRefreshMilitaryUnits.Size = new Size(60, 60);
@@ -511,11 +480,10 @@
             panelControlMilitaryUnits.Controls.Add(buttonSaveMilitaryUnit);
             panelControlMilitaryUnits.Controls.Add(buttonWordMilitaryUnit);
             panelControlMilitaryUnits.Controls.Add(buttonExcelMilitaryUnit);
-            panelControlMilitaryUnits.Controls.Add(buttonTXTMilitaryUnit);
             panelControlMilitaryUnits.Location = new Point(626, 481);
             panelControlMilitaryUnits.Margin = new Padding(4, 3, 4, 3);
             panelControlMilitaryUnits.Name = "panelControlMilitaryUnits";
-            panelControlMilitaryUnits.Size = new Size(255, 373);
+            panelControlMilitaryUnits.Size = new Size(255, 321);
             panelControlMilitaryUnits.TabIndex = 2;
             // 
             // buttonNewMilitaryUnit
@@ -607,21 +575,6 @@
             buttonExcelMilitaryUnit.UseVisualStyleBackColor = true;
             buttonExcelMilitaryUnit.Click += ButtonExcelMilitaryUnit_Click;
             // 
-            // buttonTXTMilitaryUnit
-            // 
-            buttonTXTMilitaryUnit.FlatAppearance.BorderColor = Color.Black;
-            buttonTXTMilitaryUnit.FlatStyle = FlatStyle.Flat;
-            buttonTXTMilitaryUnit.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            buttonTXTMilitaryUnit.ForeColor = Color.Black;
-            buttonTXTMilitaryUnit.Location = new Point(10, 318);
-            buttonTXTMilitaryUnit.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTMilitaryUnit.Name = "buttonTXTMilitaryUnit";
-            buttonTXTMilitaryUnit.Size = new Size(236, 45);
-            buttonTXTMilitaryUnit.TabIndex = 6;
-            buttonTXTMilitaryUnit.Text = "Вывод в TXT";
-            buttonTXTMilitaryUnit.UseVisualStyleBackColor = true;
-            buttonTXTMilitaryUnit.Click += ButtonTXTMilitaryUnit_Click;
-            // 
             // tabControl1
             // 
             tabControl1.Controls.Add(tabPageMilitaryUnits);
@@ -660,7 +613,6 @@
             // 
             panelTitleWarEvents.Controls.Add(panel2);
             panelTitleWarEvents.Controls.Add(labelTitleWarEvents);
-            panelTitleWarEvents.Controls.Add(buttonClearWarEvents);
             panelTitleWarEvents.Controls.Add(buttonRefreshWarEvents);
             panelTitleWarEvents.Controls.Add(textBoxSearchWarEvents);
             panelTitleWarEvents.Location = new Point(0, 0);
@@ -690,27 +642,13 @@
             labelTitleWarEvents.TabIndex = 4;
             labelTitleWarEvents.Text = "События войны";
             // 
-            // buttonClearWarEvents
-            // 
-            buttonClearWarEvents.BackgroundImage = (Image)resources.GetObject("buttonClearWarEvents.BackgroundImage");
-            buttonClearWarEvents.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearWarEvents.FlatStyle = FlatStyle.Flat;
-            buttonClearWarEvents.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearWarEvents.Location = new Point(388, 8);
-            buttonClearWarEvents.Margin = new Padding(4, 3, 4, 3);
-            buttonClearWarEvents.Name = "buttonClearWarEvents";
-            buttonClearWarEvents.Size = new Size(60, 60);
-            buttonClearWarEvents.TabIndex = 0;
-            buttonClearWarEvents.UseVisualStyleBackColor = true;
-            buttonClearWarEvents.Click += ButtonClear_Click;
-            // 
             // buttonRefreshWarEvents
             // 
             buttonRefreshWarEvents.BackgroundImage = (Image)resources.GetObject("buttonRefreshWarEvents.BackgroundImage");
             buttonRefreshWarEvents.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshWarEvents.FlatStyle = FlatStyle.Flat;
             buttonRefreshWarEvents.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshWarEvents.Location = new Point(456, 8);
+            buttonRefreshWarEvents.Location = new Point(554, 10);
             buttonRefreshWarEvents.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshWarEvents.Name = "buttonRefreshWarEvents";
             buttonRefreshWarEvents.Size = new Size(60, 60);
@@ -898,11 +836,10 @@
             panelControlWarEvents.Controls.Add(buttonSaveWarEvent);
             panelControlWarEvents.Controls.Add(buttonWordWarEvent);
             panelControlWarEvents.Controls.Add(buttonExcelWarEvent);
-            panelControlWarEvents.Controls.Add(buttonTXTWarEvent);
             panelControlWarEvents.Location = new Point(626, 481);
             panelControlWarEvents.Margin = new Padding(4, 3, 4, 3);
             panelControlWarEvents.Name = "panelControlWarEvents";
-            panelControlWarEvents.Size = new Size(255, 373);
+            panelControlWarEvents.Size = new Size(255, 319);
             panelControlWarEvents.TabIndex = 2;
             // 
             // buttonNewWarEvent
@@ -989,20 +926,6 @@
             buttonExcelWarEvent.UseVisualStyleBackColor = true;
             buttonExcelWarEvent.Click += ButtonExcelWarEvent_Click;
             // 
-            // buttonTXTWarEvent
-            // 
-            buttonTXTWarEvent.FlatStyle = FlatStyle.Flat;
-            buttonTXTWarEvent.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            buttonTXTWarEvent.ForeColor = Color.Black;
-            buttonTXTWarEvent.Location = new Point(8, 316);
-            buttonTXTWarEvent.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTWarEvent.Name = "buttonTXTWarEvent";
-            buttonTXTWarEvent.Size = new Size(236, 45);
-            buttonTXTWarEvent.TabIndex = 6;
-            buttonTXTWarEvent.Text = "Вывод в TXT";
-            buttonTXTWarEvent.UseVisualStyleBackColor = true;
-            buttonTXTWarEvent.Click += ButtonTXTWarEvent_Click;
-            // 
             // tabPageVeterans
             // 
             tabPageVeterans.BackgroundImage = (Image)resources.GetObject("tabPageVeterans.BackgroundImage");
@@ -1025,7 +948,6 @@
             panelTitleVeterans.Controls.Add(panel3);
             panelTitleVeterans.Controls.Add(labelTitleVeterans);
             panelTitleVeterans.Controls.Add(buttonReportVeterans);
-            panelTitleVeterans.Controls.Add(buttonClearVeterans);
             panelTitleVeterans.Controls.Add(buttonRefreshVeterans);
             panelTitleVeterans.Controls.Add(textBoxSearchVeterans);
             panelTitleVeterans.Location = new Point(0, 0);
@@ -1061,7 +983,7 @@
             buttonReportVeterans.BackgroundImageLayout = ImageLayout.Stretch;
             buttonReportVeterans.FlatStyle = FlatStyle.Flat;
             buttonReportVeterans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonReportVeterans.Location = new Point(252, 8);
+            buttonReportVeterans.Location = new Point(252, 10);
             buttonReportVeterans.Margin = new Padding(4, 3, 4, 3);
             buttonReportVeterans.Name = "buttonReportVeterans";
             buttonReportVeterans.Size = new Size(60, 60);
@@ -1069,27 +991,13 @@
             buttonReportVeterans.UseVisualStyleBackColor = true;
             buttonReportVeterans.Click += ButtonReportVeterans_Click;
             // 
-            // buttonClearVeterans
-            // 
-            buttonClearVeterans.BackgroundImage = (Image)resources.GetObject("buttonClearVeterans.BackgroundImage");
-            buttonClearVeterans.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearVeterans.FlatStyle = FlatStyle.Flat;
-            buttonClearVeterans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearVeterans.Location = new Point(320, 10);
-            buttonClearVeterans.Margin = new Padding(4, 3, 4, 3);
-            buttonClearVeterans.Name = "buttonClearVeterans";
-            buttonClearVeterans.Size = new Size(60, 60);
-            buttonClearVeterans.TabIndex = 2;
-            buttonClearVeterans.UseVisualStyleBackColor = true;
-            buttonClearVeterans.Click += ButtonClear_Click;
-            // 
             // buttonRefreshVeterans
             // 
             buttonRefreshVeterans.BackgroundImage = (Image)resources.GetObject("buttonRefreshVeterans.BackgroundImage");
             buttonRefreshVeterans.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshVeterans.FlatStyle = FlatStyle.Flat;
             buttonRefreshVeterans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshVeterans.Location = new Point(388, 10);
+            buttonRefreshVeterans.Location = new Point(554, 10);
             buttonRefreshVeterans.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshVeterans.Name = "buttonRefreshVeterans";
             buttonRefreshVeterans.Size = new Size(60, 60);
@@ -1135,7 +1043,7 @@
             panelRecordVeterans.Controls.Add(labelMilitaryRank);
             panelRecordVeterans.Controls.Add(textBoxMilitaryRank);
             panelRecordVeterans.Controls.Add(labelUnitID);
-            panelRecordVeterans.Controls.Add(textBoxUnitID);
+            panelRecordVeterans.Controls.Add(comboBoxUnitID);
             panelRecordVeterans.Location = new Point(8, 472);
             panelRecordVeterans.Margin = new Padding(4, 3, 4, 3);
             panelRecordVeterans.Name = "panelRecordVeterans";
@@ -1269,14 +1177,15 @@
             labelUnitID.TabIndex = 12;
             labelUnitID.Text = "Оружие:";
             // 
-            // textBoxUnitID
+            // comboBoxUnitID
             // 
-            textBoxUnitID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxUnitID.Location = new Point(151, 297);
-            textBoxUnitID.Margin = new Padding(4, 3, 4, 3);
-            textBoxUnitID.Name = "textBoxUnitID";
-            textBoxUnitID.Size = new Size(431, 33);
-            textBoxUnitID.TabIndex = 5;
+            comboBoxUnitID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxUnitID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxUnitID.FormattingEnabled = true;
+            comboBoxUnitID.Location = new Point(151, 297);
+            comboBoxUnitID.Name = "comboBoxUnitID";
+            comboBoxUnitID.Size = new Size(431, 33);
+            comboBoxUnitID.TabIndex = 5;
             // 
             // labelControlVeterans
             // 
@@ -1299,11 +1208,10 @@
             panelControlVeterans.Controls.Add(buttonSaveVeteran);
             panelControlVeterans.Controls.Add(buttonWordVeteran);
             panelControlVeterans.Controls.Add(buttonExcelVeteran);
-            panelControlVeterans.Controls.Add(buttonTXTVeteran);
             panelControlVeterans.Location = new Point(626, 481);
             panelControlVeterans.Margin = new Padding(4, 3, 4, 3);
             panelControlVeterans.Name = "panelControlVeterans";
-            panelControlVeterans.Size = new Size(255, 373);
+            panelControlVeterans.Size = new Size(255, 321);
             panelControlVeterans.TabIndex = 2;
             // 
             // buttonNewVeteran
@@ -1390,20 +1298,6 @@
             buttonExcelVeteran.UseVisualStyleBackColor = true;
             buttonExcelVeteran.Click += ButtonExcelVeteran_Click;
             // 
-            // buttonTXTVeteran
-            // 
-            buttonTXTVeteran.FlatStyle = FlatStyle.Flat;
-            buttonTXTVeteran.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            buttonTXTVeteran.ForeColor = Color.Black;
-            buttonTXTVeteran.Location = new Point(10, 317);
-            buttonTXTVeteran.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTVeteran.Name = "buttonTXTVeteran";
-            buttonTXTVeteran.Size = new Size(236, 45);
-            buttonTXTVeteran.TabIndex = 6;
-            buttonTXTVeteran.Text = "Вывод в TXT";
-            buttonTXTVeteran.UseVisualStyleBackColor = true;
-            buttonTXTVeteran.Click += ButtonTXTVeteran_Click;
-            // 
             // tabPageMedals
             // 
             tabPageMedals.BackgroundImage = (Image)resources.GetObject("tabPageMedals.BackgroundImage");
@@ -1426,7 +1320,6 @@
             panelTitleMedals.Controls.Add(panel4);
             panelTitleMedals.Controls.Add(labelTitleMedals);
             panelTitleMedals.Controls.Add(buttonReportMedals);
-            panelTitleMedals.Controls.Add(buttonClearMedals);
             panelTitleMedals.Controls.Add(buttonRefreshMedals);
             panelTitleMedals.Controls.Add(textBoxSearchMedals);
             panelTitleMedals.Location = new Point(0, 0);
@@ -1470,27 +1363,13 @@
             buttonReportMedals.UseVisualStyleBackColor = true;
             buttonReportMedals.Click += ButtonReportMedals_Click;
             // 
-            // buttonClearMedals
-            // 
-            buttonClearMedals.BackgroundImage = (Image)resources.GetObject("buttonClearMedals.BackgroundImage");
-            buttonClearMedals.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearMedals.FlatStyle = FlatStyle.Flat;
-            buttonClearMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearMedals.Location = new Point(515, 10);
-            buttonClearMedals.Margin = new Padding(4, 3, 4, 3);
-            buttonClearMedals.Name = "buttonClearMedals";
-            buttonClearMedals.Size = new Size(60, 60);
-            buttonClearMedals.TabIndex = 1;
-            buttonClearMedals.UseVisualStyleBackColor = true;
-            buttonClearMedals.Click += ButtonClear_Click;
-            // 
             // buttonRefreshMedals
             // 
             buttonRefreshMedals.BackgroundImage = (Image)resources.GetObject("buttonRefreshMedals.BackgroundImage");
             buttonRefreshMedals.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshMedals.FlatStyle = FlatStyle.Flat;
             buttonRefreshMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshMedals.Location = new Point(583, 10);
+            buttonRefreshMedals.Location = new Point(599, 10);
             buttonRefreshMedals.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshMedals.Name = "buttonRefreshMedals";
             buttonRefreshMedals.Size = new Size(60, 60);
@@ -1633,11 +1512,10 @@
             panelControlMedals.Controls.Add(buttonSaveMedal);
             panelControlMedals.Controls.Add(buttonWordMedal);
             panelControlMedals.Controls.Add(buttonExcelMedal);
-            panelControlMedals.Controls.Add(buttonTXTMedal);
             panelControlMedals.Location = new Point(626, 481);
             panelControlMedals.Margin = new Padding(4, 3, 4, 3);
             panelControlMedals.Name = "panelControlMedals";
-            panelControlMedals.Size = new Size(255, 373);
+            panelControlMedals.Size = new Size(255, 323);
             panelControlMedals.TabIndex = 2;
             // 
             // buttonNewMedal
@@ -1724,20 +1602,6 @@
             buttonExcelMedal.UseVisualStyleBackColor = true;
             buttonExcelMedal.Click += ButtonExcelMedal_Click;
             // 
-            // buttonTXTMedal
-            // 
-            buttonTXTMedal.FlatStyle = FlatStyle.Flat;
-            buttonTXTMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            buttonTXTMedal.ForeColor = Color.Black;
-            buttonTXTMedal.Location = new Point(10, 319);
-            buttonTXTMedal.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTMedal.Name = "buttonTXTMedal";
-            buttonTXTMedal.Size = new Size(236, 45);
-            buttonTXTMedal.TabIndex = 6;
-            buttonTXTMedal.Text = "Вывод в TXT";
-            buttonTXTMedal.UseVisualStyleBackColor = true;
-            buttonTXTMedal.Click += ButtonTXTMedal_Click;
-            // 
             // tabPageVeteranMedals
             // 
             tabPageVeteranMedals.BackgroundImage = (Image)resources.GetObject("tabPageVeteranMedals.BackgroundImage");
@@ -1759,7 +1623,6 @@
             // 
             panelTitleVeteranMedals.Controls.Add(panel5);
             panelTitleVeteranMedals.Controls.Add(labelTitleVeteranMedals);
-            panelTitleVeteranMedals.Controls.Add(buttonClearVeteranMedals);
             panelTitleVeteranMedals.Controls.Add(buttonRefreshVeteranMedals);
             panelTitleVeteranMedals.Controls.Add(textBoxSearchVeteranMedals);
             panelTitleVeteranMedals.Location = new Point(0, 0);
@@ -1789,27 +1652,13 @@
             labelTitleVeteranMedals.TabIndex = 4;
             labelTitleVeteranMedals.Text = "Награды ветеранов";
             // 
-            // buttonClearVeteranMedals
-            // 
-            buttonClearVeteranMedals.BackgroundImage = (Image)resources.GetObject("buttonClearVeteranMedals.BackgroundImage");
-            buttonClearVeteranMedals.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearVeteranMedals.FlatStyle = FlatStyle.Flat;
-            buttonClearVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearVeteranMedals.Location = new Point(479, 10);
-            buttonClearVeteranMedals.Margin = new Padding(4, 3, 4, 3);
-            buttonClearVeteranMedals.Name = "buttonClearVeteranMedals";
-            buttonClearVeteranMedals.Size = new Size(60, 60);
-            buttonClearVeteranMedals.TabIndex = 0;
-            buttonClearVeteranMedals.UseVisualStyleBackColor = true;
-            buttonClearVeteranMedals.Click += ButtonClear_Click;
-            // 
             // buttonRefreshVeteranMedals
             // 
             buttonRefreshVeteranMedals.BackgroundImage = (Image)resources.GetObject("buttonRefreshVeteranMedals.BackgroundImage");
             buttonRefreshVeteranMedals.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshVeteranMedals.FlatStyle = FlatStyle.Flat;
             buttonRefreshVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshVeteranMedals.Location = new Point(547, 10);
+            buttonRefreshVeteranMedals.Location = new Point(571, 10);
             buttonRefreshVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshVeteranMedals.Name = "buttonRefreshVeteranMedals";
             buttonRefreshVeteranMedals.Size = new Size(60, 60);
@@ -1847,9 +1696,9 @@
             panelRecordVeteranMedals.Controls.Add(labelVeteranMedalID);
             panelRecordVeteranMedals.Controls.Add(textBoxVeteranMedalID);
             panelRecordVeteranMedals.Controls.Add(labelVeteranIDVeteranMedals);
-            panelRecordVeteranMedals.Controls.Add(textBoxVeteranIDVeteranMedals);
+            panelRecordVeteranMedals.Controls.Add(comboBoxVeteranIDVeteranMedals);
             panelRecordVeteranMedals.Controls.Add(labelMedalIDVeteranMedals);
-            panelRecordVeteranMedals.Controls.Add(textBoxMedalIDVeteranMedals);
+            panelRecordVeteranMedals.Controls.Add(comboBoxMedalIDVeteranMedals);
             panelRecordVeteranMedals.Controls.Add(labelAwardDate);
             panelRecordVeteranMedals.Controls.Add(dateTimePickerAwardDate);
             panelRecordVeteranMedals.Location = new Point(7, 501);
@@ -1903,14 +1752,15 @@
             labelVeteranIDVeteranMedals.TabIndex = 6;
             labelVeteranIDVeteranMedals.Text = "Ветеран:";
             // 
-            // textBoxVeteranIDVeteranMedals
+            // comboBoxVeteranIDVeteranMedals
             // 
-            textBoxVeteranIDVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxVeteranIDVeteranMedals.Location = new Point(165, 112);
-            textBoxVeteranIDVeteranMedals.Margin = new Padding(4, 3, 4, 3);
-            textBoxVeteranIDVeteranMedals.Name = "textBoxVeteranIDVeteranMedals";
-            textBoxVeteranIDVeteranMedals.Size = new Size(433, 33);
-            textBoxVeteranIDVeteranMedals.TabIndex = 1;
+            comboBoxVeteranIDVeteranMedals.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxVeteranIDVeteranMedals.Font = new Font("Segoe UI", 14.25F);
+            comboBoxVeteranIDVeteranMedals.FormattingEnabled = true;
+            comboBoxVeteranIDVeteranMedals.Location = new Point(165, 112);
+            comboBoxVeteranIDVeteranMedals.Name = "comboBoxVeteranIDVeteranMedals";
+            comboBoxVeteranIDVeteranMedals.Size = new Size(433, 33);
+            comboBoxVeteranIDVeteranMedals.TabIndex = 1;
             // 
             // labelMedalIDVeteranMedals
             // 
@@ -1924,14 +1774,15 @@
             labelMedalIDVeteranMedals.TabIndex = 7;
             labelMedalIDVeteranMedals.Text = "Медаль:";
             // 
-            // textBoxMedalIDVeteranMedals
+            // comboBoxMedalIDVeteranMedals
             // 
-            textBoxMedalIDVeteranMedals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxMedalIDVeteranMedals.Location = new Point(165, 157);
-            textBoxMedalIDVeteranMedals.Margin = new Padding(4, 3, 4, 3);
-            textBoxMedalIDVeteranMedals.Name = "textBoxMedalIDVeteranMedals";
-            textBoxMedalIDVeteranMedals.Size = new Size(433, 33);
-            textBoxMedalIDVeteranMedals.TabIndex = 2;
+            comboBoxMedalIDVeteranMedals.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxMedalIDVeteranMedals.Font = new Font("Segoe UI", 14.25F);
+            comboBoxMedalIDVeteranMedals.FormattingEnabled = true;
+            comboBoxMedalIDVeteranMedals.Location = new Point(165, 157);
+            comboBoxMedalIDVeteranMedals.Name = "comboBoxMedalIDVeteranMedals";
+            comboBoxMedalIDVeteranMedals.Size = new Size(433, 33);
+            comboBoxMedalIDVeteranMedals.TabIndex = 2;
             // 
             // labelAwardDate
             // 
@@ -1974,11 +1825,10 @@
             panelControlVeteranMedals.Controls.Add(buttonSaveVeteranMedal);
             panelControlVeteranMedals.Controls.Add(buttonWordVeteranMedal);
             panelControlVeteranMedals.Controls.Add(buttonExcelVeteranMedal);
-            panelControlVeteranMedals.Controls.Add(buttonTXTVeteranMedal);
             panelControlVeteranMedals.Location = new Point(626, 481);
             panelControlVeteranMedals.Margin = new Padding(4, 3, 4, 3);
             panelControlVeteranMedals.Name = "panelControlVeteranMedals";
-            panelControlVeteranMedals.Size = new Size(255, 373);
+            panelControlVeteranMedals.Size = new Size(255, 327);
             panelControlVeteranMedals.TabIndex = 2;
             // 
             // buttonNewVeteranMedal
@@ -2065,20 +1915,6 @@
             buttonExcelVeteranMedal.UseVisualStyleBackColor = true;
             buttonExcelVeteranMedal.Click += ButtonExcelVeteranMedal_Click;
             // 
-            // buttonTXTVeteranMedal
-            // 
-            buttonTXTVeteranMedal.FlatStyle = FlatStyle.Flat;
-            buttonTXTVeteranMedal.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            buttonTXTVeteranMedal.ForeColor = Color.Black;
-            buttonTXTVeteranMedal.Location = new Point(10, 319);
-            buttonTXTVeteranMedal.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTVeteranMedal.Name = "buttonTXTVeteranMedal";
-            buttonTXTVeteranMedal.Size = new Size(236, 45);
-            buttonTXTVeteranMedal.TabIndex = 6;
-            buttonTXTVeteranMedal.Text = "Вывод в TXT";
-            buttonTXTVeteranMedal.UseVisualStyleBackColor = true;
-            buttonTXTVeteranMedal.Click += ButtonTXTVeteranMedal_Click;
-            // 
             // tabPageMilitaryEquipment
             // 
             tabPageMilitaryEquipment.BackgroundImage = (Image)resources.GetObject("tabPageMilitaryEquipment.BackgroundImage");
@@ -2101,7 +1937,6 @@
             // 
             panelTitleMilitaryEquipment.Controls.Add(panel6);
             panelTitleMilitaryEquipment.Controls.Add(labelTitleMilitaryEquipment);
-            panelTitleMilitaryEquipment.Controls.Add(buttonClearMilitaryEquipment);
             panelTitleMilitaryEquipment.Controls.Add(buttonRefreshMilitaryEquipment);
             panelTitleMilitaryEquipment.Controls.Add(textBoxSearchMilitaryEquipment);
             panelTitleMilitaryEquipment.Location = new Point(0, 0);
@@ -2131,27 +1966,13 @@
             labelTitleMilitaryEquipment.TabIndex = 4;
             labelTitleMilitaryEquipment.Text = "Военная техника";
             // 
-            // buttonClearMilitaryEquipment
-            // 
-            buttonClearMilitaryEquipment.BackgroundImage = (Image)resources.GetObject("buttonClearMilitaryEquipment.BackgroundImage");
-            buttonClearMilitaryEquipment.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearMilitaryEquipment.FlatStyle = FlatStyle.Flat;
-            buttonClearMilitaryEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearMilitaryEquipment.Location = new Point(409, 10);
-            buttonClearMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
-            buttonClearMilitaryEquipment.Name = "buttonClearMilitaryEquipment";
-            buttonClearMilitaryEquipment.Size = new Size(60, 60);
-            buttonClearMilitaryEquipment.TabIndex = 0;
-            buttonClearMilitaryEquipment.UseVisualStyleBackColor = true;
-            buttonClearMilitaryEquipment.Click += ButtonClear_Click;
-            // 
             // buttonRefreshMilitaryEquipment
             // 
             buttonRefreshMilitaryEquipment.BackgroundImage = (Image)resources.GetObject("buttonRefreshMilitaryEquipment.BackgroundImage");
             buttonRefreshMilitaryEquipment.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshMilitaryEquipment.FlatStyle = FlatStyle.Flat;
             buttonRefreshMilitaryEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshMilitaryEquipment.Location = new Point(477, 10);
+            buttonRefreshMilitaryEquipment.Location = new Point(571, 10);
             buttonRefreshMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshMilitaryEquipment.Name = "buttonRefreshMilitaryEquipment";
             buttonRefreshMilitaryEquipment.Size = new Size(60, 60);
@@ -2317,11 +2138,10 @@
             panelControlMilitaryEquipment.Controls.Add(buttonSaveMilitaryEquipment);
             panelControlMilitaryEquipment.Controls.Add(buttonWordMilitaryEquipment);
             panelControlMilitaryEquipment.Controls.Add(buttonExcelMilitaryEquipment);
-            panelControlMilitaryEquipment.Controls.Add(buttonTXTMilitaryEquipment);
             panelControlMilitaryEquipment.Location = new Point(626, 481);
             panelControlMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
             panelControlMilitaryEquipment.Name = "panelControlMilitaryEquipment";
-            panelControlMilitaryEquipment.Size = new Size(255, 373);
+            panelControlMilitaryEquipment.Size = new Size(255, 323);
             panelControlMilitaryEquipment.TabIndex = 2;
             // 
             // buttonNewMilitaryEquipment
@@ -2408,20 +2228,6 @@
             buttonExcelMilitaryEquipment.UseVisualStyleBackColor = true;
             buttonExcelMilitaryEquipment.Click += ButtonExcelMilitaryEquipment_Click;
             // 
-            // buttonTXTMilitaryEquipment
-            // 
-            buttonTXTMilitaryEquipment.FlatStyle = FlatStyle.Flat;
-            buttonTXTMilitaryEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            buttonTXTMilitaryEquipment.ForeColor = Color.Black;
-            buttonTXTMilitaryEquipment.Location = new Point(10, 316);
-            buttonTXTMilitaryEquipment.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTMilitaryEquipment.Name = "buttonTXTMilitaryEquipment";
-            buttonTXTMilitaryEquipment.Size = new Size(236, 45);
-            buttonTXTMilitaryEquipment.TabIndex = 6;
-            buttonTXTMilitaryEquipment.Text = "Вывод в TXT";
-            buttonTXTMilitaryEquipment.UseVisualStyleBackColor = true;
-            buttonTXTMilitaryEquipment.Click += ButtonTXTMilitaryEquipment_Click;
-            // 
             // tabPageMilitaryRoutes
             // 
             tabPageMilitaryRoutes.BackgroundImage = (Image)resources.GetObject("tabPageMilitaryRoutes.BackgroundImage");
@@ -2445,7 +2251,6 @@
             panelTitleMilitaryRoutes.Controls.Add(panel7);
             panelTitleMilitaryRoutes.Controls.Add(buttonReportMilitaryRoutes);
             panelTitleMilitaryRoutes.Controls.Add(labelTitleMilitaryRoutes);
-            panelTitleMilitaryRoutes.Controls.Add(buttonClearMilitaryRoutes);
             panelTitleMilitaryRoutes.Controls.Add(buttonRefreshMilitaryRoutes);
             panelTitleMilitaryRoutes.Controls.Add(textBoxSearchMilitaryRoutes);
             panelTitleMilitaryRoutes.Location = new Point(0, 0);
@@ -2469,7 +2274,7 @@
             buttonReportMilitaryRoutes.BackgroundImageLayout = ImageLayout.Stretch;
             buttonReportMilitaryRoutes.FlatStyle = FlatStyle.Flat;
             buttonReportMilitaryRoutes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonReportMilitaryRoutes.Location = new Point(447, 10);
+            buttonReportMilitaryRoutes.Location = new Point(460, 14);
             buttonReportMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             buttonReportMilitaryRoutes.Name = "buttonReportMilitaryRoutes";
             buttonReportMilitaryRoutes.Size = new Size(60, 60);
@@ -2489,27 +2294,13 @@
             labelTitleMilitaryRoutes.TabIndex = 4;
             labelTitleMilitaryRoutes.Text = "Военные маршруты";
             // 
-            // buttonClearMilitaryRoutes
-            // 
-            buttonClearMilitaryRoutes.BackgroundImage = (Image)resources.GetObject("buttonClearMilitaryRoutes.BackgroundImage");
-            buttonClearMilitaryRoutes.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearMilitaryRoutes.FlatStyle = FlatStyle.Flat;
-            buttonClearMilitaryRoutes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearMilitaryRoutes.Location = new Point(515, 10);
-            buttonClearMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
-            buttonClearMilitaryRoutes.Name = "buttonClearMilitaryRoutes";
-            buttonClearMilitaryRoutes.Size = new Size(60, 60);
-            buttonClearMilitaryRoutes.TabIndex = 0;
-            buttonClearMilitaryRoutes.UseVisualStyleBackColor = true;
-            buttonClearMilitaryRoutes.Click += ButtonClear_Click;
-            // 
             // buttonRefreshMilitaryRoutes
             // 
             buttonRefreshMilitaryRoutes.BackgroundImage = (Image)resources.GetObject("buttonRefreshMilitaryRoutes.BackgroundImage");
             buttonRefreshMilitaryRoutes.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshMilitaryRoutes.FlatStyle = FlatStyle.Flat;
             buttonRefreshMilitaryRoutes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshMilitaryRoutes.Location = new Point(583, 10);
+            buttonRefreshMilitaryRoutes.Location = new Point(608, 14);
             buttonRefreshMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshMilitaryRoutes.Name = "buttonRefreshMilitaryRoutes";
             buttonRefreshMilitaryRoutes.Size = new Size(60, 60);
@@ -2698,11 +2489,10 @@
             panelControlMilitaryRoutes.Controls.Add(buttonSaveMilitaryRoute);
             panelControlMilitaryRoutes.Controls.Add(buttonWordMilitaryRoute);
             panelControlMilitaryRoutes.Controls.Add(buttonExcelMilitaryRoute);
-            panelControlMilitaryRoutes.Controls.Add(buttonTXTMilitaryRoute);
             panelControlMilitaryRoutes.Location = new Point(626, 481);
             panelControlMilitaryRoutes.Margin = new Padding(4, 3, 4, 3);
             panelControlMilitaryRoutes.Name = "panelControlMilitaryRoutes";
-            panelControlMilitaryRoutes.Size = new Size(255, 373);
+            panelControlMilitaryRoutes.Size = new Size(255, 326);
             panelControlMilitaryRoutes.TabIndex = 2;
             // 
             // buttonNewMilitaryRoute
@@ -2789,20 +2579,6 @@
             buttonExcelMilitaryRoute.UseVisualStyleBackColor = true;
             buttonExcelMilitaryRoute.Click += ButtonExcelMilitaryRoute_Click;
             // 
-            // buttonTXTMilitaryRoute
-            // 
-            buttonTXTMilitaryRoute.FlatStyle = FlatStyle.Flat;
-            buttonTXTMilitaryRoute.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            buttonTXTMilitaryRoute.ForeColor = Color.Black;
-            buttonTXTMilitaryRoute.Location = new Point(10, 316);
-            buttonTXTMilitaryRoute.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTMilitaryRoute.Name = "buttonTXTMilitaryRoute";
-            buttonTXTMilitaryRoute.Size = new Size(236, 45);
-            buttonTXTMilitaryRoute.TabIndex = 6;
-            buttonTXTMilitaryRoute.Text = "Вывод в TXT";
-            buttonTXTMilitaryRoute.UseVisualStyleBackColor = true;
-            buttonTXTMilitaryRoute.Click += ButtonTXTMilitaryRoute_Click;
-            // 
             // tabPageEventEquipment
             // 
             tabPageEventEquipment.BackgroundImage = (Image)resources.GetObject("tabPageEventEquipment.BackgroundImage");
@@ -2824,7 +2600,6 @@
             // 
             panelTitleEventEquipment.Controls.Add(panel8);
             panelTitleEventEquipment.Controls.Add(labelTitleEventEquipment);
-            panelTitleEventEquipment.Controls.Add(buttonClearEventEquipment);
             panelTitleEventEquipment.Controls.Add(buttonRefreshEventEquipment);
             panelTitleEventEquipment.Controls.Add(textBoxSearchEventEquipment);
             panelTitleEventEquipment.Location = new Point(0, 0);
@@ -2854,27 +2629,13 @@
             labelTitleEventEquipment.TabIndex = 4;
             labelTitleEventEquipment.Text = "События техники";
             // 
-            // buttonClearEventEquipment
-            // 
-            buttonClearEventEquipment.BackgroundImage = (Image)resources.GetObject("buttonClearEventEquipment.BackgroundImage");
-            buttonClearEventEquipment.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearEventEquipment.FlatStyle = FlatStyle.Flat;
-            buttonClearEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearEventEquipment.Location = new Point(420, 10);
-            buttonClearEventEquipment.Margin = new Padding(4, 3, 4, 3);
-            buttonClearEventEquipment.Name = "buttonClearEventEquipment";
-            buttonClearEventEquipment.Size = new Size(60, 60);
-            buttonClearEventEquipment.TabIndex = 0;
-            buttonClearEventEquipment.UseVisualStyleBackColor = true;
-            buttonClearEventEquipment.Click += ButtonClear_Click;
-            // 
             // buttonRefreshEventEquipment
             // 
             buttonRefreshEventEquipment.BackgroundImage = (Image)resources.GetObject("buttonRefreshEventEquipment.BackgroundImage");
             buttonRefreshEventEquipment.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshEventEquipment.FlatStyle = FlatStyle.Flat;
             buttonRefreshEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshEventEquipment.Location = new Point(488, 10);
+            buttonRefreshEventEquipment.Location = new Point(558, 14);
             buttonRefreshEventEquipment.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshEventEquipment.Name = "buttonRefreshEventEquipment";
             buttonRefreshEventEquipment.Size = new Size(60, 60);
@@ -2912,9 +2673,9 @@
             panelRecordEventEquipment.Controls.Add(labelEventEquipmentID);
             panelRecordEventEquipment.Controls.Add(textBoxEventEquipmentID);
             panelRecordEventEquipment.Controls.Add(labelEventIDEventEquipment);
-            panelRecordEventEquipment.Controls.Add(textBoxEventIDEventEquipment);
+            panelRecordEventEquipment.Controls.Add(comboBoxEventIDEventEquipment);
             panelRecordEventEquipment.Controls.Add(labelEquipmentIDEventEquipment);
-            panelRecordEventEquipment.Controls.Add(textBoxEquipmentIDEventEquipment);
+            panelRecordEventEquipment.Controls.Add(comboBoxEquipmentIDEventEquipment);
             panelRecordEventEquipment.Location = new Point(7, 528);
             panelRecordEventEquipment.Margin = new Padding(4, 3, 4, 3);
             panelRecordEventEquipment.Name = "panelRecordEventEquipment";
@@ -2966,14 +2727,15 @@
             labelEventIDEventEquipment.TabIndex = 5;
             labelEventIDEventEquipment.Text = "Событие:";
             // 
-            // textBoxEventIDEventEquipment
+            // comboBoxEventIDEventEquipment
             // 
-            textBoxEventIDEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEventIDEventEquipment.Location = new Point(151, 110);
-            textBoxEventIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
-            textBoxEventIDEventEquipment.Name = "textBoxEventIDEventEquipment";
-            textBoxEventIDEventEquipment.Size = new Size(418, 33);
-            textBoxEventIDEventEquipment.TabIndex = 1;
+            comboBoxEventIDEventEquipment.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEventIDEventEquipment.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEventIDEventEquipment.FormattingEnabled = true;
+            comboBoxEventIDEventEquipment.Location = new Point(150, 110);
+            comboBoxEventIDEventEquipment.Name = "comboBoxEventIDEventEquipment";
+            comboBoxEventIDEventEquipment.Size = new Size(419, 33);
+            comboBoxEventIDEventEquipment.TabIndex = 1;
             // 
             // labelEquipmentIDEventEquipment
             // 
@@ -2987,14 +2749,15 @@
             labelEquipmentIDEventEquipment.TabIndex = 6;
             labelEquipmentIDEventEquipment.Text = "Оборудование:";
             // 
-            // textBoxEquipmentIDEventEquipment
+            // comboBoxEquipmentIDEventEquipment
             // 
-            textBoxEquipmentIDEventEquipment.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEquipmentIDEventEquipment.Location = new Point(151, 155);
-            textBoxEquipmentIDEventEquipment.Margin = new Padding(4, 3, 4, 3);
-            textBoxEquipmentIDEventEquipment.Name = "textBoxEquipmentIDEventEquipment";
-            textBoxEquipmentIDEventEquipment.Size = new Size(418, 33);
-            textBoxEquipmentIDEventEquipment.TabIndex = 2;
+            comboBoxEquipmentIDEventEquipment.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEquipmentIDEventEquipment.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEquipmentIDEventEquipment.FormattingEnabled = true;
+            comboBoxEquipmentIDEventEquipment.Location = new Point(150, 155);
+            comboBoxEquipmentIDEventEquipment.Name = "comboBoxEquipmentIDEventEquipment";
+            comboBoxEquipmentIDEventEquipment.Size = new Size(419, 33);
+            comboBoxEquipmentIDEventEquipment.TabIndex = 2;
             // 
             // labelControlEventEquipment
             // 
@@ -3017,11 +2780,10 @@
             panelControlEventEquipment.Controls.Add(buttonSaveEventEquipment);
             panelControlEventEquipment.Controls.Add(buttonWordEventEquipment);
             panelControlEventEquipment.Controls.Add(buttonExcelEventEquipment);
-            panelControlEventEquipment.Controls.Add(buttonTXTEventEquipment);
             panelControlEventEquipment.Location = new Point(626, 481);
             panelControlEventEquipment.Margin = new Padding(4, 3, 4, 3);
             panelControlEventEquipment.Name = "panelControlEventEquipment";
-            panelControlEventEquipment.Size = new Size(255, 373);
+            panelControlEventEquipment.Size = new Size(255, 322);
             panelControlEventEquipment.TabIndex = 2;
             // 
             // buttonNewEventEquipment
@@ -3108,25 +2870,11 @@
             buttonExcelEventEquipment.UseVisualStyleBackColor = true;
             buttonExcelEventEquipment.Click += ButtonExcelEventEquipment_Click;
             // 
-            // buttonTXTEventEquipment
-            // 
-            buttonTXTEventEquipment.FlatStyle = FlatStyle.Flat;
-            buttonTXTEventEquipment.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            buttonTXTEventEquipment.ForeColor = Color.Black;
-            buttonTXTEventEquipment.Location = new Point(10, 316);
-            buttonTXTEventEquipment.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTEventEquipment.Name = "buttonTXTEventEquipment";
-            buttonTXTEventEquipment.Size = new Size(236, 45);
-            buttonTXTEventEquipment.TabIndex = 6;
-            buttonTXTEventEquipment.Text = "Вывод в TXT";
-            buttonTXTEventEquipment.UseVisualStyleBackColor = true;
-            buttonTXTEventEquipment.Click += ButtonTXTEventEquipment_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(895, 881);
+            ClientSize = new Size(895, 874);
             Controls.Add(tabControl1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -3222,12 +2970,10 @@
         private Button buttonSaveMilitaryUnit;
         private Button buttonWordMilitaryUnit;
         private Button buttonExcelMilitaryUnit;
-        private Button buttonTXTMilitaryUnit;
         private TabControl tabControl1;
         private TabPage tabPageWarEvents;
         private Panel panelTitleWarEvents;
         private Label labelTitleWarEvents;
-        private Button buttonClearWarEvents;
         private Button buttonRefreshWarEvents;
         private TextBox textBoxSearchWarEvents;
         private DataGridView dataGridViewWarEvents;
@@ -3248,11 +2994,9 @@
         private Button buttonSaveWarEvent;
         private Button buttonWordWarEvent;
         private Button buttonExcelWarEvent;
-        private Button buttonTXTWarEvent;
         private TabPage tabPageVeterans;
         private Panel panelTitleVeterans;
         private Label labelTitleVeterans;
-        private Button buttonClearVeterans;
         private Button buttonRefreshVeterans;
         private TextBox textBoxSearchVeterans;
         private DataGridView dataGridViewVeterans;
@@ -3276,11 +3020,9 @@
         private Button buttonSaveVeteran;
         private Button buttonWordVeteran;
         private Button buttonExcelVeteran;
-        private Button buttonTXTVeteran;
         private TabPage tabPageMedals;
         private Panel panelTitleMedals;
         private Label labelTitleMedals;
-        private Button buttonClearMedals;
         private Button buttonRefreshMedals;
         private TextBox textBoxSearchMedals;
         private DataGridView dataGridViewMedals;
@@ -3300,11 +3042,9 @@
         private Button buttonSaveMedal;
         private Button buttonWordMedal;
         private Button buttonExcelMedal;
-        private Button buttonTXTMedal;
         private TabPage tabPageVeteranMedals;
         private Panel panelTitleVeteranMedals;
         private Label labelTitleVeteranMedals;
-        private Button buttonClearVeteranMedals;
         private Button buttonRefreshVeteranMedals;
         private TextBox textBoxSearchVeteranMedals;
         private DataGridView dataGridViewVeteranMedals;
@@ -3313,9 +3053,7 @@
         private Label labelVeteranMedalID;
         private TextBox textBoxVeteranMedalID;
         private Label labelVeteranIDVeteranMedals;
-        private TextBox textBoxVeteranIDVeteranMedals;
         private Label labelMedalIDVeteranMedals;
-        private TextBox textBoxMedalIDVeteranMedals;
         private Label labelAwardDate;
         private Label labelControlVeteranMedals;
         private Panel panelControlVeteranMedals;
@@ -3325,7 +3063,6 @@
         private Button buttonSaveVeteranMedal;
         private Button buttonWordVeteranMedal;
         private Button buttonExcelVeteranMedal;
-        private Button buttonTXTVeteranMedal;
         private TextBox textBoxPhoneClients;
         private TextBox textBoxEventLocation;
         private TextBox textBoxGender;
@@ -3334,7 +3071,6 @@
         private TabPage tabPageMilitaryEquipment;
         private Panel panelTitleMilitaryEquipment;
         private Label labelTitleMilitaryEquipment;
-        private Button buttonClearMilitaryEquipment;
         private Button buttonRefreshMilitaryEquipment;
         private TextBox textBoxSearchMilitaryEquipment;
         private DataGridView dataGridViewMilitaryEquipment;
@@ -3356,11 +3092,9 @@
         private Button buttonSaveMilitaryEquipment;
         private Button buttonWordMilitaryEquipment;
         private Button buttonExcelMilitaryEquipment;
-        private Button buttonTXTMilitaryEquipment;
         private TabPage tabPageMilitaryRoutes;
         private Panel panelTitleMilitaryRoutes;
         private Label labelTitleMilitaryRoutes;
-        private Button buttonClearMilitaryRoutes;
         private Button buttonRefreshMilitaryRoutes;
         private TextBox textBoxSearchMilitaryRoutes;
         private DataGridView dataGridViewMilitaryRoutes;
@@ -3384,11 +3118,9 @@
         private Button buttonSaveMilitaryRoute;
         private Button buttonWordMilitaryRoute;
         private Button buttonExcelMilitaryRoute;
-        private Button buttonTXTMilitaryRoute;
         private TabPage tabPageEventEquipment;
         private Panel panelTitleEventEquipment;
         private Label labelTitleEventEquipment;
-        private Button buttonClearEventEquipment;
         private Button buttonRefreshEventEquipment;
         private TextBox textBoxSearchEventEquipment;
         private DataGridView dataGridViewEventEquipment;
@@ -3397,9 +3129,7 @@
         private Label labelEventEquipmentID;
         private TextBox textBoxEventEquipmentID;
         private Label labelEventIDEventEquipment;
-        private TextBox textBoxEventIDEventEquipment;
         private Label labelEquipmentIDEventEquipment;
-        private TextBox textBoxEquipmentIDEventEquipment;
         private Label labelControlEventEquipment;
         private Panel panelControlEventEquipment;
         private Button buttonNewEventEquipment;
@@ -3408,7 +3138,6 @@
         private Button buttonSaveEventEquipment;
         private Button buttonWordEventEquipment;
         private Button buttonExcelEventEquipment;
-        private Button buttonTXTEventEquipment;
         private Label labelDescriptionMilitaryUnits;
         private TextBox textBoxDescriptionMilitaryUnits;
         private Label labelDescriptionWarEvents;
@@ -3416,14 +3145,12 @@
         private Label labelEventDate;
         private DateTimePicker dateTimePickerEventDate;
         private TextBox textBoxMilitaryRank;
-        private TextBox textBoxUnitID;
         private DateTimePicker dateTimePickerBirthDate;
         private DateTimePicker dateTimePickerAwardDate;
         private Button buttonReportMilitaryRoutes;
         private Panel panelTitleMilitaryUnits;
         private Panel panel1;
         private Label labelTitleMilitaryUnits;
-        private Button buttonClearMilitaryUnits;
         private Button buttonRefreshMilitaryUnits;
         private TextBox textBoxSearchMilitaryUnits;
         private Panel panel2;
@@ -3433,5 +3160,10 @@
         private Panel panel6;
         private Panel panel7;
         private Panel panel8;
+        private ComboBox comboBoxUnitID;
+        private ComboBox comboBoxVeteranIDVeteranMedals;
+        private ComboBox comboBoxMedalIDVeteranMedals;
+        private ComboBox comboBoxEventIDEventEquipment;
+        private ComboBox comboBoxEquipmentIDEventEquipment;
     }
 }
