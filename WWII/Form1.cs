@@ -262,6 +262,7 @@ namespace WWII
                     ReadSingleRow(dataGridView, sqlDataReader);
                 }
                 sqlDataReader.Close();
+                FillAllComboBoxes();
             }
             catch (Exception ex)
             {
@@ -332,7 +333,6 @@ namespace WWII
                 RefreshDataGrid(dataGridViewMilitaryEquipment, "MilitaryEquipment");
                 RefreshDataGrid(dataGridViewMilitaryRoutes, "MilitaryRoutes");
                 RefreshDataGrid(dataGridViewEventEquipment, "EventEquipment");
-                FillAllComboBoxes();
             }
             catch (Exception ex)
             {
@@ -995,8 +995,6 @@ namespace WWII
                         var deathDate = dateTimePickerDeathDate.Value;
                         var militaryRank = textBoxMilitaryRank.Text;
                         var unitID = comboBoxUnitID.Text;
-                        dataBase.CloseConnection();
-
                         dataGridView.Rows[selectedRowIndex].SetValues(veteranID, fullName, birthDate, deathDate, militaryRank, unitID);
                         dataGridView.Rows[selectedRowIndex].Cells[6].Value = RowState.Modified;
                         break;
