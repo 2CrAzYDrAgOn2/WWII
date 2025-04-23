@@ -356,6 +356,7 @@ namespace WWII
                         textBoxMilitaryUnitID.Text = dataGridViewRow.Cells[0].Value?.ToString();
                         textBoxUnitName.Text = dataGridViewRow.Cells[1].Value?.ToString();
                         textBoxDescriptionMilitaryUnits.Text = dataGridViewRow.Cells[2].Value?.ToString();
+                        panelRecordMilitaryUnits.Visible = true;
                         break;
 
                     case "dataGridViewWarEvents":
@@ -364,6 +365,7 @@ namespace WWII
                         dateTimePickerEventDate.Text = dataGridViewRow.Cells[2].Value?.ToString();
                         textBoxEventLocation.Text = dataGridViewRow.Cells[3].Value?.ToString();
                         textBoxDescriptionWarEvents.Text = dataGridViewRow.Cells[4].Value?.ToString();
+                        panelRecordWarEvents.Visible = true;
                         break;
 
                     case "dataGridViewVeterans":
@@ -373,12 +375,14 @@ namespace WWII
                         dateTimePickerDeathDate.Text = dataGridViewRow.Cells[3].Value?.ToString();
                         textBoxMilitaryRank.Text = dataGridViewRow.Cells[4].Value?.ToString();
                         comboBoxUnitID.Text = dataGridViewRow.Cells[5].Value?.ToString();
+                        panelRecordVeterans.Visible = true;
                         break;
 
                     case "dataGridViewMedals":
                         textBoxMedalID.Text = dataGridViewRow.Cells[0].Value?.ToString();
                         textBoxMedalName.Text = dataGridViewRow.Cells[1].Value?.ToString();
                         textBoxDescriptionMedals.Text = dataGridViewRow.Cells[2].Value?.ToString();
+                        panelRecordMedals.Visible = true;
                         break;
 
                     case "dataGridViewVeteranMedals":
@@ -386,6 +390,7 @@ namespace WWII
                         comboBoxVeteranIDVeteranMedals.Text = dataGridViewRow.Cells[1].Value?.ToString();
                         comboBoxMedalIDVeteranMedals.Text = dataGridViewRow.Cells[2].Value?.ToString();
                         dateTimePickerAwardDate.Text = dataGridViewRow.Cells[3].Value?.ToString();
+                        panelRecordVeteranMedals.Visible = true;
                         break;
 
                     case "dataGridViewMilitaryEquipment":
@@ -393,6 +398,7 @@ namespace WWII
                         textBoxEquipmentName.Text = dataGridViewRow.Cells[1].Value?.ToString();
                         textBoxEquipmentType.Text = dataGridViewRow.Cells[2].Value?.ToString();
                         textBoxDescriptionMilitaryEquipment.Text = dataGridViewRow.Cells[3].Value?.ToString();
+                        panelRecordMilitaryEquipment.Visible = true;
                         break;
 
                     case "dataGridViewMilitaryRoutes":
@@ -401,12 +407,14 @@ namespace WWII
                         textBoxStartLocation.Text = dataGridViewRow.Cells[2].Value?.ToString();
                         textBoxEndLocation.Text = dataGridViewRow.Cells[3].Value?.ToString();
                         textBoxDescriptionMilitaryRoutes.Text = dataGridViewRow.Cells[4].Value?.ToString();
+                        panelRecordMilitaryRoutes.Visible = true;
                         break;
 
                     case "dataGridViewEventEquipment":
                         textBoxEventEquipmentID.Text = dataGridViewRow.Cells[0].Value?.ToString();
                         comboBoxEventIDEventEquipment.Text = dataGridViewRow.Cells[1].Value?.ToString();
                         comboBoxEquipmentIDEventEquipment.Text = dataGridViewRow.Cells[2].Value?.ToString();
+                        panelRecordEventEquipment.Visible = true;
                         break;
                 }
             }
@@ -538,6 +546,15 @@ namespace WWII
         {
             try
             {
+                DialogResult result = MessageBox.Show(
+            "Вы уверены, что хотите удалить эту запись?",
+            "Подтверждение удаления",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question);
+                if (result != DialogResult.Yes)
+                {
+                    return;
+                }
                 int index = dataGridView.CurrentCell.RowIndex;
                 dataGridView.Rows[index].Visible = false;
                 switch (dataGridView.Name)

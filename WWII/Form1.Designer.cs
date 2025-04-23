@@ -383,6 +383,7 @@
             panelRecordMilitaryUnits.Name = "panelRecordMilitaryUnits";
             panelRecordMilitaryUnits.Size = new Size(609, 272);
             panelRecordMilitaryUnits.TabIndex = 1;
+            panelRecordMilitaryUnits.Visible = false;
             // 
             // labelRecordMilitaryUnits
             // 
@@ -698,6 +699,7 @@
             panelRecordWarEvents.Name = "panelRecordWarEvents";
             panelRecordWarEvents.Size = new Size(609, 333);
             panelRecordWarEvents.TabIndex = 1;
+            panelRecordWarEvents.Visible = false;
             // 
             // labelRecordWarEvents
             // 
@@ -1049,6 +1051,7 @@
             panelRecordVeterans.Name = "panelRecordVeterans";
             panelRecordVeterans.Size = new Size(609, 356);
             panelRecordVeterans.TabIndex = 0;
+            panelRecordVeterans.Visible = false;
             // 
             // labelRecordVeterans
             // 
@@ -1415,6 +1418,7 @@
             panelRecordMedals.Name = "panelRecordMedals";
             panelRecordMedals.Size = new Size(611, 242);
             panelRecordMedals.TabIndex = 0;
+            panelRecordMedals.Visible = false;
             // 
             // labelRecordMedals
             // 
@@ -1706,6 +1710,7 @@
             panelRecordVeteranMedals.Name = "panelRecordVeteranMedals";
             panelRecordVeteranMedals.Size = new Size(611, 293);
             panelRecordVeteranMedals.TabIndex = 1;
+            panelRecordVeteranMedals.Visible = false;
             // 
             // labelRecordVeteranMedals
             // 
@@ -2020,6 +2025,7 @@
             panelRecordMilitaryEquipment.Name = "panelRecordMilitaryEquipment";
             panelRecordMilitaryEquipment.Size = new Size(611, 300);
             panelRecordMilitaryEquipment.TabIndex = 1;
+            panelRecordMilitaryEquipment.Visible = false;
             // 
             // labelRecordMilitaryEquipment
             // 
@@ -2350,6 +2356,7 @@
             panelRecordMilitaryRoutes.Name = "panelRecordMilitaryRoutes";
             panelRecordMilitaryRoutes.Size = new Size(611, 300);
             panelRecordMilitaryRoutes.TabIndex = 1;
+            panelRecordMilitaryRoutes.Visible = false;
             // 
             // labelRecordMilitaryRoutes
             // 
@@ -2681,6 +2688,7 @@
             panelRecordEventEquipment.Name = "panelRecordEventEquipment";
             panelRecordEventEquipment.Size = new Size(611, 239);
             panelRecordEventEquipment.TabIndex = 1;
+            panelRecordEventEquipment.Visible = false;
             // 
             // labelRecordEventEquipment
             // 
